@@ -8,6 +8,7 @@ import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Navbar from "@/components/Navbar";
 import { useI18n } from "@/lib/translations";
+import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   const { t } = useI18n();
@@ -19,11 +20,14 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Skills Section */}
-      <Skills />
-
       {/* About Section */}
       <About />
+
+      {/* Work Experience Section */}
+      <WorkExperience />
+
+      {/* Skills Section */}
+      <Skills />
 
       {/* Projects Section */}
       <div id="projects">

@@ -6,11 +6,12 @@ import { useRef, useMemo, useState, useEffect } from "react";
 import * as THREE from "three";
 
 // Individual floating shape component
-function FloatingShape({ position, type, colors, mousePos }: { 
+function FloatingShape({ position, type, colors, mousePos, scroll }: { 
   position: [number, number, number], 
   type: 'sphere' | 'box',
   colors: THREE.Color[],
-  mousePos: { x: number, y: number }
+  mousePos: { x: number, y: number },
+  scroll: number
 }) {
   const meshRef = useRef<THREE.Mesh>(null);
   const initialPos = useMemo(() => position, [position]);
@@ -19,13 +20,24 @@ function FloatingShape({ position, type, colors, mousePos }: {
     if (meshRef.current) {
       const time = state.clock.getElapsedTime();
       
-      meshRef.current.position.y = initialPos[1] + Math.sin(time + initialPos[0]) * 0.2;
+      // Smoother parallax based on scroll
+      const parallaxOffset = scroll * 15;
+      meshRef.current.position.y = THREE.MathUtils.lerp(
+        meshRef.current.position.y,
+        initialPos[1] - parallaxOffset + Math.sin(time + initialPos[0]) * 0.3,
+        0.05
+      );
+      
       meshRef.current.position.x = THREE.MathUtils.lerp(
         meshRef.current.position.x,
-        initialPos[0] + mousePos.x * 0.5,
-        0.1
+        initialPos[0] + mousePos.x * 0.8,
+        0.05
       );
-      meshRef.current.position.z = initialPos[2] + mousePos.y * 0.5,
+      meshRef.current.position.z = THREE.MathUtils.lerp(
+        meshRef.current.position.z,
+        initialPos[2] + mousePos.y * 0.8,
+        0.05
+      );
 
       meshRef.current.rotation.x = time * 0.2;
       meshRef.current.rotation.y = time * 0.3;
@@ -49,19 +61,19 @@ function FloatingShape({ position, type, colors, mousePos }: {
   );
 }
 
-function ShapeField({ color, mousePos }: { color: THREE.Color, mousePos: { x: number, y: number } }) {
+function ShapeField({ color, mousePos, scroll }: { color: THREE.Color, mousePos: { x: number, y: number }, scroll: number }) {
   const { viewport } = useThree();
   
   const shapes = useMemo(() => {
     const list = [];
-    const count = 50;
+    const count = 70; // Increased count
     for (let i = 0; i < count; i++) {
       const side = Math.random() > 0.5 ? 1 : -1;
-      // Strict edge placement: 10% on each side
-      const edgeThreshold = viewport.width * 0.45;
-      const x = side * (edgeThreshold + Math.random() * (viewport.width * 0.05));
-      const y = (Math.random() - 0.5) * viewport.height * 2;
-      const z = (Math.random() - 0.5) * 4;
+      // Strict edge placement: 15% on each side
+      const edgeThreshold = viewport.width * 0.4;
+      const x = side * (edgeThreshold + Math.random() * (viewport.width * 0.15));
+      const y = (Math.random() - 0.5) * viewport.height * 4; // Taller field for scrolling
+      const z = (Math.random() - 0.5) * 6;
       
       // Create multi-color degrees based on the theme color
       const color1 = color.clone();
@@ -79,7 +91,7 @@ function ShapeField({ color, mousePos }: { color: THREE.Color, mousePos: { x: nu
   return (
     <>
       {shapes.map((s, i) => (
-        <FloatingShape key={i} {...s} mousePos={mousePos} />
+        <FloatingShape key={i} {...s} mousePos={mousePos} scroll={scroll} />
       ))}
     </>
   );
@@ -181,7 +193,7 @@ export default function Experience3D() {
         <ambientLight intensity={0.6} />
         <pointLight position={[10, 10, 10]} intensity={2} color={currentColor} />
         <pointLight position={[-10, -10, -10]} intensity={1} />
-        <ShapeField color={currentColor} mousePos={mousePos} />
+        <ShapeField color={currentColor} mousePos={mousePos} scroll={scroll} />
         <Stars radius={150} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
       </Canvas>
     </div>
