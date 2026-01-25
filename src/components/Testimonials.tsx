@@ -5,13 +5,13 @@ import { useState } from "react";
 
 const testimonials = [
   {
-    name: "John Doe",
-    role: "CEO at TechCorp",
+    name: "Joseph Greco",
+    role: "CEO at Salesmrkt",
     text: "Osama is an exceptional engineer. His AI integrations transformed our CRM workflow and significantly boosted efficiency.",
     image: "/placeholder-user1.jpg"
   },
   {
-    name: "Jane Smith",
+    name: "Jan Smith",
     role: "Product Manager",
     text: "The UTMSIR project was a huge success thanks to Osama's ability to simplify complex automated assignments.",
     image: "/placeholder-user2.jpg"

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useI18n } from "@/lib/translations";
+import { useI18n } from "@/lib/translations-context";
 
 export default function WorkExperience() {
   const { t, isRTL } = useI18n();

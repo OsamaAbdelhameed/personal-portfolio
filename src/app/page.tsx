@@ -7,7 +7,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Navbar from "@/components/Navbar";
-import { useI18n } from "@/lib/translations";
+import { useI18n } from "@/lib/translations-context";
 import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {

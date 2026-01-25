@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import ReactCountryFlag from "react-country-flag";
-import { useI18n } from "@/lib/translations";
+import { useI18n } from "@/lib/translations-context";
 
 export default function About() {
   const { t, isRTL } = useI18n();

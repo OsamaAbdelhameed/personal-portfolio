@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { useI18n } from "@/lib/translations";
+import { useI18n } from "@/lib/translations-context";
 
 export default function Hero() {
   const { t, isRTL } = useI18n();
