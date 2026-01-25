@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useI18n } from "@/lib/translations";
+import { useI18n } from "@/lib/translations-context";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);

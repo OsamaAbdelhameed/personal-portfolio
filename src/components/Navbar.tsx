@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import { useI18n, Language } from "@/lib/translations";
+import { useI18n, Language } from "@/lib/translations-context";
 import ReactCountryFlag from "react-country-flag";
 
 export default function Navbar() {

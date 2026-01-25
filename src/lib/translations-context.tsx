@@ -68,7 +68,11 @@ interface Translations {
       longDescription: string;
       tech: string[];
       liveUrl?: string;
-      videoUrl?: string; // YouTube ID
+        videoUrl?: string; // YouTube ID
+      images?: Array<{
+        src: string;
+        desc: string;
+      }>;
     }>;
   };
   experience: {
@@ -142,15 +146,18 @@ const translations: Record<Language, Translations> = {
           description: "Built a CRM chat application with AI chatbot capabilities, featuring real-time messaging and scalable microservices.",
           longDescription: "Led the development of a comprehensive CRM and AI-powered chatbot platform. Implemented real-time communication features, automated contact grouping for broadcasts, and complex lead management workflows. Migrated frontend to Vite for 50% faster builds and built out reporting dashboards for data-driven insights.",
           tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
-          liveUrl: "https://chat.engages.ai"
+          liveUrl: "https://chat.engages.ai",
+          videoUrl: "/engages-ai.mp4",
+          images: [{src: "/engages-ai/chat.engages.ai_.png", desc: "Dashboard page for Engages AI staff"}, {src: "/engages-ai/chat.engages.ai_ (1).png", desc: "Dashboard page for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (2).png", desc: "Contact / Leads page for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (3).png", desc: "Broadcast Campaigns page for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (4).png", desc: "Flow-based Rasa chatbot page for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (5).png", desc: "Gen AI GPT chatbot page for Engages AI client for automated self-updated chatbots"}, {src: "/engages-ai/chat.engages.ai_ (6).png", desc: "Subscription page for Engages AI client for automated self-updated chatbots"}, {src: "/engages-ai/chat.engages.ai_ (7).png", desc: "Channels page for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (8).png", desc: "Teams page for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (9).png", desc: "Automation Workflow page - Builder component for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (10).png", desc: "Automation Workflow page - Triggers component for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (11).png", desc: "Automation Workflow page - Actions component for Engages AI client"}, {src: "/engages-ai/chat.engages.ai_ (12).png", desc: "Automation Workflow page - Webhook Action component for Engages AI client"},]
         },
         { 
           slug: "salesmrkt",
           title: "Salesmrkt", 
-          description: "Developed features for sales and service providers, optimizing lead management and user engagement.",
+          description: "Developed a frontend UI components for sales and service providers, optimizing SEO and user experience.",
           longDescription: "Core developer for the Salesmrkt ecosystem, focusing on automating the sales funnel for service providers. Developed centralized lead management tools and client engagement features that streamlined operations for hundreds of users.",
-          tech: ["NextJS", "Firebase", "Algolia", "Stripe", "N8N", "TailwindCSS"],
-          liveUrl: "https://salesmrkt.com"
+          tech: ["React", "Shopify", "N8N", "Calendly"],
+          liveUrl: "https://salesmrkt.com",
+          images: [{src: "/salesmrkt/salesmrkt.com_.png", desc: "The main landing page for Salesmrkt"}, {src: "/salesmrkt/salesmrkt.com_campaigns-on-demand.png", desc: "The campaigns on demand page for Salesmrkt"}, {src: "/salesmrkt/salesmrkt.com_schedule-growth-session.png", desc: "The sales, marketing and video production growth sessions on demand page for Salesmrkt"}, {src: "/salesmrkt/salesmrkt.com_thank-you-ads.png", desc: "The thank you page that shows up when user books a session through N8N automation for Salesmrkt"}]
         },
         { 
           slug: "gotryone",
@@ -158,7 +165,8 @@ const translations: Record<Language, Translations> = {
           description: "A specialized platform for service providers to manage bookings and trials efficiently.",
           longDescription: "Built a specialized booking and trial management platform within the Salesbox ecosystem. Integrated with QuickBooks and Stripe for seamless financial operations and used Algolia for high-performance search capabilities.",
           tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
-          liveUrl: "https://gotryone.com"
+          liveUrl: "https://gotryone.com",
+          images: [{src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne"}, {src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne"}, {src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right"}, {src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button"}, {src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers"}, {src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business"}, {src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business"}, {src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business"}, {src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne"}]
         },
         { 
           slug: "utmsir",
