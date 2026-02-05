@@ -208,7 +208,7 @@ export default function Hero() {
           }}
         >
           <a 
-            href="https://linkedin.com/in/osama-abdelnasser" 
+            href="https://www.linkedin.com/in/osama-abdelhameed/" 
             target="_blank" 
             rel="noopener noreferrer"
             style={{
@@ -221,7 +221,7 @@ export default function Hero() {
             LinkedIn
           </a>
           <a 
-            href="https://github.com/osama-abdelnasser" 
+            href="https://github.com/OsamaAbdelhameed" 
             target="_blank" 
             rel="noopener noreferrer"
             style={{
