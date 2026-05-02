@@ -180,56 +180,142 @@ const translations: Record<Language, Translations> = {
     experience: {
       title: "Work Experience",
       items: [
-        {
-          company: "Salesmrkt",
-          role: "Full Stack Vibe Coder",
-          period: "Sept 2025 – Present",
-          location: "Remote, Seattle, USA",
-          responsibilities: [
-            "Converted a React project to NextJS for enhanced security and flexibility.",
-            "Developed an AI chatting system with recommendations and in-depth search, responding in 1.5s using Gemini.",
-            "Engaged directly with clients for update requests and technical support.",
-            "Updated Shopify store with new template UI and configurations.",
-            "Managed and developed features for service providers: Salesbox, Salesmrkt, and GoTryOne using NextJS, Tailwind, Firebase, Algolia, and Zustand.",
-            "Utilized QuickBooks and Stripe to handle complex payments and invoicing.",
-            "Used N8N to handle complex process automation outside the main system."
-          ],
-          tech: ["NextJS", "Tailwind", "Firebase", "Algolia", "Zustand", "QuickBooks", "Stripe", "N8N"]
-        },
-        {
-          company: "Engages AI",
-          role: "Full Stack Software Engineer",
-          period: "March 2024 – Aug 2025",
-          location: "Remote, Singapore",
-          responsibilities: [
-            "Developed a full-featured CRM chat application with integrated AI chatbot capabilities.",
-            "Enhanced Frontend features using MUI, React, Redux, socket.io, RabbitMQ, and custom web widgets.",
-            "Replaced Webpack with Vite in the Frontend, achieving 50% faster build times.",
-            "Built scalable backend microservices with NestJS, leveraging PostgreSQL, Redis, and RabbitMQ.",
-            "Integrated advanced AI components: Python, RASA models, GPT-4, GPT assistants, and LangGraph.",
-            "Managed cloud deployment on Alibaba Ubuntu instances and serverless AWS Lambda functions.",
-            "Developed comprehensive reporting dashboards and automation workflows for lead management.",
-            "Implemented contact grouping and broadcast messaging systems.",
-            "Optimized backend performance by migrating logic to database functions and materialized views.",
-            "Used PeerDB (CDC) for real-time synchronization between multiple data sources.",
-            "Developed a serverless crawler function to automatically update the GPT assistant vector store.",
-            "Ensured code quality and reliability through unit testing with Jest."
-          ],
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "LangGraph", "PeerDB", "socket.io"]
-        },
-        {
-          company: "Universiti Sains Islam Malaysia",
-          role: "System Analyst Intern",
-          period: "Feb 2023 – April 2023",
-          location: "Remote, Malaysia",
-          responsibilities: [
-            "Modernized legacy university systems by migrating from PHP and Kotlin to React and React Native.",
-            "Significantly improved system performance, maintainability, and user experience.",
-            "Developed and supported cross-platform mobile applications for student management."
-          ],
-          tech: ["React", "React Native", "PHP", "Kotlin"]
-        }
-      ]
+              {
+                "company": "Mind Step Tutor",
+                "role": "Founder",
+                "period": "Mar 2026 – Present",
+                "location": "United Arab Emirates",
+                "responsibilities": [
+                  "Organizing the relationship between Students and Private Tutors in a B2C and C2C platform."
+                ],
+                "tech": [
+                  "Business Strategy",
+                  "Platform Architecture"
+                ]
+              },
+              {
+                "company": "Salesmrkt",
+                "role": "AI FullStack Software Engineer",
+                "period": "Sept 2025 – Mar 2026",
+                "location": "Seattle, WA",
+                "responsibilities": [
+                  "Converted a React project to NextJS for enhanced security and flexibility.",
+                  "Developed an AI chatting system with recommendations and in-depth search, responding in 1.5s using Gemini.",
+                  "Engaged directly with clients for update requests and technical support.",
+                  "Updated Shopify store with new template UI and configurations.",
+                  "Managed and developed features for service providers: Salesbox, Salesmrkt, and GoTryOne using NextJS, Tailwind, Firebase, Algolia, and Zustand.",
+                  "Utilized QuickBooks and Stripe to handle complex payments and invoicing.",
+                  "Used N8N to handle complex process automation outside the main system."
+                ],
+                "tech": [
+                  "NextJS",
+                  "Tailwind",
+                  "Firebase",
+                  "Algolia",
+                  "Zustand",
+                  "QuickBooks",
+                  "Stripe",
+                  "N8N"
+                ]
+              },
+              {
+                "company": "Engages AI",
+                "role": "Fullstack Software Engineer",
+                "period": "Jan 2024 – Aug 2025",
+                "location": "Singapore",
+                "responsibilities": [
+                  "Developed a full-featured CRM chat application with integrated AI chatbot capabilities.",
+                  "Enhanced Frontend features using MUI, React, Redux, socket.io, RabbitMQ, and custom web widgets.",
+                  "Replaced Webpack with Vite in the Frontend, achieving 50% faster build times.",
+                  "Built scalable backend microservices with NestJS, leveraging PostgreSQL, Redis, and RabbitMQ.",
+                  "Integrated advanced AI components: Python, RASA models, GPT-4, GPT assistants, and LangGraph.",
+                  "Managed cloud deployment on Alibaba Ubuntu instances and serverless AWS Lambda functions.",
+                  "Developed comprehensive reporting dashboards and automation workflows for lead management.",
+                  "Implemented contact grouping and broadcast messaging systems.",
+                  "Optimized backend performance by migrating logic to database functions and materialized views.",
+                  "Used PeerDB (CDC) for real-time synchronization between multiple data sources.",
+                  "Developed a serverless crawler function to automatically update the GPT assistant vector store.",
+                  "Ensured code quality and reliability through unit testing with Jest."
+                ],
+                "tech": [
+                  "NestJS",
+                  "React",
+                  "PostgreSQL",
+                  "Redis",
+                  "RabbitMQ",
+                  "AWS Lambda",
+                  "GPT-4",
+                  "LangGraph",
+                  "PeerDB",
+                  "socket.io"
+                ]
+              },
+              {
+                "company": "QuickDesk",
+                "role": "Software Engineer Intern",
+                "period": "May 2023 – Dec 2023",
+                "location": "WP, Kuala Lumpur",
+                "responsibilities": [
+                  "Contributed to CRM web application development; developed frontend in React.",
+                  "Implemented backend using NestJS, PostgreSQL, Redis, and Alibaba ChatApp.",
+                  "Developed AI chatbots using the Rasa framework."
+                ],
+                "tech": [
+                  "React",
+                  "NestJS",
+                  "PostgreSQL",
+                  "Redis",
+                  "Rasa",
+                  "Alibaba ChatApp"
+                ]
+              },
+              {
+                "company": "Universiti Sains Islam Malaysia",
+                "role": "System Analyst",
+                "period": "Oct 2022 – Apr 2023",
+                "location": "Nilai, Malaysia",
+                "responsibilities": [
+                  "Modernized legacy university systems by migrating from PHP and Kotlin to React and React Native.",
+                  "Significantly improved system performance, maintainability, and user experience.",
+                  "Supported cross-platform mobile applications for student management."
+                ],
+                "tech": [
+                  "React",
+                  "React Native",
+                  "PHP",
+                  "Kotlin"
+                ]
+              },
+              {
+                "company": "Developer Student Club - UTM",
+                "role": "Technical Team Member",
+                "period": "Nov 2021 – Oct 2022",
+                "location": "Johor Bahru, Malaysia",
+                "responsibilities": [
+                  "Explored machine learning and deep learning fields in AI to learn and participate in hands-on workshops."
+                ],
+                "tech": [
+                  "Python",
+                  "Machine Learning",
+                  "Deep Learning"
+                ]
+              },
+              {
+                "company": "Freelancer.com",
+                "role": "Frontend Web Developer",
+                "period": "Nov 2021 – Nov 2021",
+                "location": "Remote",
+                "responsibilities": [
+                  "Developed a weather journal website connected to a weather API using HTML forms and Express.js to facilitate interactive data requests."
+                ],
+                "tech": [
+                  "HTML",
+                  "Express.js",
+                  "JavaScript",
+                  "Weather API"
+                ]
+              }
+            ]
     },
     contact: {
       title: "Work Together",
@@ -319,56 +405,142 @@ const translations: Record<Language, Translations> = {
     experience: {
       title: "الخبرة المهنية",
       items: [
-        {
-          company: "Salesmrkt",
-          role: "Full Stack Vibe Coder",
-          period: "سبتمبر 2025 – الحاضر",
-          location: "عن بعد، سياتل، الولايات المتحدة",
-          responsibilities: [
-            "تحويل مشروع React إلى NextJS لتعزيز الأمان والمرونة.",
-            "تطوير نظام دردشة ذكاء اصطناعي بقدرة على تقديم توصيات وبحث متعمق، مع استجابة في 1.5 ثانية باستخدام Gemini.",
-            "التواصل المباشر مع العملاء لتنفيذ طلبات التحديث والدعم الفني.",
-            "تحديث متجر Shopify بقالب واجهة مستخدم وتكوينات جديدة.",
-            "إدارة وتطوير الميزات لمزودي الخدمات: Salesbox و Salesmrkt و GoTryOne باستخدام NextJS و Tailwind و Firebase و Algolia و Zustand.",
-            "استخدام QuickBooks و Stripe لمعالجة المدفوعات والفواتير المعقدة.",
-            "استخدام N8N لمعالجة أتمتة العمليات المعقدة خارج النظام الأساسي."
-          ],
-          tech: ["NextJS", "Tailwind", "Firebase", "Algolia", "Zustand", "QuickBooks", "Stripe", "N8N"]
-        },
-        {
-          company: "Engages AI",
-          role: "Full Stack Software Engineer",
-          period: "مارس 2024 – أغسطس 2025",
-          location: "عن بعد، سنغافورة",
-          responsibilities: [
-            "تطوير تطبيق محادثة CRM كامل الميزات مع قدرات روبوت دردشة متكاملة بالذكاء الاصطناعي.",
-            "تحسين ميزات الواجهة الأمامية باستخدام MUI و React و Redux و socket.io و RabbitMQ وودجات الويب.",
-            "استبدال Webpack بـ Vite في الواجهة الأمامية، مما حقق سرعة بناء أفضل بنسبة 50%.",
-            "بناء خدمات مصغرة قابلة للتوسع باستخدام NestJS، مع الاعتماد على PostgreSQL و Redis و RabbitMQ.",
-            "دمج مكونات ذكاء اصطناعي متقدمة: Python و RASA و GPT-4 و GPT Assistants و LangGraph.",
-            "إدارة النشر السحابي على مثيلات Alibaba Ubuntu ووظائف AWS Lambda السحابية.",
-            "تطوير لوحات معلومات شاملة وسير عمل أتمتة لإدارة العملاء المحتملين.",
-            "تنفيذ أنظمة تجميع جهات الاتصال ورسائل البث الجماعية.",
-            "تحسين أداء الواجهة الخلفية بنقل المنطق إلى وظائف قاعدة البيانات واللقطات المحدثة (Materialized Views).",
-            "استخدام PeerDB (CDC) للمزامنة في الوقت الفعلي بين مصادر بيانات متعددة.",
-            "تطوير وظيفة زاحف (Crawler) سحابية لتحديث مخزن المتجهات الخاص بـ GPT Assistant تلقائيًا.",
-            "ضمان جودة البرمجيات وموثوقيتها من خلال اختبارات الوحدة باستخدام Jest."
-          ],
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "LangGraph", "PeerDB", "socket.io"]
-        },
-        {
-          company: "Universiti Sains Islam Malaysia",
-          role: "متدرب محلل أنظمة",
-          period: "فبراير 2023 – أبريل 2023",
-          location: "عن بعد، ماليزيا",
-          responsibilities: [
-            "تحديث أنظمة الجامعة القديمة من خلال الانتقال من PHP و Kotlin إلى React و React Native.",
-            "تحسين أداء النظام وقابلية صيانته وتجربة المستخدم بشكل كبير.",
-            "تطوير ودعم تطبيقات الهاتف المحمول عبر المنصات لإدارة الطلاب."
-          ],
-          tech: ["React", "React Native", "PHP", "Kotlin"]
-        }
-      ]
+              {
+                "company": "Mind Step Tutor",
+                "role": "مؤسس",
+                "period": "مارس 2026 – الحاضر",
+                "location": "الإمارات العربية المتحدة",
+                "responsibilities": [
+                  "تنظيم العلاقة بين الطلاب والمدرسين الخصوصيين في منصة B2C و C2C."
+                ],
+                "tech": [
+                  "استراتيجية الأعمال",
+                  "هندسة المنصة"
+                ]
+              },
+              {
+                "company": "Salesmrkt",
+                "role": "مهندس برمجيات ذكاء اصطناعي شامل",
+                "period": "سبتمبر 2025 – مارس 2026",
+                "location": "سياتل، واشنطن",
+                "responsibilities": [
+                  "تحويل مشروع React إلى NextJS لتعزيز الأمان والمرونة.",
+                  "تطوير نظام دردشة ذكاء اصطناعي بقدرة على تقديم توصيات وبحث متعمق، مع استجابة في 1.5 ثانية باستخدام Gemini.",
+                  "التواصل المباشر مع العملاء لتنفيذ طلبات التحديث والدعم الفني.",
+                  "تحديث متجر Shopify بقالب واجهة مستخدم وتكوينات جديدة.",
+                  "إدارة وتطوير الميزات لمزودي الخدمات: Salesbox و Salesmrkt و GoTryOne باستخدام NextJS و Tailwind و Firebase و Algolia و Zustand.",
+                  "استخدام QuickBooks و Stripe لمعالجة المدفوعات والفواتير المعقدة.",
+                  "استخدام N8N لمعالجة أتمتة العمليات المعقدة خارج النظام الأساسي."
+                ],
+                "tech": [
+                  "NextJS",
+                  "Tailwind",
+                  "Firebase",
+                  "Algolia",
+                  "Zustand",
+                  "QuickBooks",
+                  "Stripe",
+                  "N8N"
+                ]
+              },
+              {
+                "company": "Engages AI",
+                "role": "مهندس برمجيات شامل",
+                "period": "يناير 2024 – أغسطس 2025",
+                "location": "سنغافورة",
+                "responsibilities": [
+                  "تطوير تطبيق محادثة CRM كامل الميزات مع قدرات روبوت دردشة متكاملة بالذكاء الاصطناعي.",
+                  "تحسين ميزات الواجهة الأمامية باستخدام MUI و React و Redux و socket.io و RabbitMQ وودجات الويب.",
+                  "استبدال Webpack بـ Vite في الواجهة الأمامية، مما حقق سرعة بناء أفضل بنسبة 50%.",
+                  "بناء خدمات مصغرة قابلة للتوسع باستخدام NestJS، مع الاعتماد على PostgreSQL و Redis و RabbitMQ.",
+                  "دمج مكونات ذكاء اصطناعي متقدمة: Python و RASA و GPT-4 و GPT Assistants و LangGraph.",
+                  "إدارة النشر السحابي على مثيلات Alibaba Ubuntu ووظائف AWS Lambda السحابية.",
+                  "تطوير لوحات معلومات شاملة وسير عمل أتمتة لإدارة العملاء المحتملين.",
+                  "تنفيذ أنظمة تجميع جهات الاتصال ورسائل البث الجماعية.",
+                  "تحسين أداء الواجهة الخلفية بنقل المنطق إلى وظائف قاعدة البيانات واللقطات المحدثة.",
+                  "استخدام PeerDB (CDC) للمزامنة في الوقت الفعلي بين مصادر بيانات متعددة.",
+                  "تطوير وظيفة زاحف סერۆווערלעס لتحديث مخزن المتجهات الخاص بـ GPT Assistant تلقائيًا.",
+                  "ضمان جودة البرمجيات وموثوقيتها من خلال اختبارات الوحدة باستخدام Jest."
+                ],
+                "tech": [
+                  "NestJS",
+                  "React",
+                  "PostgreSQL",
+                  "Redis",
+                  "RabbitMQ",
+                  "AWS Lambda",
+                  "GPT-4",
+                  "LangGraph",
+                  "PeerDB",
+                  "socket.io"
+                ]
+              },
+              {
+                "company": "QuickDesk",
+                "role": "متدرب مهندس برمجيات",
+                "period": "مايو 2023 – ديسمبر 2023",
+                "location": "كوالالمبور، ماليزيا",
+                "responsibilities": [
+                  "المساهمة في تطوير تطبيق CRM للويب؛ تطوير الواجهة الأمامية باستخدام React.",
+                  "تنفيذ الواجهة الخلفية باستخدام NestJS و PostgreSQL و Redis و Alibaba ChatApp.",
+                  "تطوير روبوتات دردشة تعمل بالذكاء الاصطناعي باستخدام إطار عمل Rasa."
+                ],
+                "tech": [
+                  "React",
+                  "NestJS",
+                  "PostgreSQL",
+                  "Redis",
+                  "Rasa",
+                  "Alibaba ChatApp"
+                ]
+              },
+              {
+                "company": "Universiti Sains Islam Malaysia",
+                "role": "محلل أنظمة",
+                "period": "أكتوبر 2022 – أبريل 2023",
+                "location": "نيلاي، ماليزيا",
+                "responsibilities": [
+                  "تحديث أنظمة الجامعة القديمة من خلال الانتقال من PHP و Kotlin إلى React و React Native.",
+                  "تحسين أداء النظام وقابلية صيانته وتجربة المستخدم بشكل كبير.",
+                  "دعم تطبيقات الهاتف المحمول عبر المنصات لإدارة الطلاب."
+                ],
+                "tech": [
+                  "React",
+                  "React Native",
+                  "PHP",
+                  "Kotlin"
+                ]
+              },
+              {
+                "company": "Developer Student Club - UTM",
+                "role": "عضو الفريق التقني",
+                "period": "نوفمبر 2021 – أكتوبر 2022",
+                "location": "جوهور بهرو، ماليزيا",
+                "responsibilities": [
+                  "استكشاف مجالات التعلم الآلي والتعلم العميق في الذكاء الاصطناعي للتعلم والمشاركة في ورش العمل العملية."
+                ],
+                "tech": [
+                  "Python",
+                  "Machine Learning",
+                  "Deep Learning"
+                ]
+              },
+              {
+                "company": "Freelancer.com",
+                "role": "مطور واجهة أمامية للويب",
+                "period": "نوفمبر 2021 – نوفمبر 2021",
+                "location": "عن بعد",
+                "responsibilities": [
+                  "تطوير موقع دفتر يوميات الطقس متصل بـ Weather API باستخدام نماذج HTML و Express.js لتسهيل طلبات البيانات التفاعلية."
+                ],
+                "tech": [
+                  "HTML",
+                  "Express.js",
+                  "JavaScript",
+                  "Weather API"
+                ]
+              }
+            ]
     },
     contact: {
       title: "لنعمل معاً",
@@ -458,56 +630,142 @@ const translations: Record<Language, Translations> = {
     experience: {
       title: "Experiencia Laboral",
       items: [
-        {
-          company: "Salesmrkt",
-          role: "Full Stack Vibe Coder",
-          period: "Sept 2025 – Presente",
-          location: "Remoto, Seattle, EE. UU.",
-          responsibilities: [
-            "Convirtió un proyecto React a NextJS para mayor seguridad y flexibilidad.",
-            "Desarrolló un sistema de chat con IA con recomendaciones y búsqueda profunda, respondiendo en 1.5s usando Gemini.",
-            "Se relacionó directamente con clientes para solicitudes de actualización y soporte técnico.",
-            "Actualizó la tienda Shopify con una nueva interfaz de usuario y configuraciones.",
-            "Gestionó y desarrolló funciones para proveedores de servicios: Salesbox, Salesmrkt y GoTryOne usando NextJS, Tailwind, Firebase, Algolia y Zustand.",
-            "Utilizó QuickBooks y Stripe para gestionar pagos y facturación complejos.",
-            "Usó N8N para manejar la automatización de procesos complejos fuera del sistema principal."
-          ],
-          tech: ["NextJS", "Tailwind", "Firebase", "Algolia", "Zustand", "QuickBooks", "Stripe", "N8N"]
-        },
-        {
-          company: "Engages AI",
-          role: "Ingeniero de Software Full Stack",
-          period: "Marzo 2024 – Agosto 2025",
-          location: "Remoto, Singapur",
-          responsibilities: [
-            "Desarrolló una aplicación de chat CRM completa con capacidades integradas de chatbot de IA.",
-            "Mejoró las funciones del frontend utilizando MUI, React, Redux, socket.io, RabbitMQ y widgets web personalizados.",
-            "Reemplazó Webpack con Vite en el frontend, logrando tiempos de compilación un 50% más rápidos.",
-            "Construyó microservicios backend escalables con NestJS, aprovechando PostgreSQL, Redis y RabbitMQ.",
-            "Integró componentes de IA avanzados: Python, modelos RASA, GPT-4, asistentes GPT y LangGraph.",
-            "Gestionó el despliegue en la nube en instancias de Alibaba Ubuntu y funciones AWS Lambda sin servidor.",
-            "Desarrolló cuadros de mando de informes completos y flujos de trabajo de automatización para la gestión de leads.",
-            "Implementó sistemas de agrupación de contactos y mensajería de difusión.",
-            "Optimizó el rendimiento del backend migrando la lógica a funciones de base de datos y vistas materializadas.",
-            "Usó PeerDB (CDC) para la sincronización en tiempo real entre múltiples fuentes de datos.",
-            "Desarrolló una función de rastreador sin servidor para actualizar automáticamente el almacén de vectores del asistente GPT.",
-            "Garantizó la calidad y fiabilidad del código mediante pruebas unitarias con Jest."
-          ],
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "LangGraph", "PeerDB", "socket.io"]
-        },
-        {
-          company: "Universiti Sains Islam Malaysia",
-          role: "Pasante de Analista de Sistemas",
-          period: "Feb 2023 – Abril 2023",
-          location: "Remoto, Malasia",
-          responsibilities: [
-            "Modernizó los sistemas universitarios heredados migrando de PHP y Kotlin a React y React Native.",
-            "Mejoró significativamente el rendimiento del sistema, la mantenibilidad y la experiencia del usuario.",
-            "Desarrolló y apoyó aplicaciones móviles multiplataforma para la gestión de estudiantes."
-          ],
-          tech: ["React", "React Native", "PHP", "Kotlin"]
-        }
-      ]
+              {
+                "company": "Mind Step Tutor",
+                "role": "Fundador",
+                "period": "Mar 2026 – Presente",
+                "location": "Emiratos Árabes Unidos",
+                "responsibilities": [
+                  "Organizando la relación entre estudiantes y tutores privados en una plataforma B2C y C2C."
+                ],
+                "tech": [
+                  "Estrategia de Negocios",
+                  "Arquitectura de Plataformas"
+                ]
+              },
+              {
+                "company": "Salesmrkt",
+                "role": "Ingeniero de Software FullStack de IA",
+                "period": "Sept 2025 – Mar 2026",
+                "location": "Seattle, WA",
+                "responsibilities": [
+                  "Convirtió un proyecto React a NextJS para mayor seguridad y flexibilidad.",
+                  "Desarrolló un sistema de chat con IA con recomendaciones y búsqueda profunda, respondiendo en 1.5s usando Gemini.",
+                  "Se relacionó directamente con clientes para solicitudes de actualización y soporte técnico.",
+                  "Actualizó la tienda Shopify con una nueva interfaz de usuario y configuraciones.",
+                  "Gestionó y desarrolló funciones para proveedores de servicios: Salesbox, Salesmrkt y GoTryOne usando NextJS, Tailwind, Firebase, Algolia y Zustand.",
+                  "Utilizó QuickBooks y Stripe para gestionar pagos y facturación complejos.",
+                  "Usó N8N para manejar la automatización de procesos complejos fuera del sistema principal."
+                ],
+                "tech": [
+                  "NextJS",
+                  "Tailwind",
+                  "Firebase",
+                  "Algolia",
+                  "Zustand",
+                  "QuickBooks",
+                  "Stripe",
+                  "N8N"
+                ]
+              },
+              {
+                "company": "Engages AI",
+                "role": "Ingeniero de Software Fullstack",
+                "period": "Ene 2024 – Ago 2025",
+                "location": "Singapur",
+                "responsibilities": [
+                  "Desarrolló una aplicación de chat CRM completa con capacidades integradas de chatbot de IA.",
+                  "Mejoró las funciones del frontend utilizando MUI, React, Redux, socket.io, RabbitMQ y widgets web personalizados.",
+                  "Reemplazó Webpack con Vite en el frontend, logrando tiempos de compilación un 50% más rápidos.",
+                  "Construyó microservicios backend escalables con NestJS, aprovechando PostgreSQL, Redis y RabbitMQ.",
+                  "Integró componentes de IA avanzados: Python, modelos RASA, GPT-4, asistentes GPT y LangGraph.",
+                  "Gestionó el despliegue en la nube en instancias de Alibaba Ubuntu y funciones AWS Lambda sin servidor.",
+                  "Desarrolló cuadros de mando de informes completos y flujos de trabajo de automatización para la gestión de leads.",
+                  "Implementó sistemas de agrupación de contactos y mensajería de difusión.",
+                  "Optimizó el rendimiento del backend migrando la lógica a funciones de base de datos y vistas materializadas.",
+                  "Usó PeerDB (CDC) para la sincronización en tiempo real entre múltiples fuentes de datos.",
+                  "Desarrolló una función de rastreador sin servidor para actualizar automáticamente el almacén de vectores del asistente GPT.",
+                  "Garantizó la calidad y fiabilidad del código mediante pruebas unitarias con Jest."
+                ],
+                "tech": [
+                  "NestJS",
+                  "React",
+                  "PostgreSQL",
+                  "Redis",
+                  "RabbitMQ",
+                  "AWS Lambda",
+                  "GPT-4",
+                  "LangGraph",
+                  "PeerDB",
+                  "socket.io"
+                ]
+              },
+              {
+                "company": "QuickDesk",
+                "role": "Pasante de Ingeniero de Software",
+                "period": "Mayo 2023 – Dic 2023",
+                "location": "WP, Kuala Lumpur",
+                "responsibilities": [
+                  "Contribuyó al desarrollo de aplicaciones web CRM; desarrolló frontend en React.",
+                  "Implementó el backend utilizando NestJS, PostgreSQL, Redis y Alibaba ChatApp.",
+                  "Desarrolló chatbots de IA utilizando el marco Rasa."
+                ],
+                "tech": [
+                  "React",
+                  "NestJS",
+                  "PostgreSQL",
+                  "Redis",
+                  "Rasa",
+                  "Alibaba ChatApp"
+                ]
+              },
+              {
+                "company": "Universiti Sains Islam Malaysia",
+                "role": "Analista de Sistemas",
+                "period": "Oct 2022 – Abr 2023",
+                "location": "Nilai, Malasia",
+                "responsibilities": [
+                  "Modernizó los sistemas universitarios heredados migrando de PHP y Kotlin a React y React Native.",
+                  "Mejoró significativamente el rendimiento del sistema, la mantenibilidad y la experiencia del usuario.",
+                  "Apoyó aplicaciones móviles multiplataforma para la gestión de estudiantes."
+                ],
+                "tech": [
+                  "React",
+                  "React Native",
+                  "PHP",
+                  "Kotlin"
+                ]
+              },
+              {
+                "company": "Developer Student Club - UTM",
+                "role": "Miembro del Equipo Técnico",
+                "period": "Nov 2021 – Oct 2022",
+                "location": "Johor Bahru, Malasia",
+                "responsibilities": [
+                  "Exploró los campos de aprendizaje automático y aprendizaje profundo en IA para aprender y participar en talleres prácticos."
+                ],
+                "tech": [
+                  "Python",
+                  "Machine Learning",
+                  "Deep Learning"
+                ]
+              },
+              {
+                "company": "Freelancer.com",
+                "role": "Desarrollador Web Frontend",
+                "period": "Nov 2021 – Nov 2021",
+                "location": "Remoto",
+                "responsibilities": [
+                  "Desarrolló un sitio web de diario del clima conectado a una API del clima usando formularios HTML y Express.js para facilitar solicitudes interactivas de datos."
+                ],
+                "tech": [
+                  "HTML",
+                  "Express.js",
+                  "JavaScript",
+                  "Weather API"
+                ]
+              }
+            ]
     },
     contact: {
       title: "Trabajemos Juntos",
@@ -597,56 +855,142 @@ const translations: Record<Language, Translations> = {
     experience: {
       title: "Berufserfahrung",
       items: [
-        {
-          company: "Salesmrkt",
-          role: "Full Stack Vibe Coder",
-          period: "Sept 2025 – Heute",
-          location: "Remote, Seattle, USA",
-          responsibilities: [
-            "Konvertierte ein React-Projekt zu NextJS für verbesserte Sicherheit und Flexibilität.",
-            "Entwickelte ein KI-Chat-System mit Empfehlungen und Tiefensuche, das mit Gemini in 1,5s antwortet.",
-            "Direkte Zusammenarbeit mit Kunden für Update-Anfragen und technischen Support.",
-            "Aktualisierte den Shopify-Store mit neuem Template-UI und Konfigurationen.",
-            "Verwaltete und entwickelte Funktionen für Dienstanbieter: Salesbox, Salesmrkt und GoTryOne mit NextJS, Tailwind, Firebase, Algolia und Zustand.",
-            "Nutzte QuickBooks und Stripe für komplexe Zahlungen und Rechnungsstellung.",
-            "Verwendete N8N für komplexe Prozessautomatisierung außerhalb des Hauptsystems."
-          ],
-          tech: ["NextJS", "Tailwind", "Firebase", "Algolia", "Zustand", "QuickBooks", "Stripe", "N8N"]
-        },
-        {
-          company: "Engages AI",
-          role: "Full Stack Softwareentwickler",
-          period: "März 2024 – Aug 2025",
-          location: "Remote, Singapur",
-          responsibilities: [
-            "Entwickelte eine voll funktionsfähige CRM-Chat-Anwendung mit integrierten KI-Chatbot-Funktionen.",
-            "Verbesserte Frontend-Funktionen mit MUI, React, Redux, socket.io, RabbitMQ und benutzerdefinierten Web-Widgets.",
-            "Ersetzte Webpack durch Vite im Frontend und erreichte 50% schnellere Build-Zeiten.",
-            "Baute skalierbare Backend-Microservices mit NestJS unter Nutzung von PostgreSQL, Redis und RabbitMQ.",
-            "Integrierte fortschrittliche KI-Komponenten: Python, RASA-Modelle, GPT-4, GPT-Assistenten und LangGraph.",
-            "Verwaltete Cloud-Deployment auf Alibaba Ubuntu-Instanzen und serverlosen AWS Lambda-Funktionen.",
-            "Entwickelte umfassende Reporting-Dashboards und Automatisierungs-Workflows für das Lead-Management.",
-            "Implementierte Kontaktgruppierungs- und Broadcast-Messaging-Systeme.",
-            "Optimierte die Backend-Performance durch Migration der Logik in Datenbankfunktionen und Materialized Views.",
-            "Nutzte PeerDB (CDC) für die Echtzeitsynchronisation zwischen mehreren Datenquellen.",
-            "Entwickelte eine serverlose Crawler-Funktion zur automatischen Aktualisierung des Vektorspeichers des GPT-Assistenten.",
-            "Sicherte die Codequalität und Zuverlässigkeit durch Unit-Tests mit Jest."
-          ],
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "LangGraph", "PeerDB", "socket.io"]
-        },
-        {
-          company: "Universiti Sains Islam Malaysia",
-          role: "Systemanalytiker Praktikant",
-          period: "Feb 2023 – April 2023",
-          location: "Remote, Malaysia",
-          responsibilities: [
-            "Modernisierte veraltete Universitätssysteme durch Migration von PHP und Kotlin zu React und React Native.",
-            "Verbesserte die Systemleistung, Wartbarkeit und Benutzererfahrung erheblich.",
-            "Entwickelte und unterstützte plattformübergreifende mobile Anwendungen für das Studentenmanagement."
-          ],
-          tech: ["React", "React Native", "PHP", "Kotlin"]
-        }
-      ]
+              {
+                "company": "Mind Step Tutor",
+                "role": "Gründer",
+                "period": "März 2026 – Heute",
+                "location": "Vereinigte Arabische Emirate",
+                "responsibilities": [
+                  "Organisation der Beziehung zwischen Studenten und Privatlehrern auf einer B2C- und C2C-Plattform."
+                ],
+                "tech": [
+                  "Geschäftsstrategie",
+                  "Plattformarchitektur"
+                ]
+              },
+              {
+                "company": "Salesmrkt",
+                "role": "AI FullStack Software Entwickler",
+                "period": "Sept 2025 – März 2026",
+                "location": "Seattle, WA",
+                "responsibilities": [
+                  "Konvertierte ein React-Projekt zu NextJS für verbesserte Sicherheit und Flexibilität.",
+                  "Entwickelte ein KI-Chat-System mit Empfehlungen und Tiefensuche, das mit Gemini in 1,5s antwortet.",
+                  "Direkte Zusammenarbeit mit Kunden für Update-Anfragen und technischen Support.",
+                  "Aktualisierte den Shopify-Store mit neuem Template-UI und Konfigurationen.",
+                  "Verwaltete und entwickelte Funktionen für Dienstanbieter: Salesbox, Salesmrkt und GoTryOne mit NextJS, Tailwind, Firebase, Algolia und Zustand.",
+                  "Nutzte QuickBooks und Stripe für komplexe Zahlungen und Rechnungsstellung.",
+                  "Verwendete N8N für komplexe Prozessautomatisierung außerhalb des Hauptsystems."
+                ],
+                "tech": [
+                  "NextJS",
+                  "Tailwind",
+                  "Firebase",
+                  "Algolia",
+                  "Zustand",
+                  "QuickBooks",
+                  "Stripe",
+                  "N8N"
+                ]
+              },
+              {
+                "company": "Engages AI",
+                "role": "Fullstack Software Entwickler",
+                "period": "Jan 2024 – Aug 2025",
+                "location": "Singapur",
+                "responsibilities": [
+                  "Entwickelte eine voll funktionsfähige CRM-Chat-Anwendung mit integrierten KI-Chatbot-Funktionen.",
+                  "Verbesserte Frontend-Funktionen mit MUI, React, Redux, socket.io, RabbitMQ und benutzerdefinierten Web-Widgets.",
+                  "Ersetzte Webpack durch Vite im Frontend und erreichte 50% schnellere Build-Zeiten.",
+                  "Baute skalierbare Backend-Microservices mit NestJS unter Nutzung von PostgreSQL, Redis und RabbitMQ.",
+                  "Integrierte fortschrittliche KI-Komponenten: Python, RASA-Modelle, GPT-4, GPT-Assistenten und LangGraph.",
+                  "Verwaltete Cloud-Deployment auf Alibaba Ubuntu-Instanzen und serverlosen AWS Lambda-Funktionen.",
+                  "Entwickelte umfassende Reporting-Dashboards und Automatisierungs-Workflows für das Lead-Management.",
+                  "Implementierte Kontaktgruppierungs- und Broadcast-Messaging-Systeme.",
+                  "Optimierte die Backend-Performance durch Migration der Logik in Datenbankfunktionen und Materialized Views.",
+                  "Nutzte PeerDB (CDC) für die Echtzeitsynchronisation zwischen mehreren Datenquellen.",
+                  "Entwickelte eine serverlose Crawler-Funktion zur automatischen Aktualisierung des Vektorspeichers des GPT-Assistenten.",
+                  "Sicherte die Codequalität und Zuverlässigkeit durch Unit-Tests mit Jest."
+                ],
+                "tech": [
+                  "NestJS",
+                  "React",
+                  "PostgreSQL",
+                  "Redis",
+                  "RabbitMQ",
+                  "AWS Lambda",
+                  "GPT-4",
+                  "LangGraph",
+                  "PeerDB",
+                  "socket.io"
+                ]
+              },
+              {
+                "company": "QuickDesk",
+                "role": "Software Entwickler Praktikant",
+                "period": "Mai 2023 – Dez 2023",
+                "location": "WP, Kuala Lumpur",
+                "responsibilities": [
+                  "Trug zur Entwicklung von CRM-Webanwendungen bei; entwickelte das Frontend in React.",
+                  "Implementierte das Backend mit NestJS, PostgreSQL, Redis und Alibaba ChatApp.",
+                  "Entwickelte KI-Chatbots mit dem Rasa-Framework."
+                ],
+                "tech": [
+                  "React",
+                  "NestJS",
+                  "PostgreSQL",
+                  "Redis",
+                  "Rasa",
+                  "Alibaba ChatApp"
+                ]
+              },
+              {
+                "company": "Universiti Sains Islam Malaysia",
+                "role": "Systemanalytiker",
+                "period": "Okt 2022 – Apr 2023",
+                "location": "Nilai, Malaysia",
+                "responsibilities": [
+                  "Modernisierte veraltete Universitätssysteme durch Migration von PHP und Kotlin zu React und React Native.",
+                  "Verbesserte die Systemleistung, Wartbarkeit und Benutzererfahrung erheblich.",
+                  "Unterstützte plattformübergreifende mobile Anwendungen für das Studentenmanagement."
+                ],
+                "tech": [
+                  "React",
+                  "React Native",
+                  "PHP",
+                  "Kotlin"
+                ]
+              },
+              {
+                "company": "Developer Student Club - UTM",
+                "role": "Technisches Teammitglied",
+                "period": "Nov 2021 – Okt 2022",
+                "location": "Johor Bahru, Malaysia",
+                "responsibilities": [
+                  "Erforschte die Bereiche maschinelles Lernen und Deep Learning in KI, um zu lernen und an praktischen Workshops teilzunehmen."
+                ],
+                "tech": [
+                  "Python",
+                  "Machine Learning",
+                  "Deep Learning"
+                ]
+              },
+              {
+                "company": "Freelancer.com",
+                "role": "Frontend Web Entwickler",
+                "period": "Nov 2021 – Nov 2021",
+                "location": "Remote",
+                "responsibilities": [
+                  "Entwickelte eine Wetter-Journal-Website, die mit einer Wetter-API verbunden ist, unter Verwendung von HTML-Formularen und Express.js, um interaktive Datenanforderungen zu erleichtern."
+                ],
+                "tech": [
+                  "HTML",
+                  "Express.js",
+                  "JavaScript",
+                  "Weather API"
+                ]
+              }
+            ]
     },
     contact: {
       title: "Zusammenarbeiten",
@@ -736,56 +1080,142 @@ const translations: Record<Language, Translations> = {
     experience: {
       title: "Опыт работы",
       items: [
-        {
-          company: "Salesmrkt",
-          role: "Full Stack Vibe Coder",
-          period: "Сент 2025 – Настоящее время",
-          location: "Удаленно, Сиэтл, США",
-          responsibilities: [
-            "Перевел проект с React на NextJS для повышения безопасности и гибкости.",
-            "Разработал систему чата с ИИ с рекомендациями и глубоким поиском, отвечающую за 1,5 сек с использованием Gemini.",
-            "Напрямую взаимодействовал с клиентами по вопросам обновления и технической поддержки.",
-            "Обновил магазин Shopify с новым пользовательским интерфейсом и конфигурациями.",
-            "Управлял и разрабатывал функции для поставщиков услуг: Salesbox, Salesmrkt и GoTryOne с использованием NextJS, Tailwind, Firebase, Algolia и Zustand.",
-            "Использовал QuickBooks и Stripe для обработки сложных платежей и выставления счетов.",
-            "Использовал N8N для автоматизации сложных процессов вне основной системы."
-          ],
-          tech: ["NextJS", "Tailwind", "Firebase", "Algolia", "Zustand", "QuickBooks", "Stripe", "N8N"]
-        },
-        {
-          company: "Engages AI",
-          role: "Full Stack Software Engineer",
-          period: "Март 2024 – Авг 2025",
-          location: "Удаленно, Сингапур",
-          responsibilities: [
-            "Разработал полнофункциональное CRM-чат-приложение с интегрированными возможностями ИИ-чат-бота.",
-            "Улучшил функции фронтенда с использованием MUI, React, Redux, socket.io, RabbitMQ и пользовательских веб-виджетов.",
-            "Заменил Webpack на Vite во фронтенде, добившись ускорения сборки на 50%.",
-            "Построил масштабируемые серверные микросервисы на NestJS, используя PostgreSQL, Redis и RabbitMQ.",
-            "Интегрировал передовые ИИ-компоненты: Python, модели RASA, GPT-4, ассистенты GPT и LangGraph.",
-            "Управлял облачным развертыванием на инстансах Alibaba Ubuntu и бессерверных функциях AWS Lambda.",
-            "Разработал комплексные дашборды отчетности и рабочие процессы автоматизации для управления лидами.",
-            "Реализовал системы группировки контактов и рассылки сообщений.",
-            "Оптимизировал производительность бэкенда, перенеся логику в функции базы данных и материализованные представления.",
-            "Использовал PeerDB (CDC) для синхронизации в реальном времени между несколькими источниками данных.",
-            "Разработал бессерверную функцию краулера для автоматического обновления векторного хранилища ассистента GPT.",
-            "Обеспечил качество и надежность кода с помощью модульного тестирования на Jest."
-          ],
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "LangGraph", "PeerDB", "socket.io"]
-        },
-        {
-          company: "Universiti Sains Islam Malaysia",
-          role: "Стажер-системный аналитик",
-          period: "Фев 2023 – Апр 2023",
-          location: "Удаленно, Малайзия",
-          responsibilities: [
-            "Модернизировал устаревшие университетские системы, перейдя с PHP и Kotlin на React и React Native.",
-            "Значительно улучшил производительность системы, удобство обслуживания и пользовательский опыт.",
-            "Разрабатывал и поддерживал кроссплатформенные мобильные приложения для управления студентами."
-          ],
-          tech: ["React", "React Native", "PHP", "Kotlin"]
-        }
-      ]
+              {
+                "company": "Mind Step Tutor",
+                "role": "Основатель",
+                "period": "Март 2026 – Настоящее время",
+                "location": "ОАЭ",
+                "responsibilities": [
+                  "Организация отношений между студентами и частными репетиторами на платформе B2C и C2C."
+                ],
+                "tech": [
+                  "Business Strategy",
+                  "Platform Architecture"
+                ]
+              },
+              {
+                "company": "Salesmrkt",
+                "role": "AI FullStack Software Engineer",
+                "period": "Сент 2025 – Март 2026",
+                "location": "Сиэтл, США",
+                "responsibilities": [
+                  "Перевел проект с React на NextJS для повышения безопасности и гибкости.",
+                  "Разработал систему чата с ИИ с рекомендациями и глубоким поиском, отвечающую за 1,5 сек с использованием Gemini.",
+                  "Напрямую взаимодействовал с клиентами по вопросам обновления и технической поддержки.",
+                  "Обновил магазин Shopify с новым пользовательским интерфейсом и конфигурациями.",
+                  "Управлял и разрабатывал функции для поставщиков услуг: Salesbox, Salesmrkt и GoTryOne с использованием NextJS, Tailwind, Firebase, Algolia и Zustand.",
+                  "Использовал QuickBooks и Stripe для обработки сложных платежей и выставления счетов.",
+                  "Использовал N8N для автоматизации сложных процессов вне основной системы."
+                ],
+                "tech": [
+                  "NextJS",
+                  "Tailwind",
+                  "Firebase",
+                  "Algolia",
+                  "Zustand",
+                  "QuickBooks",
+                  "Stripe",
+                  "N8N"
+                ]
+              },
+              {
+                "company": "Engages AI",
+                "role": "Fullstack Software Engineer",
+                "period": "Янв 2024 – Авг 2025",
+                "location": "Сингапур",
+                "responsibilities": [
+                  "Разработал полнофункциональное CRM-чат-приложение с интегрированными возможностями ИИ-чат-бота.",
+                  "Улучшил функции фронтенда с использованием MUI, React, Redux, socket.io, RabbitMQ и пользовательских веб-виджетов.",
+                  "Заменил Webpack на Vite во фронтенде, добившись ускорения сборки на 50%.",
+                  "Построил масштабируемые серверные микросервисы на NestJS, используя PostgreSQL, Redis и RabbitMQ.",
+                  "Интегрировал передовые ИИ-компоненты: Python, модели RASA, GPT-4, ассистенты GPT и LangGraph.",
+                  "Управлял облачным развертыванием на инстансах Alibaba Ubuntu и бессерверных функциях AWS Lambda.",
+                  "Разработал комплексные дашборды отчетности и рабочие процессы автоматизации для управления лидами.",
+                  "Реализовал системы группировки контактов и рассылки сообщений.",
+                  "Оптимизировал производительность бэкенда, перенеся логику в функции базы данных и материализованные представления.",
+                  "Использовал PeerDB (CDC) для синхронизации в реальном времени между несколькими источниками данных.",
+                  "Разработал бессерверную функцию краулера для автоматического обновления векторного хранилища ассистента GPT.",
+                  "Обеспечил качество и надежность кода с помощью модульного тестирования на Jest."
+                ],
+                "tech": [
+                  "NestJS",
+                  "React",
+                  "PostgreSQL",
+                  "Redis",
+                  "RabbitMQ",
+                  "AWS Lambda",
+                  "GPT-4",
+                  "LangGraph",
+                  "PeerDB",
+                  "socket.io"
+                ]
+              },
+              {
+                "company": "QuickDesk",
+                "role": "Инженер-стажер по программному обеспечению",
+                "period": "Май 2023 – Дек 2023",
+                "location": "Куала-Лумпур",
+                "responsibilities": [
+                  "Внес вклад в разработку веб-приложения CRM; разработал фронтенд на React.",
+                  "Реализовал бэкенд с использованием NestJS, PostgreSQL, Redis и Alibaba ChatApp.",
+                  "Разработал ИИ-чат-ботов с использованием фреймворка Rasa."
+                ],
+                "tech": [
+                  "React",
+                  "NestJS",
+                  "PostgreSQL",
+                  "Redis",
+                  "Rasa",
+                  "Alibaba ChatApp"
+                ]
+              },
+              {
+                "company": "Universiti Sains Islam Malaysia",
+                "role": "Системный аналитик",
+                "period": "Окт 2022 – Апр 2023",
+                "location": "Малайзия",
+                "responsibilities": [
+                  "Модернизировал устаревшие университетские системы, перейдя с PHP и Kotlin на React и React Native.",
+                  "Значительно улучшил производительность системы, удобство обслуживания и пользовательский опыт.",
+                  "Разрабатывал и поддерживал кроссплатформенные мобильные приложения для управления студентами."
+                ],
+                "tech": [
+                  "React",
+                  "React Native",
+                  "PHP",
+                  "Kotlin"
+                ]
+              },
+              {
+                "company": "Developer Student Club - UTM",
+                "role": "Член технической команды",
+                "period": "Ноя 2021 – Окт 2022",
+                "location": "Джохор-Бару, Малайзия",
+                "responsibilities": [
+                  "Изучал машинное обучение и глубокое обучение в области ИИ для участия в практических семинарах."
+                ],
+                "tech": [
+                  "Python",
+                  "Machine Learning",
+                  "Deep Learning"
+                ]
+              },
+              {
+                "company": "Freelancer.com",
+                "role": "Frontend Web Разработчик",
+                "period": "Ноя 2021 – Ноя 2021",
+                "location": "Удаленно",
+                "responsibilities": [
+                  "Разработал веб-сайт журнала погоды, подключенный к API погоды с использованием HTML-форм и Express.js."
+                ],
+                "tech": [
+                  "HTML",
+                  "Express.js",
+                  "JavaScript",
+                  "Weather API"
+                ]
+              }
+            ]
     },
     contact: {
       title: "Работать вместе",
@@ -875,56 +1305,142 @@ const translations: Record<Language, Translations> = {
     experience: {
       title: "Expérience Professionnelle",
       items: [
-        {
-          company: "Salesmrkt",
-          role: "Full Stack Vibe Coder",
-          period: "Sept 2025 – Présent",
-          location: "À distance, Seattle, États-Unis",
-          responsibilities: [
-            "Converti un projet React en NextJS pour une sécurité et une flexibilité accrues.",
-            "Développé un système de chat IA avec recommandations et recherche approfondie, répondant en 1,5 s via Gemini.",
-            "Interagi directement avec les clients pour les demandes de mise à jour et le support technique.",
-            "Mis à jour la boutique Shopify avec une nouvelle interface utilisateur et des configurations.",
-            "Géré et développé des fonctionnalités pour les prestataires de services : Salesbox, Salesmrkt et GoTryOne en utilisant NextJS, Tailwind, Firebase, Algolia et Zustand.",
-            "Utilisé QuickBooks et Stripe pour gérer les paiements et la facturation complexes.",
-            "Utilisé N8N pour gérer l'automatisation de processus complexes en dehors du système principal."
-          ],
-          tech: ["NextJS", "Tailwind", "Firebase", "Algolia", "Zustand", "QuickBooks", "Stripe", "N8N"]
-        },
-        {
-          company: "Engages AI",
-          role: "Ingénieur Logiciel Full Stack",
-          period: "Mars 2024 – Août 2025",
-          location: "À distance, Singapour",
-          responsibilities: [
-            "Développé une application de chat CRM complète avec des capacités de chatbot IA intégrées.",
-            "Amélioré les fonctionnalités Frontend en utilisant MUI, React, Redux, socket.io, RabbitMQ et des widgets web personnalisés.",
-            "Remplacé Webpack par Vite dans le Frontend, multipliant par deux la vitesse de build.",
-            "Construit des microservices backend évolutifs avec NestJS, en exploitant PostgreSQL, Redis et RabbitMQ.",
-            "Intégré des composants IA avancés : Python, modèles RASA, GPT-4, assistants GPT et LangGraph.",
-            "Géré le déploiement cloud sur des instances Alibaba Ubuntu et des fonctions AWS Lambda sans serveur.",
-            "Développé des tableaux de bord de reporting complets et des flux de travail d'automatisation pour la gestion des leads.",
-            "Mis en œuvre des systèmes de regroupement de contacts et de messagerie de diffusion.",
-            "Optimisé les performances backend en migrant la logique vers des fonctions de base de données et des vues matérialisées.",
-            "Utilisé PeerDB (CDC) pour la synchronisation en temps réel entre plusieurs sources de données.",
-            "Développé une fonction de crawler sans serveur pour mettre à jour automatiquement le magasin de vecteurs de l'assistant GPT.",
-            "Assuré la qualité et la fiabilité du code grâce à des tests unitaires avec Jest."
-          ],
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "LangGraph", "PeerDB", "socket.io"]
-        },
-        {
-          company: "Universiti Sains Islam Malaysia",
-          role: "Stagiaire Analyste Système",
-          period: "Fév 2023 – Avril 2023",
-          location: "À distance, Malaisie",
-          responsibilities: [
-            "Modernisé les systèmes universitaires existants en migrant de PHP et Kotlin vers React et React Native.",
-            "Amélioré considérablement les performances du système, la maintenabilité et l'expérience utilisateur.",
-            "Développé et soutenu des applications mobiles multiplateformes pour la gestion des étudiants."
-          ],
-          tech: ["React", "React Native", "PHP", "Kotlin"]
-        }
-      ]
+              {
+                "company": "Mind Step Tutor",
+                "role": "Fondateur",
+                "period": "Mars 2026 – Présent",
+                "location": "Émirats Arabes Unis",
+                "responsibilities": [
+                  "Organisation de la relation entre les étudiants et les tuteurs privés dans une plateforme B2C et C2C."
+                ],
+                "tech": [
+                  "Stratégie d'Entreprise",
+                  "Architecture de Plateforme"
+                ]
+              },
+              {
+                "company": "Salesmrkt",
+                "role": "Ingénieur Logiciel IA FullStack",
+                "period": "Sept 2025 – Mars 2026",
+                "location": "Seattle, WA",
+                "responsibilities": [
+                  "Converti un projet React en NextJS pour une sécurité et une flexibilité accrues.",
+                  "Développé un système de chat IA avec recommandations et recherche approfondie, répondant en 1,5 s via Gemini.",
+                  "Interagi directement avec les clients pour les demandes de mise à jour et le support technique.",
+                  "Mis à jour la boutique Shopify avec une nouvelle interface utilisateur et des configurations.",
+                  "Géré et développé des fonctionnalités pour les prestataires de services : Salesbox, Salesmrkt et GoTryOne en utilisant NextJS, Tailwind, Firebase, Algolia et Zustand.",
+                  "Utilisé QuickBooks et Stripe pour gérer les paiements et la facturation complexes.",
+                  "Utilisé N8N pour gérer l'automatisation de processus complexes en dehors du système principal."
+                ],
+                "tech": [
+                  "NextJS",
+                  "Tailwind",
+                  "Firebase",
+                  "Algolia",
+                  "Zustand",
+                  "QuickBooks",
+                  "Stripe",
+                  "N8N"
+                ]
+              },
+              {
+                "company": "Engages AI",
+                "role": "Ingénieur Logiciel Full Stack",
+                "period": "Jan 2024 – Août 2025",
+                "location": "Singapour",
+                "responsibilities": [
+                  "Développé une application de chat CRM complète avec des capacités de chatbot IA intégrées.",
+                  "Amélioré les fonctionnalités Frontend en utilisant MUI, React, Redux, socket.io, RabbitMQ et des widgets web personnalisés.",
+                  "Remplacé Webpack par Vite dans le Frontend, multipliant par deux la vitesse de build.",
+                  "Construit des microservices backend évolutifs avec NestJS, en exploitant PostgreSQL, Redis et RabbitMQ.",
+                  "Intégré des composants IA avancés : Python, modèles RASA, GPT-4, assistants GPT et LangGraph.",
+                  "Géré le déploiement cloud sur des instances Alibaba Ubuntu et des fonctions AWS Lambda sans serveur.",
+                  "Développé des tableaux de bord de reporting complets et des flux de travail d'automatisation pour la gestion des leads.",
+                  "Mis en œuvre des systèmes de regroupement de contacts et de messagerie de diffusion.",
+                  "Optimisé les performances backend en migrant la logique vers des fonctions de base de données et des vues matérialisées.",
+                  "Utilisé PeerDB (CDC) pour la synchronisation en temps réel entre plusieurs sources de données.",
+                  "Développé une fonction de crawler sans serveur pour mettre à jour automatiquement le magasin de vecteurs de l'assistant GPT.",
+                  "Assuré la qualité et la fiabilité du code grâce à des tests unitaires avec Jest."
+                ],
+                "tech": [
+                  "NestJS",
+                  "React",
+                  "PostgreSQL",
+                  "Redis",
+                  "RabbitMQ",
+                  "AWS Lambda",
+                  "GPT-4",
+                  "LangGraph",
+                  "PeerDB",
+                  "socket.io"
+                ]
+              },
+              {
+                "company": "QuickDesk",
+                "role": "Stagiaire Ingénieur Logiciel",
+                "period": "Mai 2023 – Déc 2023",
+                "location": "WP, Kuala Lumpur",
+                "responsibilities": [
+                  "A contribué au développement d'applications Web CRM ; a développé le frontend en React.",
+                  "Realisé le backend à l'aide de NestJS, PostgreSQL, Redis et Alibaba ChatApp.",
+                  "Développé des chatbots IA à l'aide du framework Rasa."
+                ],
+                "tech": [
+                  "React",
+                  "NestJS",
+                  "PostgreSQL",
+                  "Redis",
+                  "Rasa",
+                  "Alibaba ChatApp"
+                ]
+              },
+              {
+                "company": "Universiti Sains Islam Malaysia",
+                "role": "Analyste Système",
+                "period": "Oct 2022 – Avr 2023",
+                "location": "Nilai, Malaisie",
+                "responsibilities": [
+                  "Modernisé les systèmes universitaires existants en migrant de PHP et Kotlin vers React et React Native.",
+                  "Amélioré considérablement les performances du système, la maintenabilité et l'expérience utilisateur.",
+                  "Soutenu des applications mobiles multiplateformes pour la gestion des étudiants."
+                ],
+                "tech": [
+                  "React",
+                  "React Native",
+                  "PHP",
+                  "Kotlin"
+                ]
+              },
+              {
+                "company": "Developer Student Club - UTM",
+                "role": "Membre de l'équipe technique",
+                "period": "Nov 2021 – Oct 2022",
+                "location": "Johor Bahru, Malaisie",
+                "responsibilities": [
+                  "A exploré les domaines du machine learning et du deep learning en IA pour apprendre et participer à des ateliers pratiques."
+                ],
+                "tech": [
+                  "Python",
+                  "Machine Learning",
+                  "Deep Learning"
+                ]
+              },
+              {
+                "company": "Freelancer.com",
+                "role": "Développeur Web Frontend",
+                "period": "Nov 2021 – Nov 2021",
+                "location": "À distance",
+                "responsibilities": [
+                  "Développé un site Web de journal météo connecté à une API météo à l'aide de formulaires HTML et d'Express.js."
+                ],
+                "tech": [
+                  "HTML",
+                  "Express.js",
+                  "JavaScript",
+                  "Weather API"
+                ]
+              }
+            ]
     },
     contact: {
       title: "Travaillons Ensemble",
