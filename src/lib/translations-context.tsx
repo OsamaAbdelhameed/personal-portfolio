@@ -208,6 +208,96 @@ const translations: Record<Language, Translations> = {
               desc: "Overview of the Calendly automation workflow in N8N handling new appointments."
             }
           ]
+        },
+        {
+          slug: "ai-audit-report-n8n",
+          title: "AI Pipeline for Audit Reports",
+          description: "N8N automation that acts as an AI pipeline to automatically process audit report forms.",
+          longDescription: "This N8N workflow automates the handling of audit report forms through a sophisticated AI pipeline. It intelligently processes form submissions, extracts and summarizes key information using advanced language models, and outputs structured audit reports to save hours of manual data entry.",
+          tech: ["N8N", "AI Pipeline", "Automation", "GPT-4"],
+          category: "n8n-automations",
+          images: [
+            {
+              src: "/ai-pipeline-for-audit-report-form-n8n.png",
+              desc: "Overview of the AI pipeline N8N automation for audit report form processing."
+            }
+          ]
+        },
+        {
+          slug: "slack-captured-lead-n8n",
+          title: "Slack Lead Capture Automation",
+          description: "N8N automation that captures incoming leads and instantly routes structured notifications to Slack.",
+          longDescription: "This N8N workflow is designed to instantly process incoming leads. It automatically retrieves lead details, structures the vital information, and dispatches a comprehensive notification directly to dedicated Slack channels. This ensures the team is instantly alerted and aligned on new prospective clients without missing a beat.",
+          tech: ["N8N", "Slack", "Webhooks", "Lead Generation"],
+          category: "n8n-automations",
+          images: [
+            {
+              src: "/slack-captured-lead-n8n.png",
+              desc: "First part of the Slack lead capture workflow in N8N."
+            },
+            {
+              src: "/slack-captured-lead-n8n2.png",
+              desc: "Detail of the routing and message formatting before dispatching to Slack."
+            }
+          ]
+        },
+        {
+          slug: "zack-thompson-portfolio",
+          title: "Zack Thompson Portfolio",
+          description: "A modern, high-performance portfolio website developed for Zack Thompson. Live at: https://zackthompson.com/",
+          longDescription: "Designed and developed a comprehensive digital portfolio for Zack Thompson to showcase his impressive work and professional brand. The platform features dynamic interactions, a clean aesthetic, and seamless responsiveness across devices. You can view the live website at https://zackthompson.com/.",
+          liveUrl: "https://zackthompson.com/",
+          tech: ["NextJS", "React", "Web Design", "UI/UX"],
+          category: "client-portfolios",
+          images: [
+            {
+              src: "/zack-website-portfolio.png",
+              desc: "Landing page view of Zack Thompson's portfolio website"
+            }
+          ]
+        },
+        {
+          slug: "meetjoegreco-portfolio",
+          title: "Joe Greco Portfolio",
+          description: "A professional portfolio website designed and developed for Joe Greco. Live at: https://meetjoegreco.com/",
+          longDescription: "Created a premium digital portfolio for Joseph Greco, CEO at Salesmrkt. The website serves as a central hub for his professional brand, featuring modern layouts, smooth animations, and optimized performance to clearly communicate his expertise and leadership. You can explore the live site at https://meetjoegreco.com/.",
+          liveUrl: "https://meetjoegreco.com/",
+          tech: ["NextJS", "React", "Web Design", "UI/UX"],
+          category: "client-portfolios",
+          images: [
+            {
+              src: "/meetjoegreco-website-portfolio.png",
+              desc: "Landing page view of Joe Greco's portfolio website"
+            }
+          ]
+        },
+        {
+          slug: "joe-website-portfolio",
+          title: "Joe Website Portfolio",
+          description: "A tailored digital portfolio and landing page designed for comprehensive brand presentation.",
+          longDescription: "Developed a specialized portfolio and landing page to elevate Joe's digital presence. The website focuses heavily on conversion-driven design, cleanly communicating core services while maintaining a sleek and fast-loading user interface.",
+          tech: ["NextJS", "React", "Web Design", "UI/UX"],
+          category: "client-portfolios",
+          images: [
+            {
+              src: "/joe-website-portfolio.png",
+              desc: "Landing page view of the Joe Website Portfolio"
+            }
+          ]
+        },
+        {
+          slug: "grn-shoreline-portfolio",
+          title: "GRN Shoreline Website",
+          description: "A tailored digital footprint and robust company website developed for GRN Shoreline.",
+          longDescription: "Designed and developed a comprehensive website for GRN Shoreline, working closely with founder Matthew Curran. The platform was built from the ground up to perfectly capture his vision, delivering a highly responsive, fast, and targeted online presence that precisely meets their business needs.",
+          tech: ["NextJS", "React", "Web Design", "UI/UX"],
+          category: "client-portfolios",
+          images: [
+            {
+              src: "/grn-shoreline-website-portfolio.png",
+              desc: "Landing page view of the GRN Shoreline website"
+            }
+          ]
         }
       ]
     },
@@ -403,38 +493,165 @@ const translations: Record<Language, Translations> = {
     projects: {
       title: "أبرز المشاريع",
       items: [
-        {
-          slug: "engages-ai",
-          title: "Engages AI",
-          description: "بناء تطبيق محادثة CRM مع قدرات روبوت الدردشة بالذكاء الاصطناعي، يتميز بالرسائل في الوقت الفعلي والخدمات المصغرة القابلة للتوسع.",
-          longDescription: "قدت تطوير منصة CRM وروبوت دردشة مدعوم بالذكاء الاصطناعي. تنفيذ ميزات التواصل في الوقت الفعلي، وتجميع جهات الاتصال الآلي للبث، وسير عمل معقد لإدارة العملاء المحتملين.",
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
-          liveUrl: "https://chat.engages.ai"
-        },
-        {
-          slug: "salesmrkt",
-          title: "Salesmrkt",
-          description: "تطوير ميزات لمقدمي خدمات المبيعات والخدمات، وتحسين إدارة العملاء المحتملين وتفاعل المستخدمين.",
-          longDescription: "مطور أساسي للنظام البيئي لـ Salesmrkt، مع التركيز على أتمتة مسار المبيعات لمقدمي الخدمات. تطوير أدوات مركزية لإدارة العملاء المحتملين.",
-          tech: ["NextJS", "Firebase", "Algolia", "Stripe", "N8N", "TailwindCSS"],
-          liveUrl: "https://salesmrkt.com"
-        },
-        {
-          slug: "gotryone",
-          title: "GoTryOne",
-          description: "منصة متخصصة لمقدمي الخدمات لإدارة الحجوزات والتجارب بكفاءة.",
-          longDescription: "بناء منصة متخصصة لإدارة الحجوزات والتجارب ضمن نظام Salesbox. التكامل مع QuickBooks و Stripe للعمليات المالية السلسة.",
-          tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
-          liveUrl: "https://gotryone.com"
-        },
-        {
-          slug: "utmsir",
-          title: "UTMSIR",
-          description: "حل ويب معزز بالذكاء الاصطناعي لسكن الطلاب الدوليين مع مهام غرف آلية.",
-          longDescription: "مشروع السنة النهائية في جامعة UTM. تطوير نظام إدارة سكن يعتمد على الويب للطلاب الدوليين. يتضمن محرك توصية يعتمد على الذكاء الاصطناعي لتنسيق الغرف.",
-          tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
-        }
-      ]
+                    {
+                      slug: "engages-ai",
+                      title: "Engages AI",
+                      description: "بناء تطبيق محادثة CRM مع قدرات روبوت الدردشة بالذكاء الاصطناعي، يتميز بالرسائل في الوقت الفعلي والخدمات المصغرة القابلة للتوسع.",
+                      longDescription: "قدت تطوير منصة CRM وروبوت دردشة مدعوم بالذكاء الاصطناعي. تتضمن الميزات التواصل في الوقت الفعلي، وتجميع جهات الاتصال الآلي للبث، ومسارات عمل معقدة لإدارة العملاء المحتملين.",
+                      tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
+                      liveUrl: "https://chat.engages.ai",
+                      videoUrl: "/engages-ai.mp4",
+                      images: [{ src: "/engages-ai/chat.engages.ai_.png", desc: "Dashboard page for Engages AI staff" }, { src: "/engages-ai/chat.engages.ai_ (1).png", desc: "Dashboard page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (2).png", desc: "Contact / Leads page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (3).png", desc: "Broadcast Campaigns page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (4).png", desc: "Flow-based Rasa chatbot page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (5).png", desc: "Gen AI GPT chatbot page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (6).png", desc: "Subscription page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (7).png", desc: "Channels page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (8).png", desc: "Teams page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (9).png", desc: "Automation Workflow page - Builder component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (10).png", desc: "Automation Workflow page - Triggers component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (11).png", desc: "Automation Workflow page - Actions component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (12).png", desc: "Automation Workflow page - Webhook Action component for Engages AI client" },]
+                    },
+                    {
+                      slug: "salesmrkt",
+                      title: "Salesmrkt",
+                      description: "تطوير ميزات لمقدمي خدمات المبيعات والخدمات، وتحسين إدارة العملاء المحتملين وتفاعل المستخدمين.",
+                      longDescription: "مطور أساسي للنظام البيئي لـ Salesmrkt، مع التركيز على أتمتة مسار المبيعات لمقدمي الخدمات. تطوير أدوات مركزية لإدارة العملاء المحتملين.",
+                      tech: ["React", "Shopify", "N8N", "Calendly"],
+                      liveUrl: "https://salesmrkt.com",
+                      images: [{ src: "/salesmrkt/salesmrkt.com_.png", desc: "The main landing page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_campaigns-on-demand.png", desc: "The campaigns on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_schedule-growth-session.png", desc: "The sales, marketing and video production growth sessions on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_thank-you-ads.png", desc: "The thank you page that shows up when user books a session through N8N automation for Salesmrkt" }]
+                    },
+                    {
+                      slug: "gotryone",
+                      title: "GoTryOne",
+                      description: "منصة متخصصة لمقدمي الخدمات لإدارة الحجوزات والتجارب بكفاءة.",
+                      longDescription: "بناء منصة متخصصة لإدارة الحجوزات والتجارب ضمن نظام Salesbox. التكامل مع QuickBooks و Stripe للعمليات المالية السلسة.",
+                      tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
+                      liveUrl: "https://gotryone.com",
+                      images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
+                    },
+                    {
+                      slug: "utmsir",
+                      title: "UTMSIR",
+                      description: "حل ويب معزز بالذكاء الاصطناعي لسكن الطلاب الدوليين مع مهام غرف آلية.",
+                      longDescription: "مشروع السنة النهائية في جامعة UTM. تطوير نظام إدارة سكن يعتمد على الويب للطلاب الدوليين. يتضمن محرك توصية يعتمد على الذكاء الاصطناعي لتنسيق الغرف.",
+                      tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
+                      category: "university-projects"
+                    },
+                    {
+                      slug: "quickbooks-n8n",
+                      title: "أتمتة QuickBooks مع N8N",
+                      description: "أتمتة QuickBooks مع استدعاءين webhook: لإنشاء الفواتير وإرسال رسائل بريد إلكتروني للعملاء من أجل الدفع.",
+                      longDescription: "تُستخدم هذه الأتمتة لإنشاء عملاء وعناصر في الحساب إذا لم تكن موجودة. تتضمن إنشاء فواتير بسلاسة وإرسالها بالبريد الإلكتروني للعملاء لطلب الدفع.",
+                      tech: ["N8N", "QuickBooks", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/quickbooks-n8n.png",
+                          desc: "Quickbooks with 2 webhook requests: the first one to create invoices and the second one to send invoice emails to the client for payment."
+                        },
+                        {
+                          src: "/quickbooks-n8n2.png",
+                          desc: "Used to create customers and items in the account if they aren't created before."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "calendly-n8n",
+                      title: "أتمتة Calendly مع N8N",
+                      description: "سير عمل مؤتمت بالكامل يعتمد على أحداث Calendly لإدارة الحجوزات ومزامنة البيانات بسلاسة.",
+                      longDescription: "يتم دمج أتمتة N8N هذه مباشرة مع Calendly لتلقي المواعيد وإدارتها، بالإضافة إلى إرسال الإشعارات وتحديث السجلات دون أي تدخل يدوي.",
+                      tech: ["N8N", "Calendly", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/calendly-n8n.png",
+                          desc: "Overview of the Calendly automation workflow in N8N handling new appointments."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "ai-audit-report-n8n",
+                      title: "خط أنابيب ذكاء اصطناعي لتقارير التدقيق",
+                      description: "أتمتة N8N تعمل كمسار للذكاء الاصطناعي لمعالجة نماذج تقارير التدقيق تلقائيًا.",
+                      longDescription: "يعمل هذا النظام على أتمتة التعامل مع نماذج تقارير التدقيق. يعالج التقديمات بذكاء، ويستخرج المعلومات الرئيسية ويلخصها باستخدام نماذج اللغات لتوفير تقارير تدقيق منظمة وتخفيف العمل اليدوي.",
+                      tech: ["N8N", "AI Pipeline", "Automation", "GPT-4"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/ai-pipeline-for-audit-report-form-n8n.png",
+                          desc: "Overview of the AI pipeline N8N automation for audit report form processing."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "slack-captured-lead-n8n",
+                      title: "أتمتة التقاط العملاء وتوجيههم لـ Slack",
+                      description: "أتمتة N8N تلتقط العملاء المحتملين الجدد وتوجه إشعارات منظمة فورية إلى قنوات Slack.",
+                      longDescription: "صُمم هذا النظام لمعالجة العملاء المحتملين الواردين بشكل فوري. يسترد تفاصيل العميل، وينظم المعلومات، ويطلق إشعارات شاملة ومباشرة لقنوات Slack المخصصة.",
+                      tech: ["N8N", "Slack", "Webhooks", "Lead Generation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/slack-captured-lead-n8n.png",
+                          desc: "First part of the Slack lead capture workflow in N8N."
+                        },
+                        {
+                          src: "/slack-captured-lead-n8n2.png",
+                          desc: "Detail of the routing and message formatting before dispatching to Slack."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "zack-thompson-portfolio",
+                      title: "معرض أعمال Zack Thompson",
+                      description: "موقع ويب احترافي وحديث لعرض الأعمال تم تطويره لـ Zack Thompson. متاح على: https://zackthompson.com/",
+                      longDescription: "تصميم وتطوير محفظة رقمية شاملة لـ Zack Thompson لعرض أعماله وعلامته التجارية. يوفر الموقع تفاعلات ديناميكية، وتصميماً نظيفاً، وتجربة سلسة عبر الأجهزة. يمكنك زيارته عبر https://zackthompson.com/.",
+                      liveUrl: "https://zackthompson.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/zack-website-portfolio.png",
+                          desc: "Landing page view of Zack Thompson's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "meetjoegreco-portfolio",
+                      title: "معرض أعمال Joe Greco",
+                      description: "موقع محفظة احترافي مصمم ومطور لـ Joe Greco. متاح على: https://meetjoegreco.com/",
+                      longDescription: "بناء محفظة رقمية فاخرة لـ Joseph Greco، الرئيس التنفيذي في Salesmrkt. تعمل كمركز رئيسي لعلامته التجارية مع تخطيطات حديثة، حركات سلسة وأداء محسن يعكس خبرته וقيادته. متاح عبر https://meetjoegreco.com/.",
+                      liveUrl: "https://meetjoegreco.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/meetjoegreco-website-portfolio.png",
+                          desc: "Landing page view of Joe Greco's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "joe-website-portfolio",
+                      title: "معرض أعمال موقع Joe",
+                      description: "محفظة رقمية مفصلة وصفحة هبوط مصممة لعرض شامل للعلامة التجارية.",
+                      longDescription: "تطوير محفظة رقمية مخصصة وصفحة هبوط لرفع التواجد الرقمي لـ Joe. يركز الموقع بشكل كبير على التصميم المدفوع بالتحويلات والسرعة وسلاسة الاستخدام.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/joe-website-portfolio.png",
+                          desc: "Landing page view of the Joe Website Portfolio"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "grn-shoreline-portfolio",
+                      title: "موقع GRN Shoreline",
+                      description: "موقع ويب مخصص للشركات تم تطويره بخبراء لـ GRN Shoreline لتعزيز تواجدها الرقمي.",
+                      longDescription: "تصميم وتطوير موقع إلكتروني شامل لـ GRN Shoreline بالتعاون المباشر مع مؤسسها Matthew Curran. بُنيت المنصة من الصفر لالتقاط رؤيته بدقة وتقديم واجهة سريعة الاستجابة وملبية لاحتياجات الشركة.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/grn-shoreline-website-portfolio.png",
+                          desc: "Landing page view of the GRN Shoreline website"
+                        }
+                      ]
+                    }
+                  ]
     },
     experience: {
       title: "الخبرة المهنية",
@@ -628,38 +845,165 @@ const translations: Record<Language, Translations> = {
     projects: {
       title: "Proyectos Destacados",
       items: [
-        {
-          slug: "engages-ai",
-          title: "Engages AI",
-          description: "Desarrollo de una aplicación de chat CRM con capacidades de chatbot de IA, mensajería en tiempo real y microservicios escalables.",
-          longDescription: "Lideré el desarrollo de una plataforma completa de CRM y chatbot impulsada por IA. Implementé funciones de comunicación en tiempo real, agrupación automática de contactos para difusiones y flujos de trabajo complejos de gestión de leads.",
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
-          liveUrl: "https://chat.engages.ai"
-        },
-        {
-          slug: "salesmrkt",
-          title: "Salesmrkt",
-          description: "Desarrollo de funciones para proveedores de ventas y servicios, optimizando la gestión de leads y el compromiso del usuario.",
-          longDescription: "Desarrollador principal del ecosistema Salesmrkt, centrado en la automatización del embudo de ventas para proveedores de servicios. Desarrollé herramientas centralizadas de gestión de leads.",
-          tech: ["NextJS", "Firebase", "Algolia", "Stripe", "N8N", "TailwindCSS"],
-          liveUrl: "https://salesmrkt.com"
-        },
-        {
-          slug: "gotryone",
-          title: "GoTryOne",
-          description: "Una plataforma especializada para que los proveedores de servicios gestionen reservas y pruebas de manera eficiente.",
-          longDescription: "Construí una plataforma especializada de gestión de reservas y pruebas dentro del ecosistema Salesbox. Integración con QuickBooks y Stripe para operaciones financieras fluidas.",
-          tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
-          liveUrl: "https://gotryone.com"
-        },
-        {
-          slug: "utmsir",
-          title: "UTMSIR",
-          description: "Solución web mejorada con IA para alojamiento de estudiantes internacionales con asignación automática de habitaciones.",
-          longDescription: "Proyecto de fin de carrera en UTM. Desarrollo de un sistema de gestión de residencias basado en la web para estudiantes internacionales. Incluye un motor de recomendación impulsado por IA.",
-          tech: ["MongoDB", "Express", "React", "Node.js", "Python", "IA Recomendación"],
-        }
-      ]
+                    {
+                      slug: "engages-ai",
+                      title: "Engages AI",
+                      description: "Se construyó una aplicación de chat CRM con capacidades integradas de chatbot de IA.",
+                      longDescription: "Lideró el desarrollo de una plataforma CRM y un chatbot impulsado por IA. Se implementó la comunicación en tiempo real y flujos de gestión de clientes potenciales.",
+                      tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
+                      liveUrl: "https://chat.engages.ai",
+                      videoUrl: "/engages-ai.mp4",
+                      images: [{ src: "/engages-ai/chat.engages.ai_.png", desc: "Dashboard page for Engages AI staff" }, { src: "/engages-ai/chat.engages.ai_ (1).png", desc: "Dashboard page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (2).png", desc: "Contact / Leads page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (3).png", desc: "Broadcast Campaigns page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (4).png", desc: "Flow-based Rasa chatbot page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (5).png", desc: "Gen AI GPT chatbot page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (6).png", desc: "Subscription page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (7).png", desc: "Channels page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (8).png", desc: "Teams page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (9).png", desc: "Automation Workflow page - Builder component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (10).png", desc: "Automation Workflow page - Triggers component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (11).png", desc: "Automation Workflow page - Actions component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (12).png", desc: "Automation Workflow page - Webhook Action component for Engages AI client" },]
+                    },
+                    {
+                      slug: "salesmrkt",
+                      title: "Salesmrkt",
+                      description: "Desarrollo de componentes de interfaz de usuario frontend para proveedores de servicios y ventas.",
+                      longDescription: "Desarrollador principal del ecosistema Salesmrkt, enfocado en automatizar el embudo de ventas para proveedores de servicios, con gestión centralizada de clientes potenciales.",
+                      tech: ["React", "Shopify", "N8N", "Calendly"],
+                      liveUrl: "https://salesmrkt.com",
+                      images: [{ src: "/salesmrkt/salesmrkt.com_.png", desc: "The main landing page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_campaigns-on-demand.png", desc: "The campaigns on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_schedule-growth-session.png", desc: "The sales, marketing and video production growth sessions on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_thank-you-ads.png", desc: "The thank you page that shows up when user books a session through N8N automation for Salesmrkt" }]
+                    },
+                    {
+                      slug: "gotryone",
+                      title: "GoTryOne",
+                      description: "Una plataforma especializada para que los proveedores gestionen reservas eficientemente.",
+                      longDescription: "Construyó una plataforma de reservas y pruebas dentro del ecosistema Salesbox, integrada con QuickBooks y Stripe.",
+                      tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
+                      liveUrl: "https://gotryone.com",
+                      images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
+                    },
+                    {
+                      slug: "utmsir",
+                      title: "UTMSIR",
+                      description: "Solución web mejorada con IA para alojamiento internacional de estudiantes.",
+                      longDescription: "Desarrolló un sistema web de gestión de residencias para estudiantes internacionales con un motor de recomendaciones por IA para emparejamiento.",
+                      tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
+                      category: "university-projects"
+                    },
+                    {
+                      slug: "quickbooks-n8n",
+                      title: "Automatización de QuickBooks",
+                      description: "Integración de N8N y QuickBooks con peticiones webhook para facturas.",
+                      longDescription: "Automatización utilizada para crear facturas y clientes en la cuenta y mandar correos electrónicos para el pago automáticamente.",
+                      tech: ["N8N", "QuickBooks", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/quickbooks-n8n.png",
+                          desc: "Quickbooks with 2 webhook requests: the first one to create invoices and the second one to send invoice emails to the client for payment."
+                        },
+                        {
+                          src: "/quickbooks-n8n2.png",
+                          desc: "Used to create customers and items in the account if they aren't created before."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "calendly-n8n",
+                      title: "Automatización Calendly N8N",
+                      description: "Flujo de trabajo automatizado para sincronización de datos de Calendly.",
+                      longDescription: "Se integra directamente con Calendly para procesar citas, mandar notificaciones y actualizar CRM basándose en eventos programados o modificados.",
+                      tech: ["N8N", "Calendly", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/calendly-n8n.png",
+                          desc: "Overview of the Calendly automation workflow in N8N handling new appointments."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "ai-audit-report-n8n",
+                      title: "Pipeline de IA para Auditorías",
+                      description: "Pipeline de IA automatizado en N8N para informes de auditoría.",
+                      longDescription: "Extrae de forma inteligente información mediante modelos avanzados, resumiendo hallazgos clave de auditorías y generando reportes estructurados.",
+                      tech: ["N8N", "AI Pipeline", "Automation", "GPT-4"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/ai-pipeline-for-audit-report-form-n8n.png",
+                          desc: "Overview of the AI pipeline N8N automation for audit report form processing."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "slack-captured-lead-n8n",
+                      title: "Captura de Clientes vía Slack",
+                      description: "Automatización que enruta nuevos clientes calificados de N8N hacia Slack.",
+                      longDescription: "Obtiene los detalles del cliente calificado y formula mensajes exhaustivos hacia canales específicos de Slack para alertar al equipo en vivo.",
+                      tech: ["N8N", "Slack", "Webhooks", "Lead Generation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/slack-captured-lead-n8n.png",
+                          desc: "First part of the Slack lead capture workflow in N8N."
+                        },
+                        {
+                          src: "/slack-captured-lead-n8n2.png",
+                          desc: "Detail of the routing and message formatting before dispatching to Slack."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "zack-thompson-portfolio",
+                      title: "Portafolio Zack Thompson",
+                      description: "Un portafolio web de alto rendimiento para Zack Thompson a zackthompson.com.",
+                      longDescription: "Desarrollo y diseño del portafolio digital de Zack, incluyendo interacciones dinámicas. Disponible a través de https://zackthompson.com/.",
+                      liveUrl: "https://zackthompson.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/zack-website-portfolio.png",
+                          desc: "Landing page view of Zack Thompson's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "meetjoegreco-portfolio",
+                      title: "Portafolio Joe Greco",
+                      description: "Un portafolio profesional para Joe Greco, visitable en meetjoegreco.com",
+                      longDescription: "Plataforma premium para Joseph Greco, CEO de Salesmrkt, enfocada en consolidar su marca como emprendedor, construida con React y rendimiento óptimo.",
+                      liveUrl: "https://meetjoegreco.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/meetjoegreco-website-portfolio.png",
+                          desc: "Landing page view of Joe Greco's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "joe-website-portfolio",
+                      title: "Página Web Joe",
+                      description: "Portafolio digital dinámico enfocado en conversiones para elevadas presencias B2B.",
+                      longDescription: "Desarrolló un landing page y portfolio centrado fuertemente en conducir más prospectos manteniendo un diseño moderno.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/joe-website-portfolio.png",
+                          desc: "Landing page view of the Joe Website Portfolio"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "grn-shoreline-portfolio",
+                      title: "Web corporativa GRN Shoreline",
+                      description: "Sitio web completo personalizado apoyando la visión de GRN Shoreline empresarial.",
+                      longDescription: "Colaboró minuciosamente con el fundador Matthew Curran para crear la experiencia digital impecable y responsiva que resuelva el crecimiento de Shoreline GRN.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/grn-shoreline-website-portfolio.png",
+                          desc: "Landing page view of the GRN Shoreline website"
+                        }
+                      ]
+                    }
+                  ]
     },
     experience: {
       title: "Experiencia Laboral",
@@ -853,38 +1197,165 @@ const translations: Record<Language, Translations> = {
     projects: {
       title: "Vorgestellte Projekte",
       items: [
-        {
-          slug: "engages-ai",
-          title: "Engages AI",
-          description: "Erstellung einer CRM-Chat-Anwendung mit KI-Chatbot-Funktionen, Echtzeit-Messaging und skalierbaren Mikroservices.",
-          longDescription: "Leitete die Entwicklung einer umfassenden CRM- und KI-gestützten Chatbot-Plattform. Implementierte Echtzeit-Kommunikationsfunktionen, automatisierte Kontaktgruppierung für Broadcasts und komplexe Lead-Management-Workflows.",
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
-          liveUrl: "https://chat.engages.ai"
-        },
-        {
-          slug: "salesmrkt",
-          title: "Salesmrkt",
-          description: "Entwicklung von Funktionen für Vertriebs- und Dienstleister, Optimierung des Lead-Managements und der Nutzerbindung.",
-          longDescription: "Kernentwickler für das Salesmrkt-Ökosystem, Schwerpunkt auf der Automatisierung des Verkaufstrichters für Dienstleister.",
-          tech: ["NextJS", "Firebase", "Algolia", "Stripe", "N8N", "TailwindCSS"],
-          liveUrl: "https://salesmrkt.com"
-        },
-        {
-          slug: "gotryone",
-          title: "GoTryOne",
-          description: "Eine spezialisierte Plattform für Dienstleister zur effizienten Verwaltung von Buchungen und Testberichten.",
-          longDescription: "Aufbau einer spezialisierten Buchungs- und Testmanagement-Plattform innerhalb des Salesbox-Ökosystems.",
-          tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
-          liveUrl: "https://gotryone.com"
-        },
-        {
-          slug: "utmsir",
-          title: "UTMSIR",
-          description: "KI-gestützte Web-Lösung für die Unterbringung internationaler Studenten mit automatischer Zimmerzuweisung.",
-          longDescription: "Abschlussprojekt an der UTM. Entwicklung eines webbasierten Wohnheim-Managementsystems für internationale Studenten.",
-          tech: ["MongoDB", "Express", "React", "Node.js", "Python", "KI-Empfehlung"],
-        }
-      ]
+                    {
+                      slug: "engages-ai",
+                      title: "Engages AI",
+                      description: "Entwicklung einer CRM-Chat-Applikation mit integrierten KI-Chatbot-Fähigkeiten.",
+                      longDescription: "Leitete die Entwicklung einer CRM- und KI-gesteuerten Chatbot-Plattform. Implementierte Echtzeit-Kommunikation und automatisierte Kontaktgruppierung sowie Lead-Management-Workflows.",
+                      tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
+                      liveUrl: "https://chat.engages.ai",
+                      videoUrl: "/engages-ai.mp4",
+                      images: [{ src: "/engages-ai/chat.engages.ai_.png", desc: "Dashboard page for Engages AI staff" }, { src: "/engages-ai/chat.engages.ai_ (1).png", desc: "Dashboard page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (2).png", desc: "Contact / Leads page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (3).png", desc: "Broadcast Campaigns page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (4).png", desc: "Flow-based Rasa chatbot page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (5).png", desc: "Gen AI GPT chatbot page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (6).png", desc: "Subscription page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (7).png", desc: "Channels page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (8).png", desc: "Teams page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (9).png", desc: "Automation Workflow page - Builder component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (10).png", desc: "Automation Workflow page - Triggers component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (11).png", desc: "Automation Workflow page - Actions component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (12).png", desc: "Automation Workflow page - Webhook Action component for Engages AI client" },]
+                    },
+                    {
+                      slug: "salesmrkt",
+                      title: "Salesmrkt",
+                      description: "Entwickelte Frontend-UI-Komponenten für Vertriebs- und Dienstleistungsanbieter.",
+                      longDescription: "Kernentwickler für das Salesmrkt-Ökosystem mit Fokus auf die Automatisierung des Vertriebsprozesses für Dienstleister inklusive zentralisierter Lead-Management-Tools.",
+                      tech: ["React", "Shopify", "N8N", "Calendly"],
+                      liveUrl: "https://salesmrkt.com",
+                      images: [{ src: "/salesmrkt/salesmrkt.com_.png", desc: "The main landing page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_campaigns-on-demand.png", desc: "The campaigns on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_schedule-growth-session.png", desc: "The sales, marketing and video production growth sessions on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_thank-you-ads.png", desc: "The thank you page that shows up when user books a session through N8N automation for Salesmrkt" }]
+                    },
+                    {
+                      slug: "gotryone",
+                      title: "GoTryOne",
+                      description: "Spezialisierte Plattform für Dienstleister zur effizienten Verwaltung von Buchungen.",
+                      longDescription: "Aufbau einer Buchungs- und Testmanagement-Plattform innerhalb des Salesbox-Ökosystems. Integriert mit QuickBooks und Stripe für nahtlose Finanzprozesse.",
+                      tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
+                      liveUrl: "https://gotryone.com",
+                      images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
+                    },
+                    {
+                      slug: "utmsir",
+                      title: "UTMSIR",
+                      description: "KI-gestützte Web-Lösung für internationale Studentenunterkünfte mit automatischer Zimmerzuweisung.",
+                      longDescription: "Abschlussprojekt an der UTM. Entwicklung eines webbasierten Wohnheim-Verwaltungssystems für internationale Studenten. Enthält eine KI-Empfehlungs-Engine für die Zimmerzuweisung.",
+                      tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
+                      category: "university-projects"
+                    },
+                    {
+                      slug: "quickbooks-n8n",
+                      title: "QuickBooks N8N-Automatisierung",
+                      description: "Robuste Integration zur Rechnungs- und Kundenerstellung per Webhook.",
+                      longDescription: "Wird zur automatischen Erstellung von Rechnungen und Kunden verwendet. Im zweiten Verlauf werden Rechnungen direkt per E-Mail angefordert.",
+                      tech: ["N8N", "QuickBooks", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/quickbooks-n8n.png",
+                          desc: "Quickbooks with 2 webhook requests: the first one to create invoices and the second one to send invoice emails to the client for payment."
+                        },
+                        {
+                          src: "/quickbooks-n8n2.png",
+                          desc: "Used to create customers and items in the account if they aren't created before."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "calendly-n8n",
+                      title: "Calendly Automatisierung",
+                      description: "Automatisierter Workflow zur Synchronisierung von Calendly Terminen.",
+                      longDescription: "Dieses System wartet auf Calendly-Hooks und steuert dann Benachrichtigungen, Aktualisierungen und mehr automatisch durch.",
+                      tech: ["N8N", "Calendly", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/calendly-n8n.png",
+                          desc: "Overview of the Calendly automation workflow in N8N handling new appointments."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "ai-audit-report-n8n",
+                      title: "KI Audit Pipeline",
+                      description: "Eine N8N Automatisierung, welche Audits generiert und verwaltet.",
+                      longDescription: "Die Formulare fließen in LLMs ein, um strukturierte Schlussfolgerungen und Berichte automatisch zusammenzufügen. Das senkt massiv Arbeitsstunden ab.",
+                      tech: ["N8N", "AI Pipeline", "Automation", "GPT-4"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/ai-pipeline-for-audit-report-form-n8n.png",
+                          desc: "Overview of the AI pipeline N8N automation for audit report form processing."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "slack-captured-lead-n8n",
+                      title: "Slack Leads Integration",
+                      description: "Sobald ein Lead eingeht, meldet N8N alle Metriken an definierte Slack Kanäle.",
+                      longDescription: "Führt Daten an einem Ort zusammen, formatiert sie schön auf und sendet Benachrichtigungsfeuer ab, um dem Sales-Team im Auge zu helfen, sobald das Lead-Form gedrückt wird.",
+                      tech: ["N8N", "Slack", "Webhooks", "Lead Generation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/slack-captured-lead-n8n.png",
+                          desc: "First part of the Slack lead capture workflow in N8N."
+                        },
+                        {
+                          src: "/slack-captured-lead-n8n2.png",
+                          desc: "Detail of the routing and message formatting before dispatching to Slack."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "zack-thompson-portfolio",
+                      title: "Zack Thompson Webseite",
+                      description: "Eine sehr performante Webseite für Zack Thompson (zackthompson.com).",
+                      longDescription: "Umfassendes Portfolio System inklusive schneller Architektur mit React, um die Personal Brand und Skills im besten Licht zu präsentieren.",
+                      liveUrl: "https://zackthompson.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/zack-website-portfolio.png",
+                          desc: "Landing page view of Zack Thompson's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "meetjoegreco-portfolio",
+                      title: "Joe Greco Web-Präsenz",
+                      description: "Digitale Marke auf meetjoegreco.com für einen bekannten Experten.",
+                      longDescription: "Zeichnet sich durch moderne Web Standards aus. Die Performance der Site, UI/UX, wurden komplett optimiert um Leaderhip Fähigkeiten klar zu zeigen.",
+                      liveUrl: "https://meetjoegreco.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/meetjoegreco-website-portfolio.png",
+                          desc: "Landing page view of Joe Greco's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "joe-website-portfolio",
+                      title: "Joe Portfolio & Sales Site",
+                      description: "Ein dedizierter Sales-Kanal inklusive Portfolio-Architektur.",
+                      longDescription: "Design und Entwicklung zur Conversion-Optimierung, wodurch sich Besucherzahlen in Anfragen umwandeln dank toller UI/UX Gestaltung.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/joe-website-portfolio.png",
+                          desc: "Landing page view of the Joe Website Portfolio"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "grn-shoreline-portfolio",
+                      title: "GRN Shoreline Webseite",
+                      description: "Unternehmenswebseite aufgebaut auf Vorgabe durch Matthew Curran.",
+                      longDescription: "Volles Projekt von Zero zur Fertigstellung. Die GRN Präsenz hat jetzt schnelle Ladezeiten und erfüllt den digitalen Unternehmensbedarf mit modernem Styling.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/grn-shoreline-website-portfolio.png",
+                          desc: "Landing page view of the GRN Shoreline website"
+                        }
+                      ]
+                    }
+                  ]
     },
     experience: {
       title: "Berufserfahrung",
@@ -1078,38 +1549,165 @@ const translations: Record<Language, Translations> = {
     projects: {
       title: "Проекты",
       items: [
-        {
-          slug: "engages-ai",
-          title: "Engages AI",
-          description: "Создание CRM-чата с возможностями ИИ-чатбота, обменом сообщениями в реальном времени и масштабируемыми микросервисами.",
-          longDescription: "Руководил разработкой комплексной платформы CRM и чат-бота на базе ИИ. Внедрил функции связи в реальном времени, автоматическую группировку контактов и сложные рабочие процессы управления лидами.",
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
-          liveUrl: "https://chat.engages.ai"
-        },
-        {
-          slug: "salesmrkt",
-          title: "Salesmrkt",
-          description: "Разработка функций для отделов продаж и поставщиков услуг, оптимизация управления лидами.",
-          longDescription: "Ведущий разработчик экосистемы Salesmrkt, специализирующийся на автоматизации воронки продаж для поставщиков услуг.",
-          tech: ["NextJS", "Firebase", "Algolia", "Stripe", "N8N", "TailwindCSS"],
-          liveUrl: "https://salesmrkt.com"
-        },
-        {
-          slug: "gotryone",
-          title: "GoTryOne",
-          description: "Специализированная платформа для поставщиков услуг для эффективного управления бронированиями и испытаниями.",
-          longDescription: "Построил специализированную платформу управления бронированием и испытаниями в экосистеме Salesbox.",
-          tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
-          liveUrl: "https://gotryone.com"
-        },
-        {
-          slug: "utmsir",
-          title: "UTMSIR",
-          description: "Веб-решение на базе ИИ для размещения иностранных студентов с автоматическим распределением комнат.",
-          longDescription: "Дипломный проект в UTM. Разработал систему управления проживанием для иностранных студентов на базе веб-технологий.",
-          tech: ["MongoDB", "Express", "React", "Node.js", "Python", "ИИ-рекомендации"],
-        }
-      ]
+                    {
+                      slug: "engages-ai",
+                      title: "Engages AI",
+                      description: "CRM-чат-приложение с интегрированными возможностями искусственного интеллекта.",
+                      longDescription: "Руководил разработкой CRM и платформы ИИ-чат-ботов. Внедрил коммуникацию в реальном времени и автоматизацию рабочих процессов для управления лидами.",
+                      tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
+                      liveUrl: "https://chat.engages.ai",
+                      videoUrl: "/engages-ai.mp4",
+                      images: [{ src: "/engages-ai/chat.engages.ai_.png", desc: "Dashboard page for Engages AI staff" }, { src: "/engages-ai/chat.engages.ai_ (1).png", desc: "Dashboard page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (2).png", desc: "Contact / Leads page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (3).png", desc: "Broadcast Campaigns page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (4).png", desc: "Flow-based Rasa chatbot page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (5).png", desc: "Gen AI GPT chatbot page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (6).png", desc: "Subscription page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (7).png", desc: "Channels page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (8).png", desc: "Teams page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (9).png", desc: "Automation Workflow page - Builder component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (10).png", desc: "Automation Workflow page - Triggers component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (11).png", desc: "Automation Workflow page - Actions component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (12).png", desc: "Automation Workflow page - Webhook Action component for Engages AI client" },]
+                    },
+                    {
+                      slug: "salesmrkt",
+                      title: "Salesmrkt",
+                      description: "Платформа компонентов интерфейса для отделов продаж и поставщиков услуг.",
+                      longDescription: "Ключевой разработчик экосистемы Salesmrkt, специализирующийся на автоматизации воронки продаж и централизованном управлении лидами.",
+                      tech: ["React", "Shopify", "N8N", "Calendly"],
+                      liveUrl: "https://salesmrkt.com",
+                      images: [{ src: "/salesmrkt/salesmrkt.com_.png", desc: "The main landing page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_campaigns-on-demand.png", desc: "The campaigns on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_schedule-growth-session.png", desc: "The sales, marketing and video production growth sessions on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_thank-you-ads.png", desc: "The thank you page that shows up when user books a session through N8N automation for Salesmrkt" }]
+                    },
+                    {
+                      slug: "gotryone",
+                      title: "GoTryOne",
+                      description: "Специализированная платформа для поставщиков услуг для управления бронированием.",
+                      longDescription: "Создал платформу бронирования в экосистеме Salesbox с интеграцией QuickBooks и Stripe.",
+                      tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
+                      liveUrl: "https://gotryone.com",
+                      images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
+                    },
+                    {
+                      slug: "utmsir",
+                      title: "UTMSIR",
+                      description: "Веб-решение с поддержкой ИИ для размещения иностранных студентов.",
+                      longDescription: "Разработал систему управления общежитиями для студентов с алгоритмами ИИ для подбора соседей и комнат.",
+                      tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
+                      category: "university-projects"
+                    },
+                    {
+                      slug: "quickbooks-n8n",
+                      title: "Интеграция QuickBooks & N8N",
+                      description: "Автоматизация вебхуков для QuickBooks, создание клиентов и отправка счет-фактур.",
+                      longDescription: "Создает счета для QuickBooks в фоновом режиме, генерируя автоматические счета к оплате и транслируя уведомления клиентам.",
+                      tech: ["N8N", "QuickBooks", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/quickbooks-n8n.png",
+                          desc: "Quickbooks with 2 webhook requests: the first one to create invoices and the second one to send invoice emails to the client for payment."
+                        },
+                        {
+                          src: "/quickbooks-n8n2.png",
+                          desc: "Used to create customers and items in the account if they aren't created before."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "calendly-n8n",
+                      title: "Связка Calendly & N8N",
+                      description: "Автоматизированная синхронизация встреч из Calendly в корпоративные системы.",
+                      longDescription: "Непрерывно прислушивается к событиям Calendly и автоматически рассылает обновления команде и синхронизирует встречи в БД.",
+                      tech: ["N8N", "Calendly", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/calendly-n8n.png",
+                          desc: "Overview of the Calendly automation workflow in N8N handling new appointments."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "ai-audit-report-n8n",
+                      title: "ИИ обработчик отчетов",
+                      description: "Сеть N8N по генерации отчетов автоматического аудита через нейросети.",
+                      longDescription: "Пайплайн на основе глубоких ИИ-алгоритмов автоматически переводит формы отчетности в структурированные документы с бизнес-аналитикой.",
+                      tech: ["N8N", "AI Pipeline", "Automation", "GPT-4"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/ai-pipeline-for-audit-report-form-n8n.png",
+                          desc: "Overview of the AI pipeline N8N automation for audit report form processing."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "slack-captured-lead-n8n",
+                      title: "Генератор лидов в Slack",
+                      description: "Система маршрутизации данных о потенциальных клиентах сразу в Slack.",
+                      longDescription: "Как только данные клиента получены, скрипт форматирует сообщение и доставляет его сотрудникам для мгновенного ответа.",
+                      tech: ["N8N", "Slack", "Webhooks", "Lead Generation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/slack-captured-lead-n8n.png",
+                          desc: "First part of the Slack lead capture workflow in N8N."
+                        },
+                        {
+                          src: "/slack-captured-lead-n8n2.png",
+                          desc: "Detail of the routing and message formatting before dispatching to Slack."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "zack-thompson-portfolio",
+                      title: "Сайт Zack Thompson",
+                      description: "Сайт-портфолио, построенный для представления бренда Зак Томпсон.",
+                      longDescription: "Полная инфраструктура веб-портфолио на NextJS. Обладает высочайшим показателем производительности и дизайна.",
+                      liveUrl: "https://zackthompson.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/zack-website-portfolio.png",
+                          desc: "Landing page view of Zack Thompson's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "meetjoegreco-portfolio",
+                      title: "Сайт Джо Греко",
+                      description: "Профессиональный веб-сайт-визитка для топ-менеджера (meetjoegreco.com).",
+                      longDescription: "Дорогая платформа для CEO Джо Греко, нацеленная на современный дизайн и высокую скорость работы приложения.",
+                      liveUrl: "https://meetjoegreco.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/meetjoegreco-website-portfolio.png",
+                          desc: "Landing page view of Joe Greco's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "joe-website-portfolio",
+                      title: "Joe Landing Page",
+                      description: "Цифровой профиль и конверсионный лендинг",
+                      longDescription: "Качественная верстка и функциональный NextJS лендинг для эффективной презентации бизнеса потенциальным клиентам.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/joe-website-portfolio.png",
+                          desc: "Landing page view of the Joe Website Portfolio"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "grn-shoreline-portfolio",
+                      title: "Сайт компании GRN Shoreline",
+                      description: "Улучшенное присутствие компании в сети, разработанное специально под нужды основателя Matthew Curran.",
+                      longDescription: "Был разработан с нуля с поддержкой самых современных технологий, обеспечивая быстрый охват и великолепную оптимизацию для корпоративных целей.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/grn-shoreline-website-portfolio.png",
+                          desc: "Landing page view of the GRN Shoreline website"
+                        }
+                      ]
+                    }
+                  ]
     },
     experience: {
       title: "Опыт работы",
@@ -1303,38 +1901,165 @@ const translations: Record<Language, Translations> = {
     projects: {
       title: "Projets",
       items: [
-        {
-          slug: "engages-ai",
-          title: "Engages AI",
-          description: "Création d'une application de chat CRM avec des capacités de chatbot IA, messagerie en tempo réel et microservices évolutifs.",
-          longDescription: "Direction du développement d'une plateforme complète de CRM et de chatbot alimentée par l'IA. Mise en œuvre de fonctionnalités de communication en temps réel, regroupement automatique des contacts pour les diffusions et flux de travail complexes de gestion des leads.",
-          tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
-          liveUrl: "https://chat.engages.ai"
-        },
-        {
-          slug: "salesmrkt",
-          title: "Salesmrkt",
-          description: "Développement de fonctionnalités pour les prestataires de services et de ventes, optimisant la gestion des leads.",
-          longDescription: "Développeur principal pour l'écosystème Salesmrkt, se concentrant sur l'automatisation de l'entonnoir de vente pour les prestataires de services.",
-          tech: ["NextJS", "Firebase", "Algolia", "Stripe", "N8N", "TailwindCSS"],
-          liveUrl: "https://salesmrkt.com"
-        },
-        {
-          slug: "gotryone",
-          title: "GoTryOne",
-          description: "Une plateforme spécialisée permettant aux prestataires de services de gérer efficacement les réservations et les essais.",
-          longDescription: "Construction d'une plateforme spécialisée de gestion des réservations et des essais au sein de l'écosystème Salesbox.",
-          tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
-          liveUrl: "https://gotryone.com"
-        },
-        {
-          slug: "utmsir",
-          title: "UTMSIR",
-          description: "Solution web améliorée par l'IA pour l'hébergement d'étudiants internationaux avec attribution automatique des chambres.",
-          longDescription: "Projet de fin d'études à l'UTM. Développement d'un système de gestion de résidence basé sur le Web pour les étudiants internationaux.",
-          tech: ["MongoDB", "Express", "React", "Node.js", "Python", "Recommandation IA"],
-        }
-      ]
+                    {
+                      slug: "engages-ai",
+                      title: "Engages AI",
+                      description: "Application de chat CRM intégrée à des capacités de chatbot IA.",
+                      longDescription: "A dirigé le développement de la plateforme CRM avec une communication en temps réel et des flux de gestion des pistes complexes via des chatbots.",
+                      tech: ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "AWS Lambda", "GPT-4", "socket.io"],
+                      liveUrl: "https://chat.engages.ai",
+                      videoUrl: "/engages-ai.mp4",
+                      images: [{ src: "/engages-ai/chat.engages.ai_.png", desc: "Dashboard page for Engages AI staff" }, { src: "/engages-ai/chat.engages.ai_ (1).png", desc: "Dashboard page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (2).png", desc: "Contact / Leads page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (3).png", desc: "Broadcast Campaigns page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (4).png", desc: "Flow-based Rasa chatbot page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (5).png", desc: "Gen AI GPT chatbot page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (6).png", desc: "Subscription page for Engages AI client for automated self-updated chatbots" }, { src: "/engages-ai/chat.engages.ai_ (7).png", desc: "Channels page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (8).png", desc: "Teams page for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (9).png", desc: "Automation Workflow page - Builder component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (10).png", desc: "Automation Workflow page - Triggers component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (11).png", desc: "Automation Workflow page - Actions component for Engages AI client" }, { src: "/engages-ai/chat.engages.ai_ (12).png", desc: "Automation Workflow page - Webhook Action component for Engages AI client" },]
+                    },
+                    {
+                      slug: "salesmrkt",
+                      title: "Salesmrkt",
+                      description: "Développement d'interfaces utilisateur frontend pour la vente et le service.",
+                      longDescription: "Développeur principal de l'écosystème Salesmrkt, spécialisé dans l'optimisation des tunnels de vente pour les fournisseurs de services via de nombreux outils de gestion.",
+                      tech: ["React", "Shopify", "N8N", "Calendly"],
+                      liveUrl: "https://salesmrkt.com",
+                      images: [{ src: "/salesmrkt/salesmrkt.com_.png", desc: "The main landing page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_campaigns-on-demand.png", desc: "The campaigns on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_schedule-growth-session.png", desc: "The sales, marketing and video production growth sessions on demand page for Salesmrkt" }, { src: "/salesmrkt/salesmrkt.com_thank-you-ads.png", desc: "The thank you page that shows up when user books a session through N8N automation for Salesmrkt" }]
+                    },
+                    {
+                      slug: "gotryone",
+                      title: "GoTryOne",
+                      description: "Plateforme spécialisée de réservation et d'essais pour les fournisseurs.",
+                      longDescription: "Mise en place d'une plateforme de réservation au sein de l'écosystème Salesbox, intégrée avec des modules comme QuickBooks et Stripe.",
+                      tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
+                      liveUrl: "https://gotryone.com",
+                      images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
+                    },
+                    {
+                      slug: "utmsir",
+                      title: "UTMSIR",
+                      description: "Solution web améliorée par l'IA pour l'hébergement d'étudiants internationaux.",
+                      longDescription: "Système de gestion web d'attributions de chambres et un moteur d'IA de correspondance développé pour le projet final à l'université UTM.",
+                      tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
+                      category: "university-projects"
+                    },
+                    {
+                      slug: "quickbooks-n8n",
+                      title: "Automatisation de QuickBooks",
+                      description: "Flux automatique N8N qui crée des factures de QuickBooks et des demandes de paiement",
+                      longDescription: "Deux processus webhook qui servent à émettre les données automatiquement vers QuickBooks puis à relayer l'état pour les courriels clients.",
+                      tech: ["N8N", "QuickBooks", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/quickbooks-n8n.png",
+                          desc: "Quickbooks with 2 webhook requests: the first one to create invoices and the second one to send invoice emails to the client for payment."
+                        },
+                        {
+                          src: "/quickbooks-n8n2.png",
+                          desc: "Used to create customers and items in the account if they aren't created before."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "calendly-n8n",
+                      title: "Automatisation de Calendly",
+                      description: "Flux de données automatisé depuis Calendly qui synchronise rendez-vous.",
+                      longDescription: "Le workflow connecte Calendly à nos systèmes en traitant l'acheminement des données pour notifications, réservations, actions consécutives etc.",
+                      tech: ["N8N", "Calendly", "Webhooks", "Automation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/calendly-n8n.png",
+                          desc: "Overview of the Calendly automation workflow in N8N handling new appointments."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "ai-audit-report-n8n",
+                      title: "Pipeline IA des audits",
+                      description: "Automatisation de récupération et rapport généré par l'IA.",
+                      longDescription: "Traite avec ingéniosité des formulaires, en tirant parti des LLM (modèles de langage IA) pour concevoir et extraire un audit formel.",
+                      tech: ["N8N", "AI Pipeline", "Automation", "GPT-4"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/ai-pipeline-for-audit-report-form-n8n.png",
+                          desc: "Overview of the AI pipeline N8N automation for audit report form processing."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "slack-captured-lead-n8n",
+                      title: "Slack Alerte du Client",
+                      description: "Un flux web automatisé recevant des requêtes clients redirigées vers un canal Slack",
+                      longDescription: "Structure instantanément et achemine en un temps record chaque piste client en enrichissant le message mis dans Slack afin d'agir vit.",
+                      tech: ["N8N", "Slack", "Webhooks", "Lead Generation"],
+                      category: "n8n-automations",
+                      images: [
+                        {
+                          src: "/slack-captured-lead-n8n.png",
+                          desc: "First part of the Slack lead capture workflow in N8N."
+                        },
+                        {
+                          src: "/slack-captured-lead-n8n2.png",
+                          desc: "Detail of the routing and message formatting before dispatching to Slack."
+                        }
+                      ]
+                    },
+                    {
+                      slug: "zack-thompson-portfolio",
+                      title: "Portfolio de Zack Thompson",
+                      description: "Un site web complet moderne axé sur les performances et construit pour zackthompson.com",
+                      longDescription: "Le portfolio offre des interactions dynamiques et témoigne d'un style irréprochable et épuré. Réalisé avec NextJS.",
+                      liveUrl: "https://zackthompson.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/zack-website-portfolio.png",
+                          desc: "Landing page view of Zack Thompson's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "meetjoegreco-portfolio",
+                      title: "Site du CEO Joe Greco",
+                      description: "Site web prestigieux pour un dirigeant qui se présente comme un hub central.",
+                      longDescription: "Portfolio premium propulsé à haute disponibilité. Transmet une clarté et un dynamisme absolu par animations modernes.",
+                      liveUrl: "https://meetjoegreco.com/",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/meetjoegreco-website-portfolio.png",
+                          desc: "Landing page view of Joe Greco's portfolio website"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "joe-website-portfolio",
+                      title: "Page de destination de Joe",
+                      description: "Un portail en ligne favorisant la conversion et la vente ciblée.",
+                      longDescription: "Rendu du site Web de Joe avec un accent tout particulier sur la rétention du client à travers un design interactif et fluide.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/joe-website-portfolio.png",
+                          desc: "Landing page view of the Joe Website Portfolio"
+                        }
+                      ]
+                    },
+                    {
+                      slug: "grn-shoreline-portfolio",
+                      title: "Site web de GRN Shoreline",
+                      description: "Plateforme robuste créée avec soin afin de positionner fortement l'entreprise.",
+                      longDescription: "Développement d'un projet clé avec M. Matthew Curran avec tous les réglages et architectures pour assurer de longues heures d'exposition digitale fiable.",
+                      tech: ["NextJS", "React", "Web Design", "UI/UX"],
+                      category: "client-portfolios",
+                      images: [
+                        {
+                          src: "/grn-shoreline-website-portfolio.png",
+                          desc: "Landing page view of the GRN Shoreline website"
+                        }
+                      ]
+                    }
+                  ]
     },
     experience: {
       title: "Expérience Professionnelle",

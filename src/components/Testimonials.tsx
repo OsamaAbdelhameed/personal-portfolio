@@ -8,13 +8,19 @@ const testimonials = [
     name: "Joseph Greco",
     role: "CEO at Salesmrkt",
     text: "Osama is an exceptional engineer. His AI integrations transformed our CRM workflow and significantly boosted efficiency.",
-    image: "/placeholder-user1.jpg"
+    image: "/joe.png"
   },
   {
-    name: "Jan Smith",
-    role: "Product Manager",
-    text: "The UTMSIR project was a huge success thanks to Osama's ability to simplify complex automated assignments.",
-    image: "/placeholder-user2.jpg"
+    name: "Matthew Curran",
+    role: "Founder at GRN Shoreline",
+    text: "Osama is very responsive, quick, on-target and patient. I'm not a web designer in any way, yet he was able to translate my suggestions into exactly what I needed. He is very good.",
+    image: "/matthew.png"
+  },
+  {
+    name: "Ismail AL.Mahdy",
+    role: "Team Lead Engineer at Engages.ai",
+    text: "I’ve had the pleasure of managing Osama directly during his time at Engages.ai, and I can confidently say he is one of the most driven and reliable engineers I’ve worked with. Osama played a pivotal role in building and scaling our AI-powered CRM chat system from the ground up, contributing across the stack—from frontend interfaces using React and MUI to backend microservices with NestJS, PostgreSQL, and Redis....",
+    image: "/ismail.jpeg"
   }
 ];
 
@@ -40,19 +46,7 @@ export default function Testimonials() {
             "{testimonials[index].text}"
           </p>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "20px" }}>
-            <div style={{ 
-              width: "60px", 
-              height: "60px", 
-              borderRadius: "50%", 
-              background: "var(--primary)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "1.5rem",
-              fontWeight: 800
-            }}>
-              {testimonials[index].name[0]}
-            </div>
+            <img src={testimonials[index].image} style={{ width: "60px", height: "60px", borderRadius: "50%" }} />
             <div style={{ textAlign: "left" }}>
               <h4 style={{ fontSize: "1.2rem" }}>{testimonials[index].name}</h4>
               <p style={{ color: "rgba(255,255,255,0.6)" }}>{testimonials[index].role}</p>
