@@ -61,6 +61,17 @@ interface Translations {
   };
   projects: {
     title: string;
+    moreCategories: string;
+    learnMore: string;
+    viewProjects: string;
+    backToProjects: string;
+    categoryTitles: Record<string, string>;
+    categories: Array<{
+      title: string;
+      icon: string;
+      slug: string;
+      desc: string;
+    }>;
     items: Array<{
       slug: string;
       title: string;
@@ -140,6 +151,20 @@ const translations: Record<Language, Translations> = {
     },
     projects: {
       title: "Featured Projects",
+      moreCategories: "More Categories",
+      learnMore: "Learn More",
+      viewProjects: "View Projects →",
+      backToProjects: "← Back to Projects",
+      categoryTitles: {
+        "n8n-automations": "N8N Automations",
+        "university-projects": "University Projects",
+        "client-portfolios": "Client Portfolios",
+      },
+      categories: [
+        { title: "N8N Automations", icon: "🤖", slug: "n8n-automations", desc: "Automated workflows and integrations" },
+        { title: "University Projects", icon: "🎓", slug: "university-projects", desc: "Academic research and assignments" },
+        { title: "Client Portfolios", icon: "💼", slug: "client-portfolios", desc: "Portfolio websites made for customers" }
+      ],
       items: [
         {
           slug: "engages-ai",
@@ -492,6 +517,20 @@ const translations: Record<Language, Translations> = {
     },
     projects: {
       title: "أبرز المشاريع",
+      moreCategories: "المزيد من الفئات",
+      learnMore: "اعرف المزيد",
+      viewProjects: "عرض المشاريع ←",
+      backToProjects: "← العودة إلى المشاريع",
+      categoryTitles: {
+        "n8n-automations": "أتمتة N8N",
+        "university-projects": "مشاريع الجامعة",
+        "client-portfolios": "ملفات عملاء",
+      },
+      categories: [
+        { title: "أتمتة N8N", icon: "🤖", slug: "n8n-automations", desc: "سير عمل وتكامل آلي" },
+        { title: "مشاريع الجامعة", icon: "🎓", slug: "university-projects", desc: "أبحاث أكاديمية ومهام" },
+        { title: "ملفات عملاء", icon: "💼", slug: "client-portfolios", desc: "مواقع محفظة تم إنشاؤها للعملاء" }
+      ],
       items: [
                     {
                       slug: "engages-ai",
@@ -844,6 +883,20 @@ const translations: Record<Language, Translations> = {
     },
     projects: {
       title: "Proyectos Destacados",
+      moreCategories: "Más Categorías",
+      learnMore: "Saber Más",
+      viewProjects: "Ver Proyectos →",
+      backToProjects: "← Volver a Proyectos",
+      categoryTitles: {
+        "n8n-automations": "Automatización N8N",
+        "university-projects": "Proyectos Universitarios",
+        "client-portfolios": "Portafolios de Clientes",
+      },
+      categories: [
+        { title: "Automatización N8N", icon: "🤖", slug: "n8n-automations", desc: "Flujos de trabajo e integraciones automatizadas" },
+        { title: "Proyectos Universitarios", icon: "🎓", slug: "university-projects", desc: "Investigación académica y asignaciones" },
+        { title: "Portafolios de Clientes", icon: "💼", slug: "client-portfolios", desc: "Sitios web de portafolio creados para clientes" }
+      ],
       items: [
                     {
                       slug: "engages-ai",
@@ -1196,6 +1249,20 @@ const translations: Record<Language, Translations> = {
     },
     projects: {
       title: "Vorgestellte Projekte",
+      moreCategories: "Weitere Kategorien",
+      learnMore: "Mehr Erfahren",
+      viewProjects: "Projekte Ansehen →",
+      backToProjects: "← Zurück zu Projekten",
+      categoryTitles: {
+        "n8n-automations": "N8N-Automatisierungen",
+        "university-projects": "Universitätsprojekte",
+        "client-portfolios": "Kundenportfolios",
+      },
+      categories: [
+        { title: "N8N-Automatisierungen", icon: "🤖", slug: "n8n-automations", desc: "Automatisierte Workflows und Integrationen" },
+        { title: "Universitätsprojekte", icon: "🎓", slug: "university-projects", desc: "Akademische Forschung und Aufgaben" },
+        { title: "Kundenportfolios", icon: "💼", slug: "client-portfolios", desc: "Portfolio-Websites für Kunden erstellt" }
+      ],
       items: [
                     {
                       slug: "engages-ai",
@@ -1548,6 +1615,20 @@ const translations: Record<Language, Translations> = {
     },
     projects: {
       title: "Проекты",
+      moreCategories: "Больше Категорий",
+      learnMore: "Узнать Больше",
+      viewProjects: "Посмотреть Проекты →",
+      backToProjects: "← Назад к Проектам",
+      categoryTitles: {
+        "n8n-automations": "Автоматизация N8N",
+        "university-projects": "Университетские Проекты",
+        "client-portfolios": "Портфолио Клиентов",
+      },
+      categories: [
+        { title: "Автоматизация N8N", icon: "🤖", slug: "n8n-automations", desc: "Автоматизированные рабочие процессы и интеграции" },
+        { title: "Университетские Проекты", icon: "🎓", slug: "university-projects", desc: "Академические исследования и задания" },
+        { title: "Портфолио Клиентов", icon: "💼", slug: "client-portfolios", desc: "Веб-сайты портфолио для клиентов" }
+      ],
       items: [
                     {
                       slug: "engages-ai",
@@ -1900,6 +1981,20 @@ const translations: Record<Language, Translations> = {
     },
     projects: {
       title: "Projets",
+      moreCategories: "Plus de Catégories",
+      learnMore: "En Savoir Plus",
+      viewProjects: "Voir les Projets →",
+      backToProjects: "← Retour aux Projets",
+      categoryTitles: {
+        "n8n-automations": "Automatisation N8N",
+        "university-projects": "Projets Universitaires",
+        "client-portfolios": "Portfolios Clients",
+      },
+      categories: [
+        { title: "Automatisation N8N", icon: "🤖", slug: "n8n-automations", desc: "Flux de travail et intégrations automatisés" },
+        { title: "Projets Universitaires", icon: "🎓", slug: "university-projects", desc: "Recherche académique et devoirs" },
+        { title: "Portfolios Clients", icon: "💼", slug: "client-portfolios", desc: "Sites web de portfolio créés pour les clients" }
+      ],
       items: [
                     {
                       slug: "engages-ai",

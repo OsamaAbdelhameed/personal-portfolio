@@ -33,15 +33,6 @@ export default function CategoryPage() {
         ];
     }
 
-    const getCategoryTitle = (categorySlug: string) => {
-        switch (categorySlug) {
-            case "n8n-automations": return "N8N Automations";
-            case "university-projects": return "University Projects";
-            case "client-portfolios": return "Client Portfolios";
-            default: return "Category Projects";
-        }
-    }
-
     return (
         <main style={{ minHeight: "100vh", background: "#050505", color: "white" }}>
             <Navbar />
@@ -64,7 +55,7 @@ export default function CategoryPage() {
                         gap: "10px",
                         fontSize: "1.1rem"
                     }}>
-                        {isRTL ? "← العودة إلى المشاريع" : "← Back to Projects"}
+                        {t.projects.backToProjects}
                     </Link>
                 </motion.div>
 
@@ -74,7 +65,7 @@ export default function CategoryPage() {
                     animate={{ opacity: 1, y: 0 }}
                     style={{ fontSize: "clamp(3rem, 6vw, 4.5rem)", marginBottom: "60px", textAlign: "center" }}
                 >
-                    {getCategoryTitle(categorySlug || "")}
+                    {t.projects.categoryTitles[categorySlug] || categorySlug}
                 </motion.h1>
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "80px" }}>
@@ -147,7 +138,7 @@ export default function CategoryPage() {
                                 </div>
 
                                 <Link href={`/projects/${project.slug}`} className="btn-glow" style={{ alignSelf: "flex-start", textDecoration: "none", padding: "12px 30px" }}>
-                                    Learn More
+                                    {t.projects.learnMore}
                                 </Link>
                             </div>
                         </motion.div>

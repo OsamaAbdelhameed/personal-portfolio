@@ -15,9 +15,9 @@ export default function Projects() {
         transition={{ duration: 0.8 }}
         style={{ textAlign: "center", marginBottom: "60px" }}
       >
-        <h2 className="gradient-text" style={{ fontSize: "3.5rem", marginBottom: "20px" }}>
-          {t.projects.title}
-        </h2>
+<h2 className="gradient-text" style={{ fontSize: "3.5rem", marginBottom: "20px" }}>
+  {t.projects.title}
+</h2>
       </motion.div>
 
       <div style={{
@@ -89,7 +89,7 @@ export default function Projects() {
                 marginTop: "10px"
               }}
             >
-              Learn More
+              {t.projects.learnMore}
             </Link>
           </motion.div>
         ))}
@@ -101,9 +101,9 @@ export default function Projects() {
         transition={{ duration: 0.8 }}
         style={{ textAlign: "center", marginTop: "100px", marginBottom: "40px" }}
       >
-        <h3 className="gradient-text" style={{ fontSize: "2.5rem" }}>
-          More Categories
-        </h3>
+<h3 className="gradient-text" style={{ fontSize: "2.5rem" }}>
+  {t.projects.moreCategories}
+</h3>
       </motion.div>
 
       <div style={{
@@ -112,11 +112,7 @@ export default function Projects() {
         gap: "30px",
         marginTop: "20px"
       }}>
-        {[
-          { title: "N8N Automations", icon: "🤖", slug: "n8n-automations", desc: "Automated workflows and integrations" },
-          { title: "University Projects", icon: "🎓", slug: "university-projects", desc: "Academic research and assignments" },
-          { title: "Client Portfolios", icon: "💼", slug: "client-portfolios", desc: "Portfolio websites made for customers" }
-        ].map((folder, index) => (
+        {t.projects.categories.map((folder, index) => (
           <Link href={`/projects/category/${folder.slug}`} key={index} style={{ textDecoration: "none" }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -168,7 +164,7 @@ export default function Projects() {
                   marginTop: "10px",
                   fontWeight: 600
                 }}>
-                  View Projects →
+                  {t.projects.viewProjects}
                 </span>
               </div>
             </motion.div>
