@@ -13,25 +13,25 @@ export default function Hero() {
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.2 });
-    
+
     tl.from(titleRef.current, {
       y: 100,
       opacity: 0,
       duration: 1,
       ease: "power4.out",
     })
-    .from(subtitleRef.current, {
-      y: 50,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power3.out",
-    }, "-=0.5")
-    .from(ctaRef.current, {
-      y: 30,
-      opacity: 0,
-      duration: 0.6,
-      ease: "power2.out",
-    }, "-=0.4");
+      .from(subtitleRef.current, {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+      }, "-=0.5")
+      .from(ctaRef.current, {
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power2.out",
+      }, "-=0.4");
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -42,20 +42,11 @@ export default function Hero() {
   };
 
   return (
-    <section 
-      id="home" 
-      style={{ 
-        minHeight: "100vh", 
-        display: "flex", 
-        flexDirection: "column", 
-        justifyContent: "center", 
-        padding: "120px 10% 60px",
-        position: "relative",
-        zIndex: 2,
-        textAlign: isRTL ? 'right' : 'left'
-      }}
+    <section
+      id="home"
+      className={`min-h-[100vh] flex flex-col md:flex-row md:justify-between md:items-center relative z-10 px-[10%] pt-[120px] pb-[60px] gap-10 ${isRTL ? 'text-right' : 'text-left'}`}
     >
-      <div style={{ maxWidth: "900px", margin: isRTL ? '0 0 0 auto' : '0' }}>
+      <div className={`w-full md:max-w-[700px] lg:max-w-[900px] order-2 md:order-1 ${isRTL ? 'ml-auto' : ''}`}>
         {/* Location Badge */}
         <motion.div
           initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
@@ -81,11 +72,11 @@ export default function Hero() {
         </motion.div>
 
         {/* Main Title */}
-        <h1 
+        <h1
           ref={titleRef}
-          style={{ 
-            fontSize: "clamp(3rem, 8vw, 6rem)", 
-            fontWeight: 800, 
+          style={{
+            fontSize: "clamp(3rem, 8vw, 6rem)",
+            fontWeight: 800,
             lineHeight: 1.1,
             marginBottom: "20px"
           }}
@@ -96,10 +87,10 @@ export default function Hero() {
 
         {/* Subtitle */}
         <div ref={subtitleRef}>
-          <p 
-            style={{ 
-              fontSize: "clamp(1.2rem, 3vw, 1.8rem)", 
-              marginTop: "20px", 
+          <p
+            style={{
+              fontSize: "clamp(1.2rem, 3vw, 1.8rem)",
+              marginTop: "20px",
               color: "rgba(255,255,255,0.7)",
               maxWidth: "700px",
               lineHeight: 1.5
@@ -146,18 +137,18 @@ export default function Hero() {
             </motion.span>
           ))}
         </motion.div>
-        
+
         {/* CTA Buttons */}
-        <div 
+        <div
           ref={ctaRef}
-          style={{ 
-            display: "flex", 
+          style={{
+            display: "flex",
             gap: "20px",
             flexWrap: "wrap",
             flexDirection: isRTL ? 'row-reverse' : 'row'
           }}
         >
-          <button 
+          <button
             className="btn-glow"
             onClick={() => scrollToSection("projects")}
             style={{
@@ -168,11 +159,11 @@ export default function Hero() {
           >
             {t.hero.cta_projects}
           </button>
-          <button 
+          <button
             onClick={() => scrollToSection("contact")}
-            style={{ 
-              padding: "14px 32px", 
-              background: "transparent", 
+            style={{
+              padding: "14px 32px",
+              background: "transparent",
               border: "1px solid var(--glass-border)",
               borderRadius: "8px",
               color: "white",
@@ -180,7 +171,7 @@ export default function Hero() {
               cursor: "pointer",
               fontSize: "1rem",
               transition: "all 0.3s ease"
-            }} 
+            }}
             className="glass"
             onMouseEnter={(e) => {
               e.currentTarget.style.borderColor = "#00D1FF";
@@ -207,9 +198,9 @@ export default function Hero() {
             flexDirection: isRTL ? 'row-reverse' : 'row'
           }}
         >
-          <a 
-            href="https://www.linkedin.com/in/osama-abdelhameed/" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/osama-abdelhameed/"
+            target="_blank"
             rel="noopener noreferrer"
             style={{
               color: "rgba(255,255,255,0.6)",
@@ -220,9 +211,9 @@ export default function Hero() {
           >
             LinkedIn
           </a>
-          <a 
-            href="https://github.com/OsamaAbdelhameed" 
-            target="_blank" 
+          <a
+            href="https://github.com/OsamaAbdelhameed"
+            target="_blank"
             rel="noopener noreferrer"
             style={{
               color: "rgba(255,255,255,0.6)",
@@ -233,7 +224,7 @@ export default function Hero() {
           >
             GitHub
           </a>
-          <a 
+          <a
             href="mailto:osamaabdelhameed41@gmail.com"
             style={{
               color: "rgba(255,255,255,0.6)",
@@ -246,6 +237,19 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9, x: isRTL ? -30 : 30 }}
+        animate={{ opacity: 1, scale: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="order-1 md:order-2 flex justify-center items-center w-full md:w-auto"
+      >
+        <img
+          src='/osama-with-no-bg.png'
+          alt='Osama'
+          className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-auto object-contain drop-shadow-[0_0_50px_rgba(0,209,255,0.3)]"
+        />
+      </motion.div>
     </section>
   );
 }

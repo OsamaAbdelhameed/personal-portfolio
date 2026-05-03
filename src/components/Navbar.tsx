@@ -57,9 +57,7 @@ export default function Navbar() {
           flexDirection: isRTL ? 'row-reverse' : 'row'
         }}
       >
-        <div style={{ fontSize: "1.5rem", fontWeight: 800 }} className="gradient-text">
-          OA.
-        </div>
+        <img src="/logo.png" alt="Logo" className="md:h-[80px] h-[60px] w-auto" />
 
         {/* Desktop Links */}
         <div className="nav-links-desktop" style={{ 
@@ -173,7 +171,10 @@ export default function Navbar() {
             </AnimatePresence>
           </div>
 
-          <button 
+          <a 
+            href="/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-glow"
             style={{ 
               padding: "10px 24px", 
@@ -183,11 +184,13 @@ export default function Navbar() {
               border: "none",
               fontWeight: 600,
               cursor: "pointer",
-              fontSize: "0.9rem"
+              fontSize: "0.9rem",
+              textDecoration: "none",
+              display: "inline-block"
             }}
           >
             {t.nav.resume}
-          </button>
+          </a>
 
           {/* Mobile Menu Toggle */}
           <button 

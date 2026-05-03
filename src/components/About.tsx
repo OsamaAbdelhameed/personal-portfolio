@@ -10,16 +10,16 @@ export default function About() {
 
   const stats = [
     { label: t.about.stats.cgpa, value: "3.92", icon: "🎓" },
-    { label: t.about.stats.exp, value: "2+", icon: "💼" },
+    { label: t.about.stats.exp, value: "3+", icon: "💼" },
     { label: t.about.stats.projects, value: "10+", icon: "🚀" },
     { label: t.about.stats.tech, value: "20+", icon: "⚡" }
   ];
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      id="about" 
-      style={{ 
+      id="about"
+      style={{
         padding: "120px 10%",
         position: "relative",
         textAlign: isRTL ? 'right' : 'left'
@@ -41,37 +41,33 @@ export default function About() {
       <div style={{ maxWidth: "1200px", margin: "0 auto", position: "relative", zIndex: 1 }}>
         {/* Section Title */}
         <motion.div
-  initial={{ opacity: 0, y: 30 }}
-  animate={isInView ? { opacity: 1, y: 0 } : {}}
-  transition={{ duration: 0.8 }}
-  style={{ textAlign: "center", marginBottom: "60px" }}
->
-  <h2 
-    className="gradient-text" 
-    style={{ 
-      fontSize: "clamp(2.5rem, 5vw, 4rem)", 
-      marginBottom: "20px",
-      fontWeight: 800
-    }}
-  >
-    {t.about.title}
-  </h2>
-  <p style={{ 
-    fontSize: "1.2rem", 
-    color: "rgba(255,255,255,0.6)",
-    maxWidth: "700px",
-    margin: "0 auto"
-  }}>
-    {t.about.subtitle}
-  </p>
-</motion.div>
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+          style={{ textAlign: "center", marginBottom: "60px" }}
+        >
+          <h2
+            className="gradient-text"
+            style={{
+              fontSize: "clamp(2.5rem, 5vw, 4rem)",
+              marginBottom: "20px",
+              fontWeight: 800
+            }}
+          >
+            {t.about.title}
+          </h2>
+          <p style={{
+            fontSize: "1.2rem",
+            color: "rgba(255,255,255,0.6)",
+            maxWidth: "700px",
+            margin: "0 auto"
+          }}>
+            {t.about.subtitle}
+          </p>
+        </motion.div>
 
         {/* Main Content */}
         <div className="about-main-grid" style={{
-          display: "grid",
-          gridTemplateColumns: "1.2fr 0.8fr",
-          gap: "40px",
-          marginBottom: "60px",
           direction: isRTL ? 'rtl' : 'ltr'
         }}>
           {/* Bio Card */}
@@ -95,25 +91,25 @@ export default function About() {
             }}>
               {t.about.bio_title}
             </h3>
-            <p style={{ 
-              fontSize: "1.1rem", 
-              color: "rgba(255,255,255,0.8)", 
+            <p style={{
+              fontSize: "1.1rem",
+              color: "rgba(255,255,255,0.8)",
               lineHeight: 1.8,
               marginBottom: "20px"
             }}>
               {t.about.bio_p1}
             </p>
-            <p style={{ 
-              fontSize: "1.1rem", 
-              color: "rgba(255,255,255,0.8)", 
+            <p style={{
+              fontSize: "1.1rem",
+              color: "rgba(255,255,255,0.8)",
               lineHeight: 1.8,
               marginBottom: "20px"
             }}>
               {t.about.bio_p2}
             </p>
-            <p style={{ 
-              fontSize: "1.1rem", 
-              color: "rgba(255,255,255,0.8)", 
+            <p style={{
+              fontSize: "1.1rem",
+              color: "rgba(255,255,255,0.8)",
               lineHeight: 1.8
             }}>
               {t.about.bio_p3}
@@ -126,11 +122,6 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="stats-grid-container"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(2, 1fr)",
-              gap: "20px"
-            }}
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -151,16 +142,16 @@ export default function About() {
                 <div style={{ fontSize: "2.5rem", marginBottom: "10px" }}>
                   {stat.icon}
                 </div>
-                <div style={{ 
-                  fontSize: "2rem", 
-                  fontWeight: 800, 
+                <div style={{
+                  fontSize: "2rem",
+                  fontWeight: 800,
                   color: "#00D1FF",
                   marginBottom: "5px"
                 }}>
                   {stat.value}
                 </div>
-                <div style={{ 
-                  fontSize: "0.9rem", 
+                <div style={{
+                  fontSize: "0.9rem",
                   color: "rgba(255,255,255,0.6)",
                   fontWeight: 500
                 }}>
@@ -195,12 +186,8 @@ export default function About() {
           }}>
             {t.about.journey_title}
           </h3>
-          
+
           <div className="journey-grid" style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-            gap: "30px",
-            position: "relative",
             direction: isRTL ? 'rtl' : 'ltr'
           }}>
             {/* Connection Line (Desktop Only) */}
@@ -215,7 +202,6 @@ export default function About() {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="journey-item"
                 style={{
-                  textAlign: "center",
                   position: "relative",
                   zIndex: 1
                 }}
@@ -229,12 +215,11 @@ export default function About() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  margin: "0 auto 20px",
                   fontSize: "1.5rem"
                 }}>
-                  <ReactCountryFlag 
-                    countryCode={location.countryCode} 
-                    svg 
+                  <ReactCountryFlag
+                    countryCode={location.countryCode}
+                    svg
                     style={{
                       width: '1.5em',
                       height: '1.5em',
@@ -306,9 +291,9 @@ export default function About() {
                   gap: "10px"
                 }}
               >
-                <ReactCountryFlag 
-                  countryCode={language.code} 
-                  svg 
+                <ReactCountryFlag
+                  countryCode={language.code}
+                  svg
                   style={{
                     width: '1.5em',
                     height: '1.5em',
