@@ -116,7 +116,7 @@ export default function ProjectPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="glass" style={{ 
+            {project.videoUrl && <div className="glass" style={{ 
               width: "100%", 
               aspectRatio: "16/9", 
               borderRadius: "30px", 
@@ -143,7 +143,7 @@ export default function ProjectPage() {
                   Project Image Gallery Placeholder
                 </span>
               )}
-            </div>
+            </div>}
 
             {/* Image Gallery Grid */}
             {project.images && (

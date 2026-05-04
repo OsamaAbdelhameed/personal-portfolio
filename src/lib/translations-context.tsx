@@ -200,7 +200,27 @@ const translations: Record<Language, Translations> = {
           description: "AI-enhanced web solution for international student accommodation with automated room assignments.",
           longDescription: "Final Year Project at UTM. Developed a web-based residence management system for international students. Features include an AI-driven recommendation engine for roommate matching and automated room assignments based on student preferences.",
           tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
-          category: "university-projects"
+          category: "university-projects",
+          images: [
+            {
+              src: "/utmsir-university.png",
+              desc: "UTMSIR - AI-enhanced web solution for international student accommodation with automated room assignments."
+            }
+          ]
+        },
+        {
+          slug: "chatoo",
+          title: "Chatoo",
+          description: "Robust and intuitive solution for modern communication needs. By successfully implementing core real-time messaging features alongside a clean, user-friendly interface, this project bridges the gap between complex backend functionality and seamless frontend design.",
+          longDescription: "Robust and intuitive solution for modern communication needs. By successfully implementing core real-time messaging features alongside a clean, user-friendly interface, this project bridges the gap between complex backend functionality and seamless frontend design. Whether used for personal connectivity or as a foundation for larger social applications, Chatoo demonstrates that reliable instant messaging can be both accessible and scalable. We hope this project serves as a valuable tool for users and a solid reference for developers exploring real-time architectures.",
+          tech: ["MongoDB", "Express", "React", "Node.js"],
+          category: "university-projects",
+          images: [
+            {
+              src: "/chatoo-university.png",
+              desc: "Chatoo - Robust and intuitive solution for modern communication needs."
+            }
+          ]
         },
         {
           slug: "quickbooks-n8n",
@@ -321,6 +341,20 @@ const translations: Record<Language, Translations> = {
             {
               src: "/grn-shoreline-website-portfolio.png",
               desc: "Landing page view of the GRN Shoreline website"
+            }
+          ]
+        },
+        {
+          slug: "food-bazaar-app",
+          title: "Food Bazaar App",
+          description: "Dedicated micro-restaurant application that allows individuals selling home-made food to reach customers more easily, add new meals, and deliver food faster with an easy-to-use UI and services provided by the Food Bazaar app.",
+          longDescription: "Food Bazaar is a dedicated micro-restaurant application built with Flutter and Dart for cross-platform mobile development. It enables individual home-made food sellers to reach customers more easily, add new meals to their catalog, and deliver food faster through an intuitive user interface. The app features user authentication for both sellers and customers, a meal catalog with images and descriptions, order tracking and delivery management, and payment integration. GitHub repository: https://github.com/softtechforgeeks/Food-Bazaar-App",
+          tech: ["Flutter", "Dart", "Mobile Development"],
+          category: "university-projects",
+          images: [
+            {
+              src: "/food-bazaar-university.png",
+              desc: "Food Bazaar App - Micro-restaurant application interface"
             }
           ]
         }
@@ -566,8 +600,41 @@ const translations: Record<Language, Translations> = {
                       description: "حل ويب معزز بالذكاء الاصطناعي لسكن الطلاب الدوليين مع مهام غرف آلية.",
                       longDescription: "مشروع السنة النهائية في جامعة UTM. تطوير نظام إدارة سكن يعتمد على الويب للطلاب الدوليين. يتضمن محرك توصية يعتمد على الذكاء الاصطناعي لتنسيق الغرف.",
                       tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
-                      category: "university-projects"
+                      category: "university-projects",
+          images: [
+            {
+              src: "/utmsir-university.png",
+              desc: "UTMSIR - حل ويب معزز بالذكاء الاصطناعي لسكن الطلاب الدوليين مع توزيع آلي للغرف."
+            }
+          ]
                     },
+                    {
+  slug: "food-bazaar-app",
+  title: "تطبيق فود بازار (Food Bazaar)",
+  description: "تطبيق مخصص للمطاعم الصغيرة يتيح للأفراد الذين يبيعون طعاماً منزلياً الوصول إلى العملاء بسهولة أكبر وإضافة وجبات جديدة وتوصيل الطعام بشكل أسرع.",
+  longDescription: "Food Bazaar هو تطبيق مخصص للمطاعم الصغيرة تم بناؤه باستخدام Flutter و Dart. يُمكّن بائعي الأغذية المنزلية من الوصول إلى العملاء بسهولة، وإدارة كتالوج الوجبات، وتتبع الطلبات من خلال واجهة مستخدم سهلة. يتضمن التطبيق ميزات توثيق المستخدمين، وعرض الوجبات بالصور، وإدارة التوصيل، وتكامل الدفع.",
+  tech: ["Flutter", "Dart", "Mobile Development"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/food-bazaar-university.png",
+      desc: "تطبيق فود بازار - واجهة تطبيق المطاعم الصغيرة"
+    }
+  ]
+},{
+  slug: "chatoo",
+  title: "Chatoo",
+  description: "حل قوي وبديهي لاحتياجات التواصل الحديثة. من خلال تنفيذ ميزات الرسائل الفورية الأساسية مع واجهة مستخدم نظيفة، يجمع هذا المشروع بين تعقيد الأنظمة الخلفية وسلاسة التصميم الأمامي.",
+  longDescription: "حل قوي وبديهي لاحتياجات التواصل الحديثة. من خلال تنفيذ ميزات الرسائل الفورية الأساسية في الوقت الفعلي مع واجهة مستخدم نظيفة وسهلة الاستخدام، يسد هذا المشروع الفجوة بين وظائف الواجهة الخلفية المعقدة وتصميم الواجهة الأمامية السلس. سواء تم استخدامه للتواصل الشخصي أو كأساس لتطبيقات اجتماعية أكبر، يثبت Chatoo أن المراسلة الفورية الموثوقة يمكن أن تكون سهلة الوصول وقابلة للتوسع في نفس الوقت.",
+  tech: ["MongoDB", "Express", "React", "Node.js"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/chatoo-university.png",
+      desc: "Chatoo - حل قوي وبديهي لاحتياجات التواصل الحديثة."
+    }
+  ]
+},
                     {
                       slug: "quickbooks-n8n",
                       title: "أتمتة QuickBooks مع N8N",
@@ -932,8 +999,40 @@ const translations: Record<Language, Translations> = {
                       description: "Solución web mejorada con IA para alojamiento internacional de estudiantes.",
                       longDescription: "Desarrolló un sistema web de gestión de residencias para estudiantes internacionales con un motor de recomendaciones por IA para emparejamiento.",
                       tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
-                      category: "university-projects"
-                    },
+                      category: "university-projects",
+          images: [
+            {
+              src: "/utmsir-university.png",
+              desc: "UTMSIR - Solución web mejorada con IA para el alojamiento de estudiantes internacionales con asignación automática de habitaciones."
+            }
+          ]
+                    },{
+  slug: "food-bazaar-app",
+  title: "Food Bazaar App",
+  description: "Aplicación dedicada a microrrestaurantes que permite a personas que venden comida casera llegar a los clientes más fácilmente y gestionar pedidos.",
+  longDescription: "Food Bazaar es una aplicación para microrrestaurantes construida con Flutter y Dart. Permite a los vendedores de comida casera llegar a más clientes, añadir nuevos platos al catálogo y entregar comida más rápido. Incluye autenticación, catálogo con imágenes, seguimiento de pedidos e integración de pagos.",
+  tech: ["Flutter", "Dart", "Mobile Development"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/food-bazaar-university.png",
+      desc: "Food Bazaar App - Interfaz de la aplicación de microrrestaurantes"
+    }
+  ]
+},{
+  slug: "chatoo",
+  title: "Chatoo",
+  description: "Solución robusta e intuitiva para las necesidades de comunicación modernas. Al implementar funciones principales de mensajería en tiempo real con una interfaz limpia, este proyecto cierra la brecha entre la funcionalidad compleja del backend y el diseño fluido del frontend.",
+  longDescription: "Solución robusta e intuitiva para las necesidades de comunicación modernas. Mediante la implementación exitosa de funciones de mensajería en tiempo real junto con una interfaz limpia y fácil de usar, este proyecto une la funcionalidad compleja del backend con un diseño frontend impecable. Chatoo demuestra que la mensajería instantánea confiable puede ser accesible y escalable al mismo tiempo.",
+  tech: ["MongoDB", "Express", "React", "Node.js"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/chatoo-university.png",
+      desc: "Chatoo - Solución robusta e intuitiva para las necesidades de comunicación modernas."
+    }
+  ]
+},
                     {
                       slug: "quickbooks-n8n",
                       title: "Automatización de QuickBooks",
@@ -1298,8 +1397,40 @@ const translations: Record<Language, Translations> = {
                       description: "KI-gestützte Web-Lösung für internationale Studentenunterkünfte mit automatischer Zimmerzuweisung.",
                       longDescription: "Abschlussprojekt an der UTM. Entwicklung eines webbasierten Wohnheim-Verwaltungssystems für internationale Studenten. Enthält eine KI-Empfehlungs-Engine für die Zimmerzuweisung.",
                       tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
-                      category: "university-projects"
-                    },
+                      category: "university-projects",
+          images: [
+            {
+              src: "/utmsir-university.png",
+              desc: "UTMSIR - KI-gestützte Weblösung für internationale Studentenunterkünfte mit automatischer Zimmerzuweisung."
+            }
+          ]
+                    },{
+  slug: "food-bazaar-app",
+  title: "Food Bazaar App",
+  description: "Spezialisierte Mikro-Restaurant-App, die es Privatpersonen ermöglicht, hausgemachtes Essen einfacher an Kunden zu verkaufen und zu liefern.",
+  longDescription: "Food Bazaar ist eine Mikro-Restaurant-Anwendung, die mit Flutter und Dart entwickelt wurde. Sie ermöglicht es Verkäufern von hausgemachten Speisen, Kunden leichter zu erreichen und ihr Angebot effizient zu verwalten. Die App bietet Benutzerauthentifizierung, einen bebilderten Speisekatalog, Bestellverfolgung und Zahlungsverwaltung.",
+  tech: ["Flutter", "Dart", "Mobile Development"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/food-bazaar-university.png",
+      desc: "Food Bazaar App - Benutzeroberfläche der Mikro-Restaurant-Anwendung"
+    }
+  ]
+},{
+  slug: "chatoo",
+  title: "Chatoo",
+  description: "Robuste und intuitive Lösung für moderne Kommunikationsbedürfnisse. Durch die Implementierung von Echtzeit-Messaging-Funktionen mit einer sauberen Benutzeroberfläche schließt dieses Projekt die Lücke zwischen komplexem Backend und nahtlosem Frontend-Design.",
+  longDescription: "Eine robuste und intuitive Lösung für moderne Kommunikationsbedürfnisse. Durch die erfolgreiche Implementierung von Echtzeit-Messaging-Kernfunktionen zusammen mit einer sauberen Benutzeroberfläche verbindet dieses Projekt komplexe Backend-Funktionalität mit nahtlosem Frontend-Design. Chatoo zeigt, dass zuverlässiges Instant Messaging sowohl zugänglich als auch skalierbar sein kann.",
+  tech: ["MongoDB", "Express", "React", "Node.js"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/chatoo-university.png",
+      desc: "Chatoo - Robuste und intuitive Lösung für moderne Kommunikationsbedürfnisse."
+    }
+  ]
+},
                     {
                       slug: "quickbooks-n8n",
                       title: "QuickBooks N8N-Automatisierung",
@@ -1664,8 +1795,40 @@ const translations: Record<Language, Translations> = {
                       description: "Веб-решение с поддержкой ИИ для размещения иностранных студентов.",
                       longDescription: "Разработал систему управления общежитиями для студентов с алгоритмами ИИ для подбора соседей и комнат.",
                       tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
-                      category: "university-projects"
-                    },
+                      category: "university-projects",
+          images: [
+            {
+              src: "/utmsir-university.png",
+              desc: "UTMSIR - Веб-решение на базе ИИ для размещения иностранных студентов с автоматическим распределением комнат."
+            }
+          ]
+                    },{
+  slug: "food-bazaar-app",
+  title: "Приложение Food Bazaar",
+  description: "Приложение для микро-ресторанов, позволяющее частным лицам продавать домашнюю еду, расширять базу клиентов и управлять доставкой.",
+  longDescription: "Food Bazaar — это мобильное приложение для микро-ресторанов, созданное на Flutter и Dart. Оно помогает продавцам домашней еды находить клиентов, добавлять блюда в каталог и ускорять доставку. Включает аутентификацию, каталог с изображениями, отслеживание заказов и интеграцию платежей.",
+  tech: ["Flutter", "Dart", "Mobile Development"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/food-bazaar-university.png",
+      desc: "Food Bazaar App - Интерфейс приложения для микро-ресторанов"
+    }
+  ]
+},{
+  slug: "chatoo",
+  title: "Chatoo",
+  description: "Надежное и интуитивно понятное решение для современных коммуникаций. Реализуя основные функции обмена сообщениями в реальном времени и чистый интерфейс, этот проект объединяет сложную серверную часть с плавным дизайном.",
+  longDescription: "Надежное и интуитивно понятное решение для современных коммуникаций. Благодаря успешному внедрению функций обмена сообщениями в реальном времени и удобному интерфейсу, этот проект устраняет разрыв между сложной логикой бэкенда и безупречным фронтенд-дизайном. Chatoo доказывает, что надежный мессенджер может быть одновременно доступным и масштабируемым.",
+  tech: ["MongoDB", "Express", "React", "Node.js"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/chatoo-university.png",
+      desc: "Chatoo - Надежное и интуитивно понятное решение для современных коммуникаций."
+    }
+  ]
+},
                     {
                       slug: "quickbooks-n8n",
                       title: "Интеграция QuickBooks & N8N",
@@ -2030,8 +2193,40 @@ const translations: Record<Language, Translations> = {
                       description: "Solution web améliorée par l'IA pour l'hébergement d'étudiants internationaux.",
                       longDescription: "Système de gestion web d'attributions de chambres et un moteur d'IA de correspondance développé pour le projet final à l'université UTM.",
                       tech: ["MongoDB", "Express", "React", "Node.js", "Python", "AI Recommendation"],
-                      category: "university-projects"
-                    },
+                      category: "university-projects",
+          images: [
+            {
+              src: "/utmsir-university.png",
+              desc: "UTMSIR - Solution web optimisée par l'IA pour l'hébergement des étudiants internationaux avec attribution automatique des chambres."
+            }
+          ]
+                    },{
+  slug: "food-bazaar-app",
+  title: "Application Food Bazaar",
+  description: "Application dédiée aux micro-restaurants permettant aux particuliers vendant de la cuisine maison d'atteindre plus facilement les clients.",
+  longDescription: "Food Bazaar est une application pour micro-restaurants construite avec Flutter et Dart. Elle permet aux vendeurs de repas faits maison d'élargir leur clientèle, d'ajouter des plats et de gérer les livraisons. L'app comprend l'authentification, un catalogue illustré, le suivi des commandes et le paiement intégré.",
+  tech: ["Flutter", "Dart", "Mobile Development"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/food-bazaar-university.png",
+      desc: "Application Food Bazaar - Interface de l'application de micro-restauration"
+    }
+  ]
+},{
+  slug: "chatoo",
+  title: "Chatoo",
+  description: "Solution robuste et intuitive pour les besoins de communication modernes. En implémentant des fonctionnalités de messagerie en temps réel avec une interface épurée, ce projet comble le fossé entre la complexité du backend et la fluidité du frontend.",
+  longDescription: "Solution robuste et intuitive pour les besoins de communication modernes. En implémentant avec succès les fonctionnalités de messagerie instantanée avec une interface utilisateur propre et conviviale, ce projet relie les fonctionnalités backend complexes à une conception frontend fluide. Chatoo démontre qu'une messagerie instantanée fiable peut être à la fois accessible et évolutive.",
+  tech: ["MongoDB", "Express", "React", "Node.js"],
+  category: "university-projects",
+  images: [
+    {
+      src: "/chatoo-university.png",
+      desc: "Chatoo - Solution robuste et intuitive pour les besoins de communication modernes."
+    }
+  ]
+},
                     {
                       slug: "quickbooks-n8n",
                       title: "Automatisation de QuickBooks",
