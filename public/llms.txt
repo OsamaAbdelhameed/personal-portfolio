@@ -1,0 +1,113 @@
+# Osama Abdelnasser - AI Fullstack Developer
+
+> Full Stack Software Engineer & AI Specialist with 4+ years of experience building AI-driven solutions, scalable microservices, and high-performance web applications.
+
+## Identity
+
+- Name: Osama Abdelnasser (Osama Abdelhameed)
+- Title: Full Stack Software Engineer & AI Specialist
+- Location: Currently based in Bali, Indonesia | Originally from Egypt
+- Education: B.Sc. Software Engineering, Universiti Teknologi Malaysia (UTM) - 3.92 CGPA
+- Languages: Arabic (Native), English (Professional), Indonesian (Beginner)
+- Founder: Mind Step Tutor (UAE, 2026-Present)
+
+## Core Expertise
+
+- AI & Machine Learning: GPT-4, OpenAI, Gemini, LangGraph, RASA, Computer Vision, AI Chatbots, AI Recommendation Engines
+- Frontend: React, Next.js, Tailwind CSS, MUI, Redux, Zustand, Vite
+- Backend: NestJS, Node.js, Express, Microservices, REST API, GraphQL, socket.io
+- Databases: PostgreSQL, MongoDB, MySQL, Redis, RabbitMQ
+- DevOps & Cloud: AWS Lambda, Alibaba Cloud, Azure, Firebase, Docker, Heroku, Netlify, GitHub Actions
+- Automation: N8N, Webhooks, QuickBooks, Calendly, Slack, Stripe
+- Mobile: Flutter, Dart, React Native
+- Languages: Python, JavaScript, TypeScript, C++, Java
+- Tools: Cursor, GPT Plus, Bitbucket, Shopify, Algolia, PeerDB
+
+## Professional Experience
+
+### Founder - Mind Step Tutor (Mar 2026 - Present, UAE)
+Building a B2C and C2C platform connecting students with private tutors.
+
+### AI FullStack Software Engineer - Salesmrkt (Sept 2025 - Mar 2026, Seattle, WA)
+- Built AI chat system with recommendations using Gemini (1.5s response time)
+- Converted React to Next.js for enhanced security
+- Managed Salesbox, Salesmrkt, and GoTryOne platforms
+- N8N automation for complex business workflows
+- QuickBooks and Stripe payment integration
+
+### Fullstack Software Engineer - Engages AI (Jan 2024 - Aug 2025, Singapore)
+- Developed full-featured CRM with AI chatbot capabilities
+- Built scalable backend microservices with NestJS, PostgreSQL, Redis, RabbitMQ
+- Integrated GPT-4, RASA, LangGraph for AI features
+- Real-time communication with socket.io
+- Replaced Webpack with Vite (50% faster builds)
+- AWS Lambda serverless functions and Alibaba Cloud deployment
+- PeerDB (CDC) for real-time data synchronization
+- Reporting dashboards and automation workflows
+
+### Software Engineer Intern - QuickDesk (May 2023 - Dec 2023, Kuala Lumpur)
+- CRM web application development with React and NestJS
+- AI chatbots using RASA framework
+
+### System Analyst - Universiti Sains Islam Malaysia (Oct 2022 - Apr 2023)
+- Migrated legacy PHP/Kotlin systems to React and React Native
+
+## Featured Projects
+
+### Engages AI
+CRM chat application with AI chatbot capabilities, real-time messaging, and scalable microservices.
+Tech: NestJS, React, PostgreSQL, Redis, RabbitMQ, AWS Lambda, GPT-4, socket.io
+Live: https://chat.engages.ai
+
+### Salesmrkt
+Sales funnel automation platform for service providers with centralized lead management.
+Tech: React, Shopify, N8N, Calendly
+Live: https://salesmrkt.com
+
+### GoTryOne
+Booking and trial management platform with AI conversation chatbot, QuickBooks and Stripe integration.
+Tech: NextJS, Firebase, Algolia, Zustand, Stripe, QuickBooks
+Live: https://gotryone.com
+
+### UTMSIR (Final Year Project)
+AI-enhanced web solution for international student accommodation with automated room assignments using AI recommendation engine.
+Tech: MongoDB, Express, React, Node.js, Python, AI Recommendation
+
+### Chatoo
+Real-time messaging application bridging complex backend with seamless frontend design.
+Tech: MongoDB, Express, React, Node.js
+
+### Food Bazaar App
+Cross-platform mobile app for micro-restaurant food delivery.
+Tech: Flutter, Dart, Mobile Development
+
+### N8N Automation Projects
+- QuickBooks invoice automation with webhooks
+- Calendly scheduling event automation
+- AI pipeline for audit report processing (GPT-4)
+- Slack lead capture and routing automation
+
+### Client Portfolio Websites
+- Zack Thompson Portfolio: https://zackthompson.com
+- Joe Greco Portfolio: https://meetjoegreco.com
+- GRN Shoreline Website (for founder Matthew Curran)
+
+## Services Offered
+
+- AI-powered application development (chatbots, recommendation systems, NLP)
+- Full-stack web application development (React, Next.js, NestJS)
+- Business process automation (N8N, webhooks, integrations)
+- CRM system development and customization
+- Cloud deployment and DevOps (AWS, Alibaba Cloud, Firebase)
+- Mobile app development (Flutter, React Native)
+- Portfolio and landing page design for businesses
+- AI consulting and integration
+
+## Keywords
+
+Osama Abdelnasser, Osama Abdelhameed, AI developer, fullstack developer, full stack engineer, AI specialist, software engineer, AI automation, N8N automation, NestJS developer, React developer, Next.js developer, GPT-4 integration, AI chatbot developer, CRM developer, microservices architect, cloud engineer, DevOps, freelance developer, hire AI engineer, Bali developer, Egyptian developer, Malaysia UTM graduate, LangGraph, RASA chatbot, PostgreSQL, real-time applications, socket.io, serverless, AWS Lambda, process automation, business automation, lead generation automation, AI pipeline, computer vision, machine learning engineer
+
+## Contact
+
+Available for technical partnerships, AI-driven projects, and full-stack engineering work.
+Portfolio: Built with Next.js & Three.js
