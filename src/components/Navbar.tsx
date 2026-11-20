@@ -18,10 +18,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: t.nav.home, href: "#home" },
-    { name: t.nav.about, href: "#about" },
-    { name: t.nav.projects, href: "#projects" },
-    { name: t.nav.contact, href: "#contact" },
+    { name: t.nav.work, href: "/#work" },
+    { name: t.nav.experience, href: "/#experience" },
+    { name: t.nav.projects, href: "/#projects" },
+    { name: t.nav.skills, href: "/#skills" },
+    { name: t.nav.education, href: "/#education" },
+    { name: t.nav.contact, href: "/#contact" },
   ];
 
   const languages = [
@@ -62,7 +64,7 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="nav-links-desktop" style={{ 
           display: "flex", 
-          gap: "30px",
+          gap: "16px",
           flexDirection: isRTL ? 'row-reverse' : 'row'
         }}>
           {navLinks.map((link) => (
@@ -73,7 +75,7 @@ export default function Navbar() {
                 color: "rgba(255,255,255,0.7)", 
                 textDecoration: "none",
                 fontWeight: 500,
-                fontSize: "0.95rem",
+                fontSize: "0.85rem",
                 transition: "color 0.3s ease"
               }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#00D1FF")}

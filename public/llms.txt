@@ -1,113 +1,64 @@
-# Osama Abdelnasser - AI Fullstack Developer
+# Osama Abdelnasser - AI Full Stack Software Engineer
 
-> Full Stack Software Engineer & AI Specialist with 4+ years of experience building AI-driven solutions, scalable microservices, and high-performance web applications.
+> AI full stack software engineer. Sole developer of Review Revolution, Daily Authority, Art By MIO, and FDG Workspace at Frequency Digital Group (Jun 2026 to Present, Remote).
 
 ## Identity
 
-- Name: Osama Abdelnasser (Osama Abdelhameed)
-- Title: Full Stack Software Engineer & AI Specialist
-- Location: Currently based in Bali, Indonesia | Originally from Egypt
-- Education: B.Sc. Software Engineering, Universiti Teknologi Malaysia (UTM) - 3.92 CGPA
+- Name: Osama Abdelnasser
+- Title: AI Full Stack Software Engineer
+- Location: Selangor, Malaysia
+- Education: Bachelor of Computer Science (Software Engineering), Universiti Teknologi Malaysia, Mar 2020 to Feb 2024, CGPA 3.92
 - Languages: Arabic (Native), English (Professional), Indonesian (Beginner)
-- Founder: Mind Step Tutor (UAE, 2026-Present)
+- Independent project: Mind Step Tutor (Mar 2026 to Present), not an employment role
 
 ## Core Expertise
 
-- AI & Machine Learning: GPT-4, OpenAI, Gemini, LangGraph, RASA, Computer Vision, AI Chatbots, AI Recommendation Engines
-- Frontend: React, Next.js, Tailwind CSS, MUI, Redux, Zustand, Vite
-- Backend: NestJS, Node.js, Express, Microservices, REST API, GraphQL, socket.io
-- Databases: PostgreSQL, MongoDB, MySQL, Redis, RabbitMQ
-- DevOps & Cloud: AWS Lambda, Alibaba Cloud, Azure, Firebase, Docker, Heroku, Netlify, GitHub Actions
-- Automation: N8N, Webhooks, QuickBooks, Calendly, Slack, Stripe
-- Mobile: Flutter, Dart, React Native
-- Languages: Python, JavaScript, TypeScript, C++, Java
-- Tools: Cursor, GPT Plus, Bitbucket, Shopify, Algolia, PeerDB
+- Frontend: JavaScript, TypeScript, React, Next.js, Tailwind CSS, MUI, Redux Toolkit, Zustand
+- Backend: NestJS, FastAPI, Node.js, APIs, microservices, architecture
+- Data and real-time: PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Socket.io
+- AI and automation: Python, Rasa, LangGraph, n8n
+- Cloud and delivery: Docker, Kubernetes, Helm, Terraform, GitHub Actions, AWS, Google Cloud, Alibaba Cloud, Netlify, Heroku, Firebase
+- Observability: Grafana, Prometheus, OpenTelemetry
+- Mobile: Flutter, React Native
+- Commerce: Shopify, Stripe, QuickBooks
 
 ## Professional Experience
 
-### Founder - Mind Step Tutor (Mar 2026 - Present, UAE)
-Building a B2C and C2C platform connecting students with private tutors.
+### Sole AI Full Stack Developer - Frequency Digital Group (Jun 2026 to Present, Remote)
+Sole developer for Review Revolution, Daily Authority, Art By MIO, and FDG Workspace.
 
-### AI FullStack Software Engineer - Salesmrkt (Sept 2025 - Mar 2026, Seattle, WA)
-- Built AI chat system with recommendations using Gemini (1.5s response time)
-- Converted React to Next.js for enhanced security
-- Managed Salesbox, Salesmrkt, and GoTryOne platforms
-- N8N automation for complex business workflows
-- QuickBooks and Stripe payment integration
+### Full Stack Software Engineer - Salesmrkt (Sep 2025 to Mar 2026, Seattle, USA, Remote)
+Web applications, AI-enabled chat, React to Next.js migration, payments, and cloud deployments.
 
-### Fullstack Software Engineer - Engages AI (Jan 2024 - Aug 2025, Singapore)
-- Developed full-featured CRM with AI chatbot capabilities
-- Built scalable backend microservices with NestJS, PostgreSQL, Redis, RabbitMQ
-- Integrated GPT-4, RASA, LangGraph for AI features
-- Real-time communication with socket.io
-- Replaced Webpack with Vite (50% faster builds)
-- AWS Lambda serverless functions and Alibaba Cloud deployment
-- PeerDB (CDC) for real-time data synchronization
-- Reporting dashboards and automation workflows
+### Full Stack Software Engineer - Engages AI (Jan 2024 to Aug 2025, Singapore, Remote)
+CRM, real-time chat, microservices, AI-assisted chat, data workflows, and reporting dashboards.
 
-### Software Engineer Intern - QuickDesk (May 2023 - Dec 2023, Kuala Lumpur)
-- CRM web application development with React and NestJS
-- AI chatbots using RASA framework
+### Software Engineer Intern - Engages AI (May 2023 to Dec 2023, Malaysia, Hybrid)
+Quickdesk CRM React frontend, backend services, and AI chatbot capabilities.
 
-### System Analyst - Universiti Sains Islam Malaysia (Oct 2022 - Apr 2023)
-- Migrated legacy PHP/Kotlin systems to React and React Native
+### System Analyst - Universiti Sains Islam Malaysia (Oct 2022 to Apr 2023, Malaysia, Remote)
+Migrated legacy web and mobile interfaces to React and React Native; enhanced Laravel backend.
 
-## Featured Projects
+## Featured Work
 
-### Engages AI
-CRM chat application with AI chatbot capabilities, real-time messaging, and scalable microservices.
-Tech: NestJS, React, PostgreSQL, Redis, RabbitMQ, AWS Lambda, GPT-4, socket.io
-Live: https://chat.engages.ai
+### Review Revolution
+Multi-module SaaS covering customer feedback, reputation operations, automated content workflows, analytics, and management dashboards.
 
-### Salesmrkt
-Sales funnel automation platform for service providers with centralized lead management.
-Tech: React, Shopify, N8N, Calendly
-Live: https://salesmrkt.com
+### Daily Authority
+Sole ownership of product architecture, frontend and backend, workflows, testing, deployment, and ongoing delivery.
 
-### GoTryOne
-Booking and trial management platform with AI conversation chatbot, QuickBooks and Stripe integration.
-Tech: NextJS, Firebase, Algolia, Zustand, Stripe, QuickBooks
-Live: https://gotryone.com
+### Art By MIO
+Sole development of user-facing features, backend functionality, data handling, and ongoing improvements.
 
-### UTMSIR (Final Year Project)
-AI-enhanced web solution for international student accommodation with automated room assignments using AI recommendation engine.
-Tech: MongoDB, Express, React, Node.js, Python, AI Recommendation
+### FDG Workspace
+Content calendar and social workspace covering drafting, scheduling, approvals, channel publishing, automations, and production on one calendar.
 
-### Chatoo
-Real-time messaging application bridging complex backend with seamless frontend design.
-Tech: MongoDB, Express, React, Node.js
-
-### Food Bazaar App
-Cross-platform mobile app for micro-restaurant food delivery.
-Tech: Flutter, Dart, Mobile Development
-
-### N8N Automation Projects
-- QuickBooks invoice automation with webhooks
-- Calendly scheduling event automation
-- AI pipeline for audit report processing (GPT-4)
-- Slack lead capture and routing automation
-
-### Client Portfolio Websites
-- Zack Thompson Portfolio: https://zackthompson.com
-- Joe Greco Portfolio: https://meetjoegreco.com
-- GRN Shoreline Website (for founder Matthew Curran)
-
-## Services Offered
-
-- AI-powered application development (chatbots, recommendation systems, NLP)
-- Full-stack web application development (React, Next.js, NestJS)
-- Business process automation (N8N, webhooks, integrations)
-- CRM system development and customization
-- Cloud deployment and DevOps (AWS, Alibaba Cloud, Firebase)
-- Mobile app development (Flutter, React Native)
-- Portfolio and landing page design for businesses
-- AI consulting and integration
-
-## Keywords
-
-Osama Abdelnasser, Osama Abdelhameed, AI developer, fullstack developer, full stack engineer, AI specialist, software engineer, AI automation, N8N automation, NestJS developer, React developer, Next.js developer, GPT-4 integration, AI chatbot developer, CRM developer, microservices architect, cloud engineer, DevOps, freelance developer, hire AI engineer, Bali developer, Egyptian developer, Malaysia UTM graduate, LangGraph, RASA chatbot, PostgreSQL, real-time applications, socket.io, serverless, AWS Lambda, process automation, business automation, lead generation automation, AI pipeline, computer vision, machine learning engineer
+### Mind Step Tutor
+Independent B2C and C2C platform connecting students with private tutors. Mar 2026 to Present.
 
 ## Contact
 
-Available for technical partnerships, AI-driven projects, and full-stack engineering work.
-Portfolio: Built with Next.js & Three.js
+- Site: https://osamaabdelnasser.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/osama-abdelhameed/
+- GitHub: https://github.com/OsamaAbdelhameed
+- Email: osamaabdelhameed41@gmail.com

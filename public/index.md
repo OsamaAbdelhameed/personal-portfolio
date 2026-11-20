@@ -1,23 +1,21 @@
 ---
-title: Osama Abdelnasser | AI Fullstack Developer & Software Engineer
-description: Full Stack Software Engineer & AI Specialist with 4+ years of experience in AI automation, frontend, backend, and DevOps. Expert in building AI-driven CRM systems, chatbots, and scalable microservices.
-keywords: Osama Abdelnasser, Osama Abdelhameed, AI developer, fullstack developer, full stack engineer, AI specialist, software engineer, NestJS, React, Next.js, GPT-4, AI chatbot, CRM development, N8N automation, microservices, cloud engineering, DevOps, LangGraph, RASA, PostgreSQL, machine learning
+title: Osama Abdelnasser | AI Full Stack Software Engineer
+description: AI full stack software engineer and sole developer of Review Revolution, Daily Authority, Art By MIO, and FDG Workspace at Frequency Digital Group.
+keywords: Osama Abdelnasser, AI full stack, Frequency Digital Group, Review Revolution, Daily Authority, Art By MIO, FDG Workspace, NestJS, React, Next.js
 author: Osama Abdelnasser
 ---
 
 # Osama Abdelnasser
 
-**Full Stack Software Engineer & AI Specialist**
+**AI Full Stack Software Engineer**
 
-4+ years of hands-on experience building AI-driven solutions, scalable microservices, and high-performance web applications. Currently based in Bali, Indonesia.
+Building complex SaaS products from architecture to delivery. Based in Selangor, Malaysia.
 
 ---
 
 ## About
 
-Highly skilled Full Stack Software Engineer with deep expertise in AI-powered application development. Led the development of scalable microservices, real-time communication features, and AI chatbot integrations for enterprise clients. Strong academic foundation with a 3.92 CGPA from Universiti Teknologi Malaysia (UTM).
-
-Originally from Egypt, with professional experience spanning Singapore, Malaysia, Seattle (USA), and the United Arab Emirates.
+I am a full stack software engineer with experience across frontend development, backend architecture, AI-enabled product functionality, workflow automation, and mobile applications. At Frequency Digital Group, I am the sole developer of four distinct products. I graduated from Universiti Teknologi Malaysia with a BSc in Software Engineering and a CGPA of 3.92.
 
 ---
 
@@ -38,13 +36,13 @@ Originally from Egypt, with professional experience spanning Singapore, Malaysia
 
 ## Work Experience
 
-### Founder - Mind Step Tutor
-**Mar 2026 - Present | United Arab Emirates**
+### Sole AI Full Stack Developer - Frequency Digital Group
+**Jun 2026 – Present | Remote**
 
-Building a B2C and C2C platform that connects students with private tutors, organizing the tutoring ecosystem with modern platform architecture.
+Sole developer for Review Revolution, Daily Authority, Art By MIO, and FDG Workspace.
 
-### AI FullStack Software Engineer - Salesmrkt
-**Sept 2025 - Mar 2026 | Seattle, WA**
+### Full Stack Software Engineer - Salesmrkt
+**Sep 2025 – Mar 2026 | Seattle, USA (Remote)**
 
 - Developed AI chatting system with recommendations and in-depth search (1.5s response using Gemini)
 - Converted React project to Next.js for enhanced security and flexibility
@@ -64,8 +62,8 @@ Building a B2C and C2C platform that connects students with private tutors, orga
 - Built comprehensive reporting dashboards and lead management automation
 - Developed serverless crawler for automatic GPT Assistant vector store updates
 
-### Software Engineer Intern - QuickDesk
-**May 2023 - Dec 2023 | Kuala Lumpur, Malaysia**
+### Software Engineer Intern - Engages AI
+**May 2023 – Dec 2023 | Malaysia (Hybrid)**
 
 - Contributed to CRM web application with React frontend and NestJS backend
 - Developed AI chatbots using RASA framework
@@ -79,7 +77,26 @@ Building a B2C and C2C platform that connects students with private tutors, orga
 
 ---
 
-## Featured Projects
+## Featured Work
+
+### Review Revolution
+Independently developed a multi-module SaaS platform covering customer feedback, reputation operations, automated content workflows, analytics, and management dashboards.
+
+### Daily Authority
+Independently owned product architecture, frontend and backend implementation, application workflows, testing, deployment, and ongoing delivery.
+
+### Art By MIO
+Solely developed and maintained user-facing application features, backend functionality, data handling, and ongoing product improvements.
+
+### FDG Workspace
+Independently owned product architecture, frontend and backend implementation, and workflows for content creation, scheduling, approvals, channel publishing, automations, and production on one calendar.
+
+**Live:** [workspace.frequencydigital.group](https://workspace.frequencydigital.group/)
+
+### Mind Step Tutor
+Independent B2C and C2C platform connecting students with private tutors. Mar 2026 to Present. Not an employment role.
+
+## Selected Projects
 
 ### Engages AI - AI-Powered CRM Platform
 A comprehensive CRM and AI-powered chatbot platform with real-time messaging, automated contact grouping for broadcasts, complex lead management workflows, and reporting dashboards.
@@ -143,14 +160,16 @@ Professional portfolio and company websites built with modern web technologies:
 
 ## Education
 
-**Bachelor of Science in Software Engineering**  
-Universiti Teknologi Malaysia (UTM) | CGPA: 3.92
+**Bachelor of Computer Science (Software Engineering)**  
+Universiti Teknologi Malaysia | Mar 2020 – Feb 2024 | CGPA: 3.92
+
+**Certifications:** Web Development Nanodegree (Udacity); Applied Data Science with Python (Cognitive Class.ai)
 
 ---
 
 ## Global Journey
 
-Egypt (Origin) → Saudi Arabia (Early Years) → Malaysia (Education & Career Start) → Indonesia (Current Base)
+Egypt (Origin) → Saudi Arabia (Early Years) → Malaysia (Education, career, and current base)
 
 **Languages Spoken:** Arabic (Native), English (Professional), Indonesian (Beginner)
 

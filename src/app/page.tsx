@@ -5,7 +5,8 @@ import Experience3D from "@/components/Experience3D";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import About from "@/components/About";
-import Projects from "@/components/Projects";
+import Projects, { FeaturedWork } from "@/components/Projects";
+import Education from "@/components/Education";
 import Testimonials from "@/components/Testimonials";
 import Navbar from "@/components/Navbar";
 import { useI18n } from "@/lib/translations-context";
@@ -57,24 +58,13 @@ export default function Home() {
       <Navbar />
       <Experience3D />
       
-      {/* Hero Section */}
       <Hero />
-
-      {/* About Section */}
-      <About />
-
-      {/* Work Experience Section */}
+      <FeaturedWork />
       <WorkExperience />
-
-      {/* Skills Section */}
+      <Projects />
       <Skills />
-
-      {/* Projects Section */}
-      <div id="projects">
-        <Projects />
-      </div>
-
-      {/* Testimonials Section */}
+      <Education />
+      <About />
       <Testimonials />
 
       {/* Contact Section */}

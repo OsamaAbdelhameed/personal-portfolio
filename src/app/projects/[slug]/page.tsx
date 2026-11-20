@@ -74,9 +74,29 @@ export default function ProjectPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="gradient-text" style={{ fontSize: "clamp(3rem, 8vw, 5rem)", marginBottom: "20px" }}>
+            <h1 className="gradient-text" style={{ fontSize: "clamp(3rem, 8vw, 5rem)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+              {project.icon && (
+                <img
+                  src={project.icon}
+                  alt=""
+                  style={{
+                    width: "64px",
+                    height: "64px",
+                    objectFit: "contain",
+                    borderRadius: "16px",
+                    background: "rgba(255,255,255,0.95)",
+                    flexShrink: 0,
+                  }}
+                />
+              )}
               {project.title}
             </h1>
+            {project.organization && (
+              <p style={{ color: "var(--accent-primary)", marginBottom: "8px" }}>{project.organization}</p>
+            )}
+            {project.role && (
+              <p style={{ color: "rgba(255,255,255,0.7)", marginBottom: "20px" }}>{project.role}</p>
+            )}
             <p style={{ fontSize: "1.2rem", color: "rgba(255,255,255,0.6)", marginBottom: "40px", lineHeight: "1.8" }}>
               {project.longDescription}
             </p>

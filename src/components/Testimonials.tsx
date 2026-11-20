@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "Ismail AL.Mahdy",
     role: "Team Lead Engineer at Engages.ai",
-    text: "I’ve had the pleasure of managing Osama directly during his time at Engages.ai, and I can confidently say he is one of the most driven and reliable engineers I’ve worked with. Osama played a pivotal role in building and scaling our AI-powered CRM chat system from the ground up, contributing across the stack—from frontend interfaces using React and MUI to backend microservices with NestJS, PostgreSQL, and Redis....",
+    text: "I've had the pleasure of managing Osama directly during his time at Engages.ai, and I can confidently say he is one of the most driven and reliable engineers I've worked with. Osama played a pivotal role in building and scaling our AI-powered CRM chat system from the ground up, contributing across the stack: from frontend interfaces using React and MUI to backend microservices with NestJS, PostgreSQL, and Redis.",
     image: "/ismail.jpeg"
   }
 ];

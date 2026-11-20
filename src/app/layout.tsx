@@ -13,25 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Osama Abdelnasser | AI Fullstack Developer",
-  description: "4 years of working experience in AI Automation, Frontend, Backend and DevOps",
-  keywords: ["AI", "Automation", "Frontend", "Backend", "DevOps", "Osama Abdelnasser", "Software Engineer", "AI Specialist"],
+  title: "Osama Abdelnasser | AI Full Stack Software Engineer",
+  description: "AI full stack software engineer and sole developer of Review Revolution, Daily Authority, Art By MIO, and FDG Workspace at Frequency Digital Group.",
+  keywords: ["AI", "Full Stack", "Osama Abdelnasser", "Software Engineer", "Frequency Digital Group", "Review Revolution"],
   authors: [{ name: "Osama Abdelnasser" }],
   creator: "Osama Abdelnasser",
   publisher: "Osama Abdelnasser",
+  metadataBase: new URL("https://osamaabdelnasser.netlify.app"),
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Osama Abdelnasser | AI Fullstack Developer",
-    description: "4 years of working experience in AI Automation, Frontend, Backend and DevOps",
+    title: "Osama Abdelnasser | AI Full Stack Software Engineer",
+    description: "Building complex SaaS products from architecture to delivery. Sole AI full stack developer at Frequency Digital Group.",
     type: "website",
     locale: "en_US",
     siteName: "Osama Abdelnasser",
+    url: "https://osamaabdelnasser.netlify.app",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Osama Abdelnasser | AI Fullstack Developer",
-    description: "4 years of working experience in AI Automation, Frontend, Backend and DevOps",
+    title: "Osama Abdelnasser | AI Full Stack Software Engineer",
+    description: "Building complex SaaS products from architecture to delivery.",
     creator: "@OsamaAbdelnasser",
-    images: ["/og-image.png"],
   },
   icons: {
     icon: "/osama.jpg"

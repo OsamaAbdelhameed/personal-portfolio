@@ -7,16 +7,22 @@ export type Language = 'en' | 'ar' | 'es' | 'de' | 'ru' | 'fr';
 interface Translations {
   nav: {
     home: string;
-    about: string;
+    work: string;
+    experience: string;
     projects: string;
+    skills: string;
+    education: string;
+    about: string;
     contact: string;
     resume: string;
   };
   hero: {
     location: string;
     title: string;
+    headline: string;
     description: string;
     cta_projects: string;
+    cta_resume: string;
     cta_contact: string;
   };
   about: {
@@ -49,14 +55,15 @@ interface Translations {
     title: string;
     subtitle: string;
     categories: {
-      languages: string;
       frontend: string;
       backend: string;
+      data: string;
       ai: string;
-      db: string;
-      devops: string;
+      cloud: string;
+      observability: string;
+      mobile: string;
+      commerce: string;
       tools: string;
-      core: string;
     };
   };
   projects: {
@@ -72,6 +79,10 @@ interface Translations {
       slug: string;
       desc: string;
     }>;
+    featuredTitle: string;
+    selectedTitle: string;
+    independentTitle: string;
+    caseStudy: string;
     items: Array<{
       slug: string;
       title: string;
@@ -79,12 +90,31 @@ interface Translations {
       longDescription: string;
       tech: string[];
       liveUrl?: string;
-      videoUrl?: string; // YouTube ID
+      videoUrl?: string;
       category?: string;
+      featured?: boolean;
+      organization?: string;
+      role?: string;
+      productCategory?: string;
+      achievements?: string[];
+      ctaLabel?: string;
+      icon?: string;
       images?: Array<{
         src: string;
         desc: string;
       }>;
+    }>;
+  };
+  education: {
+    title: string;
+    degree: string;
+    school: string;
+    period: string;
+    cgpa: string;
+    certificationsTitle: string;
+    certifications: Array<{
+      name: string;
+      issuer: string;
     }>;
   };
   experience: {
@@ -113,15 +143,23 @@ interface Translations {
 
 const translations: Record<Language, Translations> = {
   en: {
-    nav: { home: "Home", about: "About", projects: "Projects", contact: "Contact", resume: "Resume" },
-    hero: { location: "Denpasar, Bali, Indonesia", title: "Full Stack Software Engineer & AI Specialist", description: "Crafting scalable AI-driven solutions and high-performance web applications.", cta_projects: "View Projects", cta_contact: "Contact Me" },
+    nav: { home: "Home", work: "Work", experience: "Experience", projects: "Projects", skills: "Skills", education: "Education", about: "About", contact: "Contact", resume: "Resume" },
+    hero: {
+      location: "Selangor, Malaysia",
+      title: "AI Full Stack Software Engineer",
+      headline: "Building complex SaaS products from architecture to delivery.",
+      description: "I independently develop frontend applications, backend systems, and AI-enabled workflows, combining product thinking with hands-on engineering. My recent work includes four software projects at Frequency Digital Group, alongside prior experience with CRM platforms, real-time applications, and scalable services.",
+      cta_projects: "Explore My Work",
+      cta_resume: "Download Resume",
+      cta_contact: "Get in Touch"
+    },
     about: {
       title: "About Me",
-      subtitle: "Full Stack Engineer with a passion for AI and scalable systems",
+      subtitle: "Full product ownership across frontend, backend, and AI-enabled products",
       bio_title: "Professional Summary",
-      bio_p1: "Highly skilled Full Stack Software Engineer with hands-on experience building AI-driven CRM systems.",
-      bio_p2: "Led the development of scalable microservices, real-time features, and AI chatbot integrations.",
-      bio_p3: "Strong foundation in software engineering with a 3.92 CGPA from Universiti Teknologi Malaysia.",
+      bio_p1: "I am a full stack software engineer with experience across frontend development, backend architecture, AI-enabled product functionality, workflow automation, and mobile applications.",
+      bio_p2: "At Frequency Digital Group, I am the sole developer of four distinct products, with responsibility spanning application architecture, product implementation, and ongoing improvements.",
+      bio_p3: "My previous roles involved CRM platforms, real-time systems, microservices, data workflows, and reporting dashboards. I graduated from Universiti Teknologi Malaysia with a BSc in Software Engineering and a CGPA of 3.92.",
       stats: {
         cgpa: "3.92 CGPA",
         exp: "Years Experience",
@@ -132,8 +170,7 @@ const translations: Record<Language, Translations> = {
       journey: [
         { country: "Egypt", countryCode: "EG", role: "Origin" },
         { country: "Saudi Arabia", countryCode: "SA", role: "Early Years" },
-        { country: "Malaysia", countryCode: "MY", role: "Education & Career Start" },
-        { country: "Indonesia", countryCode: "ID", role: "Current Base" }
+        { country: "Malaysia", countryCode: "MY", role: "Education, career, and current base" }
       ],
       languages_title: "Languages",
       languages: [
@@ -143,31 +180,149 @@ const translations: Record<Language, Translations> = {
       ]
     },
     skills: {
-      title: "Tech Arsenal",
-      subtitle: "A comprehensive toolkit for building modern, scalable applications",
+      title: "Skills",
+      subtitle: "Engineering competencies grouped by specialty",
       categories: {
-        languages: "Languages", frontend: "Frontend", backend: "Backend", ai: "AI & ML", db: "Databases", devops: "DevOps & Cloud", tools: "Tools & Platforms", core: "Core Concepts"
+        frontend: "Frontend",
+        backend: "Backend",
+        data: "Data and real-time",
+        ai: "AI and automation",
+        cloud: "Cloud and delivery",
+        observability: "Observability",
+        mobile: "Mobile",
+        commerce: "Commerce and business systems",
+        tools: "Tools"
       }
     },
     projects: {
-      title: "Featured Projects",
+      title: "Featured Work",
+      featuredTitle: "Frequency Digital Group",
+      selectedTitle: "Selected Work",
+      independentTitle: "Independent Projects",
       moreCategories: "More Categories",
       learnMore: "Learn More",
+      caseStudy: "Case Study",
       viewProjects: "View Projects →",
       backToProjects: "← Back to Projects",
       categoryTitles: {
         "n8n-automations": "N8N Automations",
         "university-projects": "University Projects",
         "client-portfolios": "Client Portfolios",
+        "selected-work": "Selected Work",
+        "independent-projects": "Independent Projects",
       },
       categories: [
+        { title: "Selected Work", icon: "🧩", slug: "selected-work", desc: "CRM, sales, and product work from earlier roles" },
+        { title: "Independent Projects", icon: "🚀", slug: "independent-projects", desc: "Solo products built outside employment" },
         { title: "N8N Automations", icon: "🤖", slug: "n8n-automations", desc: "Automated workflows and integrations" },
         { title: "University Projects", icon: "🎓", slug: "university-projects", desc: "Academic research and assignments" },
         { title: "Client Portfolios", icon: "💼", slug: "client-portfolios", desc: "Portfolio websites made for customers" }
       ],
       items: [
         {
+          slug: "review-revolution",
+          title: "Review Revolution",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Sole full stack developer",
+          productCategory: "AI-powered SaaS, customer experience, reputation management",
+          description: "Independently developed a multi-module SaaS platform covering customer feedback, reputation operations, automated content workflows, analytics, and management dashboards, with ownership of frontend experiences, backend architecture, and AI-enabled functionality.",
+          longDescription: "Designed frontend experiences, backend services, data models, and business workflows for a customer feedback and reputation intelligence platform. The product covers configurable feedback experiences, business profile management, AI-assisted workflows, automated publishing, analytics, and executive reporting.",
+          achievements: [
+            "Owns frontend, backend architecture, and AI-enabled functionality as the sole developer.",
+            "Connects configurable feedback journeys with administration, analytics, and automation modules in one SaaS application."
+          ],
+          tech: ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"],
+          ctaLabel: "Case Study",
+          liveUrl: "https://reviewrevolution.ai",
+          icon: "/review-revolution/icon.png",
+          images: [
+            { src: "/review-revolution/homepage.png", desc: "Review Revolution homepage" },
+            { src: "/review-revolution/features.png", desc: "Review Revolution reputation growth features" }
+          ]
+        },
+        {
+          slug: "daily-authority",
+          title: "Daily Authority",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Sole full stack developer",
+          productCategory: "Content and visibility product",
+          description: "Independently owned product architecture, frontend and backend implementation, and publishing workflows for Review Revolution's content and visibility product.",
+          longDescription: "Independently owned product architecture, frontend and backend implementation, application workflows, testing, deployment, and ongoing delivery. RR Daily Authority is the content and visibility product from Review Revolution. It plans a month of useful pages, then publishes one every day on a site the business owns so search engines and AI assistants have something real to quote.",
+          achievements: [
+            "Sole developer from architecture through deployment.",
+            "Owns frontend, backend, workflows, testing, and ongoing delivery."
+          ],
+          tech: ["Full stack", "Product architecture", "Testing", "Deployment"],
+          ctaLabel: "Case Study",
+          liveUrl: "https://authority.reviewrevolution.ai",
+          icon: "/daily-authority/icon.png",
+          images: [
+            { src: "/daily-authority/homepage.png", desc: "RR Daily Authority homepage" }
+          ]
+        },
+        {
+          slug: "art-by-mio",
+          title: "Art By MIO",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Sole full stack developer",
+          productCategory: "Cultural platform",
+          description: "Solely developed and maintained user-facing application features, backend functionality, data handling, and ongoing product improvements for Art By MIO, a membership site covering people, places, and ideas shaping culture across Asia.",
+          longDescription: "Solely developed and maintained user-facing application features, backend functionality, data handling, and ongoing product improvements. Art By MIO is a cultural platform with radar, experiences, magazine, and membership surfaces.",
+          achievements: [
+            "Sole developer of user-facing features and backend functionality.",
+            "Owns data handling and ongoing product improvements."
+          ],
+          tech: ["Full stack", "UI", "Backend", "Data handling"],
+          ctaLabel: "Case Study",
+          liveUrl: "https://artbymio.com",
+          icon: "/art-by-mio/icon.png",
+          images: [
+            { src: "/art-by-mio/homepage.png", desc: "Art By MIO homepage" }
+          ]
+        },
+        {
+          slug: "fdg-workspace",
+          title: "FDG Workspace",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Sole full stack developer",
+          productCategory: "Content calendar and social workspace",
+          description: "Independently owned product architecture, frontend and backend implementation, and workflows for FDG Workspace, covering content creation, scheduling, approvals, channel publishing, automations, and video production on one calendar.",
+          longDescription: "Independently owned product architecture, frontend and backend implementation, application workflows, testing, deployment, and ongoing delivery. FDG Workspace is the Frequency Digital Group workspace for client work: draft posts and media, run a smart scheduler across connected social channels, collect sign-off on preview links, connect APIs and internal tools, and keep shooting and editing aligned with the same publishing calendar.",
+          achievements: [
+            "Sole developer from architecture through deployment.",
+            "Connects content, scheduling, approvals, automations, and production in one workspace."
+          ],
+          tech: ["Full stack", "Product architecture", "APIs", "Workflows"],
+          ctaLabel: "Case Study",
+          liveUrl: "https://workspace.frequencydigital.group/",
+          icon: "/fdg-workspace/icon.png",
+          images: [
+            { src: "/fdg-workspace/homepage.png", desc: "FDG Workspace homepage" }
+          ]
+        },
+        {
+          slug: "mind-step-tutor",
+          title: "Mind Step Tutor",
+          category: "independent-projects",
+          organization: "Independent",
+          role: "Independent solo project",
+          productCategory: "Education platform",
+          description: "Independently developing a B2C and C2C platform connecting students with private tutors. Mar 2026 to Present.",
+          longDescription: "Independent solo project (Mar 2026 to Present). A B2C and C2C platform connecting students with private tutors. This is not an employment role.",
+          achievements: [
+            "Independent product, not a company employment role.",
+            "Designs the student and tutor relationship across B2C and C2C flows."
+          ],
+          tech: ["Product architecture", "Full stack"],
+          ctaLabel: "Case Study"
+        },
+        {
           slug: "engages-ai",
+          category: "selected-work",
           title: "Engages AI",
           description: "Built a CRM chat application with AI chatbot capabilities, featuring real-time messaging and scalable microservices.",
           longDescription: "Led the development of a comprehensive CRM and AI-powered chatbot platform. Implemented real-time communication features, automated contact grouping for broadcasts, and complex lead management workflows. Migrated frontend to Vite for 50% faster builds and built out reporting dashboards for data-driven insights.",
@@ -179,6 +334,7 @@ const translations: Record<Language, Translations> = {
         {
           slug: "salesmrkt",
           title: "Salesmrkt",
+          category: "selected-work",
           description: "Developed a frontend UI components for sales and service providers, optimizing SEO and user experience.",
           longDescription: "Core developer for the Salesmrkt ecosystem, focusing on automating the sales funnel for service providers. Developed centralized lead management tools and client engagement features that streamlined operations for hundreds of users.",
           tech: ["React", "Shopify", "N8N", "Calendly"],
@@ -188,6 +344,7 @@ const translations: Record<Language, Translations> = {
         {
           slug: "gotryone",
           title: "GoTryOne",
+          category: "selected-work",
           description: "A specialized platform for service providers to manage bookings and trials efficiently.",
           longDescription: "Built a specialized booking and trial management platform within the Salesbox ecosystem. Integrated with QuickBooks and Stripe for seamless financial operations and used Algolia for high-performance search capabilities.",
           tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
@@ -244,7 +401,7 @@ const translations: Record<Language, Translations> = {
           slug: "calendly-n8n",
           title: "Calendly N8N Automation",
           description: "Automated workflow triggered by Calendly events to seamlessly manage bookings and synchronize data.",
-          longDescription: "This N8N automation integrates directly with Calendly. It listens for scheduling events and automatically processes them—handling appointments, sending necessary notifications, and updating records without any manual intervention.",
+          longDescription: "This N8N automation integrates directly with Calendly. It listens for scheduling events and automatically processes them: handling appointments, sending necessary notifications, and updating records without any manual intervention.",
           tech: ["N8N", "Calendly", "Webhooks", "Automation"],
           category: "n8n-automations",
           images: [
@@ -360,65 +517,65 @@ const translations: Record<Language, Translations> = {
         }
       ]
     },
+    education: {
+      title: "Education and Certifications",
+      degree: "Bachelor of Computer Science (Software Engineering)",
+      school: "Universiti Teknologi Malaysia",
+      period: "Mar 2020 – Feb 2024",
+      cgpa: "CGPA: 3.92",
+      certificationsTitle: "Certifications",
+      certifications: [
+        { name: "Web Development Nanodegree", issuer: "Udacity" },
+        { name: "Applied Data Science with Python", issuer: "Cognitive Class.ai" }
+      ]
+    },
     experience: {
       title: "Work Experience",
       items: [
         {
-          "company": "Mind Step Tutor",
-          "role": "Founder",
-          "period": "Mar 2026 – Present",
-          "location": "United Arab Emirates",
+          "company": "Frequency Digital Group",
+          "role": "Sole AI Full Stack Developer",
+          "period": "Jun 2026 – Present",
+          "location": "Remote",
           "responsibilities": [
-            "Organizing the relationship between Students and Private Tutors in a B2C and C2C platform."
+            "Sole developer for Review Revolution, Daily Authority, Art By MIO, and FDG Workspace under a Hong Kong-registered company.",
+            "Owns application architecture, frontend and backend implementation, and ongoing product improvements."
           ],
           "tech": [
-            "Business Strategy",
-            "Platform Architecture"
+            "Next.js",
+            "TypeScript",
+            "Backend APIs",
+            "PostgreSQL",
+            "AI workflows"
           ]
         },
         {
           "company": "Salesmrkt",
-          "role": "AI FullStack Software Engineer",
-          "period": "Sept 2025 – Mar 2026",
-          "location": "Seattle, WA",
+          "role": "Full Stack Software Engineer",
+          "period": "Sep 2025 – Mar 2026",
+          "location": "Seattle, USA (Remote)",
           "responsibilities": [
-            "Converted a React project to NextJS for enhanced security and flexibility.",
-            "Developed an AI chatting system with recommendations and in-depth search, responding in 1.5s using Gemini.",
-            "Engaged directly with clients for update requests and technical support.",
-            "Updated Shopify store with new template UI and configurations.",
-            "Managed and developed features for service providers: Salesbox, Salesmrkt, and GoTryOne using NextJS, Tailwind, Firebase, Algolia, and Zustand.",
-            "Utilized QuickBooks and Stripe to handle complex payments and invoicing.",
-            "Used N8N to handle complex process automation outside the main system."
+            "Built and enhanced web applications and AI-enabled chat functionality, including a migration from React to Next.js.",
+            "Delivered frontend and backend features, business workflows, e-commerce updates, payments, and cloud deployments.",
+            "Developed an AI chatting system with recommendations and in-depth search, responding in 1.5s using Gemini."
           ],
           "tech": [
-            "NextJS",
-            "Tailwind",
+            "Next.js",
+            "Tailwind CSS",
             "Firebase",
-            "Algolia",
-            "Zustand",
-            "QuickBooks",
+            "Shopify",
             "Stripe",
-            "N8N"
+            "n8n"
           ]
         },
         {
           "company": "Engages AI",
-          "role": "Fullstack Software Engineer",
+          "role": "Full Stack Software Engineer",
           "period": "Jan 2024 – Aug 2025",
-          "location": "Singapore",
+          "location": "Singapore (Remote)",
           "responsibilities": [
-            "Developed a full-featured CRM chat application with integrated AI chatbot capabilities.",
-            "Enhanced Frontend features using MUI, React, Redux, socket.io, RabbitMQ, and custom web widgets.",
-            "Replaced Webpack with Vite in the Frontend, achieving 50% faster build times.",
-            "Built scalable backend microservices with NestJS, leveraging PostgreSQL, Redis, and RabbitMQ.",
-            "Integrated advanced AI components: Python, RASA models, GPT-4, GPT assistants, and LangGraph.",
-            "Managed cloud deployment on Alibaba Ubuntu instances and serverless AWS Lambda functions.",
-            "Developed comprehensive reporting dashboards and automation workflows for lead management.",
-            "Implemented contact grouping and broadcast messaging systems.",
-            "Optimized backend performance by migrating logic to database functions and materialized views.",
-            "Used PeerDB (CDC) for real-time synchronization between multiple data sources.",
-            "Developed a serverless crawler function to automatically update the GPT assistant vector store.",
-            "Ensured code quality and reliability through unit testing with Jest."
+            "Developed CRM and real-time chat capabilities, backend microservices, AI-assisted chat functionality, data workflows, and reporting dashboards.",
+            "Worked across frontend, backend, database design, automation, and production deployment."
           ],
           "tech": [
             "NestJS",
@@ -426,83 +583,60 @@ const translations: Record<Language, Translations> = {
             "PostgreSQL",
             "Redis",
             "RabbitMQ",
-            "AWS Lambda",
-            "GPT-4",
             "LangGraph",
-            "PeerDB",
-            "socket.io"
+            "Rasa"
           ]
         },
         {
-          "company": "QuickDesk",
+          "company": "Engages AI",
           "role": "Software Engineer Intern",
           "period": "May 2023 – Dec 2023",
-          "location": "WP, Kuala Lumpur",
+          "location": "Malaysia (Hybrid)",
           "responsibilities": [
-            "Contributed to CRM web application development; developed frontend in React.",
-            "Implemented backend using NestJS, PostgreSQL, Redis, and Alibaba ChatApp.",
-            "Developed AI chatbots using the Rasa framework."
+            "Contributed to the Quickdesk CRM platform by building and enhancing its React frontend.",
+            "Implemented backend services and AI chatbot capabilities for the application."
           ],
           "tech": [
             "React",
             "NestJS",
             "PostgreSQL",
-            "Redis",
-            "Rasa",
-            "Alibaba ChatApp"
+            "Rasa"
           ]
         },
         {
           "company": "Universiti Sains Islam Malaysia",
           "role": "System Analyst",
           "period": "Oct 2022 – Apr 2023",
-          "location": "Nilai, Malaysia",
+          "location": "Malaysia (Remote)",
           "responsibilities": [
-            "Modernized legacy university systems by migrating from PHP and Kotlin to React and React Native.",
-            "Significantly improved system performance, maintainability, and user experience.",
-            "Supported cross-platform mobile applications for student management."
+            "Modernized legacy web and mobile interfaces by migrating to React and React Native.",
+            "Enhanced the Laravel backend to improve maintainability and support cross-platform applications."
           ],
           "tech": [
             "React",
             "React Native",
-            "PHP",
-            "Kotlin"
+            "Laravel"
           ]
         },
         {
-          "company": "Developer Student Club - UTM",
+          "company": "Google Developer Student Club, UTM",
           "role": "Technical Team Member",
           "period": "Nov 2021 – Oct 2022",
           "location": "Johor Bahru, Malaysia",
           "responsibilities": [
-            "Explored machine learning and deep learning fields in AI to learn and participate in hands-on workshops."
+            "Supported computer vision and AI chatbot workshops using Azure."
           ],
           "tech": [
             "Python",
-            "Machine Learning",
-            "Deep Learning"
-          ]
-        },
-        {
-          "company": "Freelancer.com",
-          "role": "Frontend Web Developer",
-          "period": "Nov 2021 – Nov 2021",
-          "location": "Remote",
-          "responsibilities": [
-            "Developed a weather journal website connected to a weather API using HTML forms and Express.js to facilitate interactive data requests."
-          ],
-          "tech": [
-            "HTML",
-            "Express.js",
-            "JavaScript",
-            "Weather API"
+            "Azure",
+            "Computer Vision"
           ]
         }
       ]
     },
     contact: {
-      title: "Work Together",
-      description: "Looking for a technical partner or engineer to bring your AI ideas to life? Let's connect.",
+      title: "Get in Touch",
+      description: "Open to conversations about full stack product engineering, AI-enabled workflows, and software delivery.",
       name_placeholder: "Name",
       email_placeholder: "Email",
       message_placeholder: "Message",
@@ -513,8 +647,8 @@ const translations: Record<Language, Translations> = {
     }
   },
   ar: {
-    nav: { home: "الرئيسية", about: "من أنا", projects: "المشاريع", contact: "اتصل بي", resume: "السيرة الذاتية" },
-    hero: { location: "دينباسار، بالي، إندونيسيا", title: "مهندس برمجيات و أخصائي ذكاء اصطناعي", description: "بناء حلول مدعومة بالذكاء الاصطناعي وتطبيقات ويب عالية الأداء.", cta_projects: "عرض المشاريع", cta_contact: "اتصل بي" },
+    nav: { home: "الرئيسية", work: "العمل", experience: "الخبرة", projects: "المشاريع", skills: "المهارات", education: "التعليم", about: "من أنا", contact: "اتصل بي", resume: "السيرة الذاتية" },
+    hero: { location: "Selangor, Malaysia", title: "AI Full Stack Software Engineer", headline: "بناء منتجات SaaS معقدة من الهندسة حتى التسليم.", description: "أطور بشكل مستقل تطبيقات الواجهة الأمامية وأنظمة الخلفية وسير العمل المدعومة بالذكاء الاصطناعي. يشمل عملي الأخير أربعة مشاريع برمجية في Frequency Digital Group.", cta_projects: "استكشف أعمالي", cta_resume: "تحميل السيرة", cta_contact: "تواصل معي" },
     about: {
       title: "عني",
       subtitle: "مهندس واجهات برمجية شاملة مع شغف بالذكاء الاصطناعي والأنظمة القابلة للتوسع",
@@ -532,8 +666,7 @@ const translations: Record<Language, Translations> = {
       journey: [
         { country: "مصر", countryCode: "EG", role: "الأصل" },
         { country: "المملكة العربية السعودية", countryCode: "SA", role: "السنوات الأولى" },
-        { country: "ماليزيا", countryCode: "MY", role: "بداية التعليم والمسار المهني" },
-        { country: "إندونيسيا", countryCode: "ID", role: "القاعدة الحالية" }
+        { country: "ماليزيا", countryCode: "MY", role: "التعليم والمسار المهني والقاعدة الحالية" }
       ],
       languages_title: "اللغات",
       languages: [
@@ -546,11 +679,15 @@ const translations: Record<Language, Translations> = {
       title: "ترسانة التقنيات",
       subtitle: "مجموعة أدوات شاملة لبناء تطبيقات حديثة وقابلة للتوسع",
       categories: {
-        languages: "اللغات", frontend: "الواجهة الأمامية", backend: "الواجهة الخلفية", ai: "الذكاء الاصطناعي", db: "قواعد البيانات", devops: "ديف أوبس", tools: "الأدوات والمنصات", core: "المفاهيم الأساسية"
+        frontend: "الواجهة الأمامية", backend: "الواجهة الخلفية", data: "البيانات والوقت الفعلي", ai: "الذكاء الاصطناعي والأتمتة", cloud: "السحابة والتسليم", observability: "المراقبة", mobile: "الجوال", commerce: "التجارة وأنظمة الأعمال", tools: "الأدوات"
       }
     },
     projects: {
       title: "أبرز المشاريع",
+      featuredTitle: "Frequency Digital Group",
+      selectedTitle: "Selected Work",
+      independentTitle: "Independent Projects",
+      caseStudy: "Case Study",
       moreCategories: "المزيد من الفئات",
       learnMore: "اعرف المزيد",
       viewProjects: "عرض المشاريع ←",
@@ -558,16 +695,108 @@ const translations: Record<Language, Translations> = {
       categoryTitles: {
         "n8n-automations": "أتمتة N8N",
         "university-projects": "مشاريع الجامعة",
+        "selected-work": "أعمال مختارة",
+        "independent-projects": "مشاريع مستقلة",
         "client-portfolios": "ملفات عملاء",
       },
       categories: [
+        { title: "أعمال مختارة", icon: "🧩", slug: "selected-work", desc: "أعمال سابقة في CRM والمبيعات والمنتجات" },
+        { title: "مشاريع مستقلة", icon: "🚀", slug: "independent-projects", desc: "منتجات فردية خارج التوظيف" },
         { title: "أتمتة N8N", icon: "🤖", slug: "n8n-automations", desc: "سير عمل وتكامل آلي" },
         { title: "مشاريع الجامعة", icon: "🎓", slug: "university-projects", desc: "أبحاث أكاديمية ومهام" },
         { title: "ملفات عملاء", icon: "💼", slug: "client-portfolios", desc: "مواقع محفظة تم إنشاؤها للعملاء" }
       ],
       items: [
-                    {
+                    
+        {
+          slug: "review-revolution",
+          title: "Review Revolution",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "المطور الوحيد للمنتج الكامل",
+          productCategory: "برمجيات كخدمة مدعومة بالذكاء الاصطناعي",
+          description: "طورت بشكل مستقل منصة متعددة الوحدات تغطي ملاحظات العملاء وعمليات السمعة والأتمتة والتحليلات ولوحات الإدارة.",
+          longDescription: "صممت الواجهة الأمامية والخلفية ونماذج البيانات وسير العمل لمنصة ملاحظات وذكاء السمعة.",
+          achievements: ["المطور الوحيد للواجهة الأمامية وهندسة الخلفية ووظائف الذكاء الاصطناعي.", "يربط رحلات الملاحظات مع الإدارة والتحليلات والأتمتة في منتج واحد."],
+          tech: ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"],
+          ctaLabel: "دراسة حالة",
+          liveUrl: "https://reviewrevolution.ai",
+          icon: "/review-revolution/icon.png",
+          images: [
+            { src: "/review-revolution/homepage.png", desc: "Review Revolution homepage" },
+            { src: "/review-revolution/features.png", desc: "Review Revolution reputation growth features" }
+          ]
+        },
+        {
+          slug: "daily-authority",
+          title: "Daily Authority",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "المطور الوحيد للمنتج الكامل",
+          productCategory: "منتج محتوى وظهور",
+          description: "ملكية مستقلة لهندسة المنتج والواجهة الأمامية والخلفية وسير النشر لمنتج المحتوى والظهور من Review Revolution.",
+          longDescription: "ملكية مستقلة لهندسة المنتج والتنفيذ والاختبار والنشر. RR Daily Authority هو منتج المحتوى والظهور من Review Revolution. يخطط لشهر من الصفحات المفيدة ثم ينشر صفحة كل يوم على موقع يملكه النشاط.",
+          achievements: ["المطور الوحيد من الهندسة حتى النشر.", "يملك الواجهة الأمامية والخلفية وسير العمل والاختبار والتسليم المستمر."],
+          tech: ["Full stack", "Product architecture", "Testing", "Deployment"],
+          ctaLabel: "دراسة حالة",
+          liveUrl: "https://authority.reviewrevolution.ai",
+          icon: "/daily-authority/icon.png",
+          images: [
+            { src: "/daily-authority/homepage.png", desc: "RR Daily Authority homepage" }
+          ]
+        },
+        {
+          slug: "art-by-mio",
+          title: "Art By MIO",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "المطور الوحيد للمنتج الكامل",
+          productCategory: "منصة ثقافية",
+          description: "طورت وصنت وحدي ميزات المستخدم ووظائف الخلفية ومعالجة البيانات وتحسينات المنتج لموقع Art By MIO.",
+          longDescription: "تطوير وصيانة فردية لميزات المستخدم والخلفية والبيانات. Art By MIO منصة ثقافية تغطي الرادار والتجارب والمجلة والعضوية.",
+          achievements: ["المطور الوحيد لميزات المستخدم ووظائف الخلفية.", "يملك معالجة البيانات وتحسينات المنتج المستمرة."],
+          tech: ["Full stack", "UI", "Backend", "Data handling"],
+          ctaLabel: "دراسة حالة",
+          liveUrl: "https://artbymio.com",
+          icon: "/art-by-mio/icon.png",
+          images: [
+            { src: "/art-by-mio/homepage.png", desc: "Art By MIO homepage" }
+          ]
+        },
+        {
+          slug: "fdg-workspace",
+          title: "FDG Workspace",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "المطور الوحيد للمنتج الكامل",
+          productCategory: "مساحة عمل للمحتوى والتقويم والنشر",
+          description: "ملكية مستقلة لهندسة المنتج والواجهة الأمامية والخلفية وسير العمل في FDG Workspace لإنشاء المحتوى والجدولة والموافقات والنشر والأتمتة والإنتاج على تقويم واحد.",
+          longDescription: "ملكية مستقلة لهندسة المنتج والتنفيذ والاختبار والنشر. FDG Workspace مساحة عمل Frequency Digital Group لعمل العملاء: صياغة المنشورات والوسائط، وجدولة ذكية عبر القنوات المتصلة، وجمع الموافقات عبر روابط المعاينة، وربط واجهات برمجية وأدوات داخلية، ومواءمة التصوير والمونتاج مع تقويم النشر.",
+          achievements: ["المطور الوحيد من الهندسة حتى النشر.", "يربط المحتوى والجدولة والموافقات والأتمتة والإنتاج في مساحة عمل واحدة."],
+          tech: ["Full stack", "Product architecture", "APIs", "Workflows"],
+          ctaLabel: "دراسة حالة",
+          liveUrl: "https://workspace.frequencydigital.group/",
+          icon: "/fdg-workspace/icon.png",
+          images: [
+            { src: "/fdg-workspace/homepage.png", desc: "FDG Workspace homepage" }
+          ]
+        },
+        {
+          slug: "mind-step-tutor",
+          title: "Mind Step Tutor",
+          category: "independent-projects",
+          organization: "Independent",
+          role: "مشروع مستقل فردي",
+          productCategory: "منصة تعليم",
+          description: "تطوير مستقل لمنصة B2C و C2C تربط الطلاب بالمدرسين الخصوصيين. Mar 2026 to Present.",
+          longDescription: "مشروع مستقل فردي (Mar 2026 to Present). هذا ليس دوراً وظيفياً.",
+          achievements: ["منتج مستقل، وليس دوراً وظيفياً.", "يصمم علاقة الطالب والمدرس عبر تدفقات B2C و C2C."],
+          tech: ["Product architecture", "Full stack"],
+          ctaLabel: "دراسة حالة"
+        },
+{
                       slug: "engages-ai",
+                      category: "selected-work",
                       title: "Engages AI",
                       description: "بناء تطبيق محادثة CRM مع قدرات روبوت الدردشة بالذكاء الاصطناعي، يتميز بالرسائل في الوقت الفعلي والخدمات المصغرة القابلة للتوسع.",
                       longDescription: "قدت تطوير منصة CRM وروبوت دردشة مدعوم بالذكاء الاصطناعي. تتضمن الميزات التواصل في الوقت الفعلي، وتجميع جهات الاتصال الآلي للبث، ومسارات عمل معقدة لإدارة العملاء المحتملين.",
@@ -578,6 +807,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "salesmrkt",
+                      category: "selected-work",
                       title: "Salesmrkt",
                       description: "تطوير ميزات لمقدمي خدمات المبيعات والخدمات، وتحسين إدارة العملاء المحتملين وتفاعل المستخدمين.",
                       longDescription: "مطور أساسي للنظام البيئي لـ Salesmrkt، مع التركيز على أتمتة مسار المبيعات لمقدمي الخدمات. تطوير أدوات مركزية لإدارة العملاء المحتملين.",
@@ -587,6 +817,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "gotryone",
+                      category: "selected-work",
                       title: "GoTryOne",
                       description: "منصة متخصصة لمقدمي الخدمات لإدارة الحجوزات والتجارب بكفاءة.",
                       longDescription: "بناء منصة متخصصة لإدارة الحجوزات والتجارب ضمن نظام Salesbox. التكامل مع QuickBooks و Stripe للعمليات المالية السلسة.",
@@ -759,143 +990,68 @@ const translations: Record<Language, Translations> = {
                     }
                   ]
     },
+    education: {
+      title: "التعليم والشهادات",
+      degree: "Bachelor of Computer Science (Software Engineering)",
+      school: "Universiti Teknologi Malaysia",
+      period: "Mar 2020 – Feb 2024",
+      cgpa: "CGPA: 3.92",
+      certificationsTitle: "الشهادات",
+      certifications: [
+        { name: "Web Development Nanodegree", issuer: "Udacity" },
+        { name: "Applied Data Science with Python", issuer: "Cognitive Class.ai" }
+      ]
+    },
     experience: {
       title: "الخبرة المهنية",
       items: [
         {
-          "company": "Mind Step Tutor",
-          "role": "مؤسس",
-          "period": "مارس 2026 – الحاضر",
-          "location": "الإمارات العربية المتحدة",
-          "responsibilities": [
-            "تنظيم العلاقة بين الطلاب والمدرسين الخصوصيين في منصة B2C و C2C."
-          ],
-          "tech": [
-            "استراتيجية الأعمال",
-            "هندسة المنصة"
-          ]
+          "company": "Frequency Digital Group",
+          "role": "Sole AI Full Stack Developer",
+          "period": "Jun 2026 – Present",
+          "location": "Remote",
+          "responsibilities": ["المطور الوحيد لـ Review Revolution و Daily Authority و Art By MIO و FDG Workspace ضمن شركة مسجلة في هونغ كونغ.", "أملك هندسة التطبيق وتنفيذ الواجهة الأمامية والخلفية وتحسينات المنتج المستمرة."],
+          "tech": ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"]
         },
         {
           "company": "Salesmrkt",
-          "role": "مهندس برمجيات ذكاء اصطناعي شامل",
-          "period": "سبتمبر 2025 – مارس 2026",
-          "location": "سياتل، واشنطن",
-          "responsibilities": [
-            "تحويل مشروع React إلى NextJS لتعزيز الأمان والمرونة.",
-            "تطوير نظام دردشة ذكاء اصطناعي بقدرة على تقديم توصيات وبحث متعمق، مع استجابة في 1.5 ثانية باستخدام Gemini.",
-            "التواصل المباشر مع العملاء لتنفيذ طلبات التحديث والدعم الفني.",
-            "تحديث متجر Shopify بقالب واجهة مستخدم وتكوينات جديدة.",
-            "إدارة وتطوير الميزات لمزودي الخدمات: Salesbox و Salesmrkt و GoTryOne باستخدام NextJS و Tailwind و Firebase و Algolia و Zustand.",
-            "استخدام QuickBooks و Stripe لمعالجة المدفوعات والفواتير المعقدة.",
-            "استخدام N8N لمعالجة أتمتة العمليات المعقدة خارج النظام الأساسي."
-          ],
-          "tech": [
-            "NextJS",
-            "Tailwind",
-            "Firebase",
-            "Algolia",
-            "Zustand",
-            "QuickBooks",
-            "Stripe",
-            "N8N"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Sep 2025 – Mar 2026",
+          "location": "Seattle, USA (Remote)",
+          "responsibilities": ["بنيت وحسّنت تطبيقات ويب ودردشة مدعومة بالذكاء الاصطناعي، بما في ذلك الانتقال من React إلى Next.js.", "قدمت ميزات الواجهة الأمامية والخلفية وسير العمل التجاري والمدفوعات والنشر السحابي.", "طورت نظام دردشة ذكاء اصطناعي مع توصيات وبحث متعمق، باستجابة 1.5s باستخدام Gemini."],
+          "tech": ["Next.js", "Tailwind CSS", "Firebase", "Shopify", "Stripe", "n8n"]
         },
         {
           "company": "Engages AI",
-          "role": "مهندس برمجيات شامل",
-          "period": "يناير 2024 – أغسطس 2025",
-          "location": "سنغافورة",
-          "responsibilities": [
-            "تطوير تطبيق محادثة CRM كامل الميزات مع قدرات روبوت دردشة متكاملة بالذكاء الاصطناعي.",
-            "تحسين ميزات الواجهة الأمامية باستخدام MUI و React و Redux و socket.io و RabbitMQ وودجات الويب.",
-            "استبدال Webpack بـ Vite في الواجهة الأمامية، مما حقق سرعة بناء أفضل بنسبة 50%.",
-            "بناء خدمات مصغرة قابلة للتوسع باستخدام NestJS، مع الاعتماد على PostgreSQL و Redis و RabbitMQ.",
-            "دمج مكونات ذكاء اصطناعي متقدمة: Python و RASA و GPT-4 و GPT Assistants و LangGraph.",
-            "إدارة النشر السحابي على مثيلات Alibaba Ubuntu ووظائف AWS Lambda السحابية.",
-            "تطوير لوحات معلومات شاملة وسير عمل أتمتة لإدارة العملاء المحتملين.",
-            "تنفيذ أنظمة تجميع جهات الاتصال ورسائل البث الجماعية.",
-            "تحسين أداء الواجهة الخلفية بنقل المنطق إلى وظائف قاعدة البيانات واللقطات المحدثة.",
-            "استخدام PeerDB (CDC) للمزامنة في الوقت الفعلي بين مصادر بيانات متعددة.",
-            "تطوير وظيفة زاحف סერۆווערלעס لتحديث مخزن المتجهات الخاص بـ GPT Assistant تلقائيًا.",
-            "ضمان جودة البرمجيات وموثوقيتها من خلال اختبارات الوحدة باستخدام Jest."
-          ],
-          "tech": [
-            "NestJS",
-            "React",
-            "PostgreSQL",
-            "Redis",
-            "RabbitMQ",
-            "AWS Lambda",
-            "GPT-4",
-            "LangGraph",
-            "PeerDB",
-            "socket.io"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Jan 2024 – Aug 2025",
+          "location": "Singapore (Remote)",
+          "responsibilities": ["طورت قدرات CRM ودردشة فورية وخدمات مصغرة ووظائف دردشة بمساعدة الذكاء الاصطناعي وسير عمل البيانات ولوحات التقارير.", "عملت عبر الواجهة الأمامية والخلفية وتصميم قواعد البيانات والأتمتة والنشر الإنتاجي."],
+          "tech": ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "LangGraph", "Rasa"]
         },
         {
-          "company": "QuickDesk",
-          "role": "متدرب مهندس برمجيات",
-          "period": "مايو 2023 – ديسمبر 2023",
-          "location": "كوالالمبور، ماليزيا",
-          "responsibilities": [
-            "المساهمة في تطوير تطبيق CRM للويب؛ تطوير الواجهة الأمامية باستخدام React.",
-            "تنفيذ الواجهة الخلفية باستخدام NestJS و PostgreSQL و Redis و Alibaba ChatApp.",
-            "تطوير روبوتات دردشة تعمل بالذكاء الاصطناعي باستخدام إطار عمل Rasa."
-          ],
-          "tech": [
-            "React",
-            "NestJS",
-            "PostgreSQL",
-            "Redis",
-            "Rasa",
-            "Alibaba ChatApp"
-          ]
+          "company": "Engages AI",
+          "role": "Software Engineer Intern",
+          "period": "May 2023 – Dec 2023",
+          "location": "Malaysia (Hybrid)",
+          "responsibilities": ["ساهمت في منصة Quickdesk CRM عبر بناء وتحسين الواجهة الأمامية بـ React.", "نفذت خدمات الخلفية وقدرات روبوت الدردشة بالذكاء الاصطناعي للتطبيق."],
+          "tech": ["React", "NestJS", "PostgreSQL", "Rasa"]
         },
         {
           "company": "Universiti Sains Islam Malaysia",
-          "role": "محلل أنظمة",
-          "period": "أكتوبر 2022 – أبريل 2023",
-          "location": "نيلاي، ماليزيا",
-          "responsibilities": [
-            "تحديث أنظمة الجامعة القديمة من خلال الانتقال من PHP و Kotlin إلى React و React Native.",
-            "تحسين أداء النظام وقابلية صيانته وتجربة المستخدم بشكل كبير.",
-            "دعم تطبيقات الهاتف المحمول عبر المنصات لإدارة الطلاب."
-          ],
-          "tech": [
-            "React",
-            "React Native",
-            "PHP",
-            "Kotlin"
-          ]
+          "role": "System Analyst",
+          "period": "Oct 2022 – Apr 2023",
+          "location": "Malaysia (Remote)",
+          "responsibilities": ["حدّثت واجهات الويب والجوال القديمة عبر الانتقال إلى React و React Native.", "حسّنت خلفية Laravel لزيادة قابلية الصيانة ودعم التطبيقات عبر المنصات."],
+          "tech": ["React", "React Native", "Laravel"]
         },
         {
-          "company": "Developer Student Club - UTM",
-          "role": "عضو الفريق التقني",
-          "period": "نوفمبر 2021 – أكتوبر 2022",
-          "location": "جوهور بهرو، ماليزيا",
-          "responsibilities": [
-            "استكشاف مجالات التعلم الآلي والتعلم العميق في الذكاء الاصطناعي للتعلم والمشاركة في ورش العمل العملية."
-          ],
-          "tech": [
-            "Python",
-            "Machine Learning",
-            "Deep Learning"
-          ]
-        },
-        {
-          "company": "Freelancer.com",
-          "role": "مطور واجهة أمامية للويب",
-          "period": "نوفمبر 2021 – نوفمبر 2021",
-          "location": "عن بعد",
-          "responsibilities": [
-            "تطوير موقع دفتر يوميات الطقس متصل بـ Weather API باستخدام نماذج HTML و Express.js لتسهيل طلبات البيانات التفاعلية."
-          ],
-          "tech": [
-            "HTML",
-            "Express.js",
-            "JavaScript",
-            "Weather API"
-          ]
+          "company": "Google Developer Student Club, UTM",
+          "role": "Technical Team Member",
+          "period": "Nov 2021 – Oct 2022",
+          "location": "Johor Bahru, Malaysia",
+          "responsibilities": ["دعمت ورش عمل الرؤية الحاسوبية وروبوتات الدردشة باستخدام Azure."],
+          "tech": ["Python", "Azure", "Computer Vision"]
         }
       ]
     },
@@ -912,8 +1068,8 @@ const translations: Record<Language, Translations> = {
     }
   },
   es: {
-    nav: { home: "Inicio", about: "Sobre mí", projects: "Proyectos", contact: "Contacto", resume: "Currículum" },
-    hero: { location: "Denpasar, Bali, Indonesia", title: "Ingeniero Full Stack y Especialista en IA", description: "Creando soluciones escalables impulsadas por IA y aplicaciones web de alto rendimiento.", cta_projects: "Ver Proyectos", cta_contact: "Contáctame" },
+    nav: { home: "Inicio", work: "Trabajo", experience: "Experiencia", projects: "Proyectos", skills: "Habilidades", education: "Educación", about: "Sobre mí", contact: "Contacto", resume: "Currículum" },
+    hero: { location: "Selangor, Malaysia", title: "AI Full Stack Software Engineer", headline: "Construyendo productos SaaS complejos desde la arquitectura hasta la entrega.", description: "Desarrollo de forma independiente frontend, backend y flujos con IA. Mi trabajo reciente incluye cuatro proyectos de software en Frequency Digital Group.", cta_projects: "Explorar mi trabajo", cta_resume: "Descargar currículum", cta_contact: "Contactar" },
     about: {
       title: "Sobre Mí",
       subtitle: "Ingeniero Full Stack con pasión por la IA y los sistemas escalables",
@@ -931,8 +1087,7 @@ const translations: Record<Language, Translations> = {
       journey: [
         { country: "Egipto", countryCode: "EG", role: "Origen" },
         { country: "Arabia Saudita", countryCode: "SA", role: "Primeros Años" },
-        { country: "Malasia", countryCode: "MY", role: "Educación e Inicio de Carrera" },
-        { country: "Indonesia", countryCode: "ID", role: "Base Actual" }
+        { country: "Malasia", countryCode: "MY", role: "Educación, carrera y base actual" }
       ],
       languages_title: "Idiomas",
       languages: [
@@ -945,11 +1100,15 @@ const translations: Record<Language, Translations> = {
       title: "Arsenal Tecnológico",
       subtitle: "Un conjunto de herramientas para crear aplicaciones modernas",
       categories: {
-        languages: "Idiomas", frontend: "Frontend", backend: "Backend", ai: "IA y ML", db: "Bases de Datos", devops: "DevOps", tools: "Herramientas", core: "Conceptos Principales"
+        frontend: "Frontend", backend: "Backend", data: "Datos y tiempo real", ai: "IA y automatización", cloud: "Nube y entrega", observability: "Observabilidad", mobile: "Móvil", commerce: "Comercio y sistemas de negocio", tools: "Herramientas"
       }
     },
     projects: {
       title: "Proyectos Destacados",
+      featuredTitle: "Frequency Digital Group",
+      selectedTitle: "Selected Work",
+      independentTitle: "Independent Projects",
+      caseStudy: "Case Study",
       moreCategories: "Más Categorías",
       learnMore: "Saber Más",
       viewProjects: "Ver Proyectos →",
@@ -957,16 +1116,108 @@ const translations: Record<Language, Translations> = {
       categoryTitles: {
         "n8n-automations": "Automatización N8N",
         "university-projects": "Proyectos Universitarios",
+        "selected-work": "Selected Work",
+        "independent-projects": "Independent Projects",
         "client-portfolios": "Portafolios de Clientes",
       },
       categories: [
+        { title: "Selected Work", icon: "🧩", slug: "selected-work", desc: "CRM, sales, and product work from earlier roles" },
+        { title: "Independent Projects", icon: "🚀", slug: "independent-projects", desc: "Solo products built outside employment" },
         { title: "Automatización N8N", icon: "🤖", slug: "n8n-automations", desc: "Flujos de trabajo e integraciones automatizadas" },
         { title: "Proyectos Universitarios", icon: "🎓", slug: "university-projects", desc: "Investigación académica y asignaciones" },
         { title: "Portafolios de Clientes", icon: "💼", slug: "client-portfolios", desc: "Sitios web de portafolio creados para clientes" }
       ],
       items: [
-                    {
+                    
+        {
+          slug: "review-revolution",
+          title: "Review Revolution",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Desarrollador full stack único",
+          productCategory: "SaaS con IA, experiencia del cliente, gestión de reputación",
+          description: "Desarrollé de forma independiente una plataforma SaaS multimódulo de comentarios, reputación, automatización, analítica y paneles.",
+          longDescription: "Diseñé frontend, backend, modelos de datos y flujos para una plataforma de comentarios e inteligencia de reputación.",
+          achievements: ["Único desarrollador del frontend, backend e IA.", "Conecta recorridos de feedback con administración, analítica y automatización."],
+          tech: ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"],
+          ctaLabel: "Caso de estudio",
+          liveUrl: "https://reviewrevolution.ai",
+          icon: "/review-revolution/icon.png",
+          images: [
+            { src: "/review-revolution/homepage.png", desc: "Review Revolution homepage" },
+            { src: "/review-revolution/features.png", desc: "Review Revolution reputation growth features" }
+          ]
+        },
+        {
+          slug: "daily-authority",
+          title: "Daily Authority",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Desarrollador full stack único",
+          productCategory: "Producto de contenido y visibilidad",
+          description: "Propiedad independiente de arquitectura, frontend, backend y flujos de publicación del producto de contenido y visibilidad de Review Revolution.",
+          longDescription: "Propiedad independiente de arquitectura, implementación, pruebas y despliegue. RR Daily Authority es el producto de contenido y visibilidad de Review Revolution. Planifica un mes de páginas útiles y publica una cada día en un sitio que posee el negocio.",
+          achievements: ["Único desarrollador desde la arquitectura hasta el despliegue.", "Posee frontend, backend, flujos, pruebas y entrega."],
+          tech: ["Full stack", "Product architecture", "Testing", "Deployment"],
+          ctaLabel: "Caso de estudio",
+          liveUrl: "https://authority.reviewrevolution.ai",
+          icon: "/daily-authority/icon.png",
+          images: [
+            { src: "/daily-authority/homepage.png", desc: "RR Daily Authority homepage" }
+          ]
+        },
+        {
+          slug: "art-by-mio",
+          title: "Art By MIO",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Desarrollador full stack único",
+          productCategory: "Plataforma cultural",
+          description: "Desarrollé y mantuve en solitario funciones de usuario, backend, datos y mejoras continuas para Art By MIO.",
+          longDescription: "Desarrollo y mantenimiento en solitario de funciones de usuario, backend y datos. Art By MIO es una plataforma cultural con radar, experiencias, revista y membresía.",
+          achievements: ["Único desarrollador de funciones de usuario y backend.", "Posee datos y mejoras continuas."],
+          tech: ["Full stack", "UI", "Backend", "Data handling"],
+          ctaLabel: "Caso de estudio",
+          liveUrl: "https://artbymio.com",
+          icon: "/art-by-mio/icon.png",
+          images: [
+            { src: "/art-by-mio/homepage.png", desc: "Art By MIO homepage" }
+          ]
+        },
+        {
+          slug: "fdg-workspace",
+          title: "FDG Workspace",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Desarrollador full stack único",
+          productCategory: "Espacio de contenido, calendario y redes",
+          description: "Propiedad independiente de arquitectura, frontend, backend y flujos de FDG Workspace para creación de contenido, programación, aprobaciones, publicación, automatizaciones y producción en un mismo calendario.",
+          longDescription: "Propiedad independiente de arquitectura, implementación, pruebas y despliegue. FDG Workspace es el espacio de Frequency Digital Group para trabajo con clientes: redactar publicaciones y medios, programar en canales sociales conectados, recoger aprobaciones con enlaces de vista previa, conectar APIs y herramientas internas, y alinear rodaje y edición con el mismo calendario de publicación.",
+          achievements: ["Único desarrollador desde la arquitectura hasta el despliegue.", "Conecta contenido, programación, aprobaciones, automatizaciones y producción en un solo espacio."],
+          tech: ["Full stack", "Product architecture", "APIs", "Workflows"],
+          ctaLabel: "Caso de estudio",
+          liveUrl: "https://workspace.frequencydigital.group/",
+          icon: "/fdg-workspace/icon.png",
+          images: [
+            { src: "/fdg-workspace/homepage.png", desc: "FDG Workspace homepage" }
+          ]
+        },
+        {
+          slug: "mind-step-tutor",
+          title: "Mind Step Tutor",
+          category: "independent-projects",
+          organization: "Independent",
+          role: "Proyecto independiente en solitario",
+          productCategory: "Plataforma educativa",
+          description: "Desarrollo independiente de una plataforma B2C y C2C que conecta estudiantes con tutores privados. Mar 2026 to Present.",
+          longDescription: "Proyecto independiente en solitario (Mar 2026 to Present). No es un rol de empleo.",
+          achievements: ["Producto independiente, no un rol de empleo.", "Diseña la relación estudiante-tutor en flujos B2C y C2C."],
+          tech: ["Product architecture", "Full stack"],
+          ctaLabel: "Caso de estudio"
+        },
+{
                       slug: "engages-ai",
+                      category: "selected-work",
                       title: "Engages AI",
                       description: "Se construyó una aplicación de chat CRM con capacidades integradas de chatbot de IA.",
                       longDescription: "Lideró el desarrollo de una plataforma CRM y un chatbot impulsado por IA. Se implementó la comunicación en tiempo real y flujos de gestión de clientes potenciales.",
@@ -977,6 +1228,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "salesmrkt",
+                      category: "selected-work",
                       title: "Salesmrkt",
                       description: "Desarrollo de componentes de interfaz de usuario frontend para proveedores de servicios y ventas.",
                       longDescription: "Desarrollador principal del ecosistema Salesmrkt, enfocado en automatizar el embudo de ventas para proveedores de servicios, con gestión centralizada de clientes potenciales.",
@@ -986,6 +1238,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "gotryone",
+                      category: "selected-work",
                       title: "GoTryOne",
                       description: "Una plataforma especializada para que los proveedores gestionen reservas eficientemente.",
                       longDescription: "Construyó una plataforma de reservas y pruebas dentro del ecosistema Salesbox, integrada con QuickBooks y Stripe.",
@@ -1157,143 +1410,68 @@ const translations: Record<Language, Translations> = {
                     }
                   ]
     },
+    education: {
+      title: "Educación y certificaciones",
+      degree: "Bachelor of Computer Science (Software Engineering)",
+      school: "Universiti Teknologi Malaysia",
+      period: "Mar 2020 – Feb 2024",
+      cgpa: "CGPA: 3.92",
+      certificationsTitle: "Certificaciones",
+      certifications: [
+        { name: "Web Development Nanodegree", issuer: "Udacity" },
+        { name: "Applied Data Science with Python", issuer: "Cognitive Class.ai" }
+      ]
+    },
     experience: {
-      title: "Experiencia Laboral",
+      title: "Experiencia laboral",
       items: [
         {
-          "company": "Mind Step Tutor",
-          "role": "Fundador",
-          "period": "Mar 2026 – Presente",
-          "location": "Emiratos Árabes Unidos",
-          "responsibilities": [
-            "Organizando la relación entre estudiantes y tutores privados en una plataforma B2C y C2C."
-          ],
-          "tech": [
-            "Estrategia de Negocios",
-            "Arquitectura de Plataformas"
-          ]
+          "company": "Frequency Digital Group",
+          "role": "Sole AI Full Stack Developer",
+          "period": "Jun 2026 – Present",
+          "location": "Remote",
+          "responsibilities": ["Único desarrollador de Review Revolution, Daily Authority, Art By MIO y FDG Workspace en una empresa registrada en Hong Kong.", "Posee arquitectura, implementación frontend y backend, y mejoras continuas."],
+          "tech": ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"]
         },
         {
           "company": "Salesmrkt",
-          "role": "Ingeniero de Software FullStack de IA",
-          "period": "Sept 2025 – Mar 2026",
-          "location": "Seattle, WA",
-          "responsibilities": [
-            "Convirtió un proyecto React a NextJS para mayor seguridad y flexibilidad.",
-            "Desarrolló un sistema de chat con IA con recomendaciones y búsqueda profunda, respondiendo en 1.5s usando Gemini.",
-            "Se relacionó directamente con clientes para solicitudes de actualización y soporte técnico.",
-            "Actualizó la tienda Shopify con una nueva interfaz de usuario y configuraciones.",
-            "Gestionó y desarrolló funciones para proveedores de servicios: Salesbox, Salesmrkt y GoTryOne usando NextJS, Tailwind, Firebase, Algolia y Zustand.",
-            "Utilizó QuickBooks y Stripe para gestionar pagos y facturación complejos.",
-            "Usó N8N para manejar la automatización de procesos complejos fuera del sistema principal."
-          ],
-          "tech": [
-            "NextJS",
-            "Tailwind",
-            "Firebase",
-            "Algolia",
-            "Zustand",
-            "QuickBooks",
-            "Stripe",
-            "N8N"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Sep 2025 – Mar 2026",
+          "location": "Seattle, USA (Remote)",
+          "responsibilities": ["Construí y mejoré aplicaciones web y chat con IA, incluida una migración de React a Next.js.", "Entregué frontend, backend, flujos de negocio, pagos y despliegues en la nube.", "Desarrollé un sistema de chat IA con recomendaciones y búsqueda, respondiendo en 1.5s con Gemini."],
+          "tech": ["Next.js", "Tailwind CSS", "Firebase", "Shopify", "Stripe", "n8n"]
         },
         {
           "company": "Engages AI",
-          "role": "Ingeniero de Software Fullstack",
-          "period": "Ene 2024 – Ago 2025",
-          "location": "Singapur",
-          "responsibilities": [
-            "Desarrolló una aplicación de chat CRM completa con capacidades integradas de chatbot de IA.",
-            "Mejoró las funciones del frontend utilizando MUI, React, Redux, socket.io, RabbitMQ y widgets web personalizados.",
-            "Reemplazó Webpack con Vite en el frontend, logrando tiempos de compilación un 50% más rápidos.",
-            "Construyó microservicios backend escalables con NestJS, aprovechando PostgreSQL, Redis y RabbitMQ.",
-            "Integró componentes de IA avanzados: Python, modelos RASA, GPT-4, asistentes GPT y LangGraph.",
-            "Gestionó el despliegue en la nube en instancias de Alibaba Ubuntu y funciones AWS Lambda sin servidor.",
-            "Desarrolló cuadros de mando de informes completos y flujos de trabajo de automatización para la gestión de leads.",
-            "Implementó sistemas de agrupación de contactos y mensajería de difusión.",
-            "Optimizó el rendimiento del backend migrando la lógica a funciones de base de datos y vistas materializadas.",
-            "Usó PeerDB (CDC) para la sincronización en tiempo real entre múltiples fuentes de datos.",
-            "Desarrolló una función de rastreador sin servidor para actualizar automáticamente el almacén de vectores del asistente GPT.",
-            "Garantizó la calidad y fiabilidad del código mediante pruebas unitarias con Jest."
-          ],
-          "tech": [
-            "NestJS",
-            "React",
-            "PostgreSQL",
-            "Redis",
-            "RabbitMQ",
-            "AWS Lambda",
-            "GPT-4",
-            "LangGraph",
-            "PeerDB",
-            "socket.io"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Jan 2024 – Aug 2025",
+          "location": "Singapore (Remote)",
+          "responsibilities": ["Desarrollé CRM y chat en tiempo real, microservicios, chat con IA, flujos de datos y paneles de informes.", "Trabajé en frontend, backend, bases de datos, automatización y despliegue en producción."],
+          "tech": ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "LangGraph", "Rasa"]
         },
         {
-          "company": "QuickDesk",
-          "role": "Pasante de Ingeniero de Software",
-          "period": "Mayo 2023 – Dic 2023",
-          "location": "WP, Kuala Lumpur",
-          "responsibilities": [
-            "Contribuyó al desarrollo de aplicaciones web CRM; desarrolló frontend en React.",
-            "Implementó el backend utilizando NestJS, PostgreSQL, Redis y Alibaba ChatApp.",
-            "Desarrolló chatbots de IA utilizando el marco Rasa."
-          ],
-          "tech": [
-            "React",
-            "NestJS",
-            "PostgreSQL",
-            "Redis",
-            "Rasa",
-            "Alibaba ChatApp"
-          ]
+          "company": "Engages AI",
+          "role": "Software Engineer Intern",
+          "period": "May 2023 – Dec 2023",
+          "location": "Malaysia (Hybrid)",
+          "responsibilities": ["Contribuí a Quickdesk CRM construyendo y mejorando su frontend en React.", "Implementé servicios backend y capacidades de chatbot de IA."],
+          "tech": ["React", "NestJS", "PostgreSQL", "Rasa"]
         },
         {
           "company": "Universiti Sains Islam Malaysia",
-          "role": "Analista de Sistemas",
-          "period": "Oct 2022 – Abr 2023",
-          "location": "Nilai, Malasia",
-          "responsibilities": [
-            "Modernizó los sistemas universitarios heredados migrando de PHP y Kotlin a React y React Native.",
-            "Mejoró significativamente el rendimiento del sistema, la mantenibilidad y la experiencia del usuario.",
-            "Apoyó aplicaciones móviles multiplataforma para la gestión de estudiantes."
-          ],
-          "tech": [
-            "React",
-            "React Native",
-            "PHP",
-            "Kotlin"
-          ]
+          "role": "System Analyst",
+          "period": "Oct 2022 – Apr 2023",
+          "location": "Malaysia (Remote)",
+          "responsibilities": ["Modernicé interfaces web y móviles heredadas migrando a React y React Native.", "Mejoré el backend Laravel para mantenibilidad y soporte multiplataforma."],
+          "tech": ["React", "React Native", "Laravel"]
         },
         {
-          "company": "Developer Student Club - UTM",
-          "role": "Miembro del Equipo Técnico",
+          "company": "Google Developer Student Club, UTM",
+          "role": "Technical Team Member",
           "period": "Nov 2021 – Oct 2022",
-          "location": "Johor Bahru, Malasia",
-          "responsibilities": [
-            "Exploró los campos de aprendizaje automático y aprendizaje profundo en IA para aprender y participar en talleres prácticos."
-          ],
-          "tech": [
-            "Python",
-            "Machine Learning",
-            "Deep Learning"
-          ]
-        },
-        {
-          "company": "Freelancer.com",
-          "role": "Desarrollador Web Frontend",
-          "period": "Nov 2021 – Nov 2021",
-          "location": "Remoto",
-          "responsibilities": [
-            "Desarrolló un sitio web de diario del clima conectado a una API del clima usando formularios HTML y Express.js para facilitar solicitudes interactivas de datos."
-          ],
-          "tech": [
-            "HTML",
-            "Express.js",
-            "JavaScript",
-            "Weather API"
-          ]
+          "location": "Johor Bahru, Malaysia",
+          "responsibilities": ["Apoyé talleres de visión por computador y chatbots de IA usando Azure."],
+          "tech": ["Python", "Azure", "Computer Vision"]
         }
       ]
     },
@@ -1310,8 +1488,8 @@ const translations: Record<Language, Translations> = {
     }
   },
   de: {
-    nav: { home: "Startseite", about: "Über mich", projects: "Projekte", contact: "Kontakt", resume: "Lebenslauf" },
-    hero: { location: "Denpasar, Bali, Indien", title: "Full-Stack-Softwareentwickler & KI-Spezialist", description: "Entwicklung skalierbarer KI-gestützter Lösungen und Webanwendungen.", cta_projects: "Projekte ansehen", cta_contact: "Kontaktieren Sie mich" },
+    nav: { home: "Startseite", work: "Arbeit", experience: "Erfahrung", projects: "Projekte", skills: "Skills", education: "Bildung", about: "Über mich", contact: "Kontakt", resume: "Lebenslauf" },
+    hero: { location: "Selangor, Malaysia", title: "AI Full Stack Software Engineer", headline: "Komplexe SaaS-Produkte von der Architektur bis zur Auslieferung.", description: "Ich entwickle eigenständig Frontend, Backend und KI-Workflows. Zur jüngsten Arbeit gehören vier Softwareprojekte bei Frequency Digital Group.", cta_projects: "Arbeit ansehen", cta_resume: "Lebenslauf laden", cta_contact: "Kontakt" },
     about: {
       title: "Über Mich",
       subtitle: "Full-Stack-Engineer mit einer Leidenschaft für KI und skalierbare Systeme",
@@ -1329,8 +1507,7 @@ const translations: Record<Language, Translations> = {
       journey: [
         { country: "Ägypten", countryCode: "EG", role: "Ursprung" },
         { country: "Saudi-Arabien", countryCode: "SA", role: "Frühe Jahre" },
-        { country: "Malaysia", countryCode: "MY", role: "Ausbildung & Karrierestart" },
-        { country: "Indonesien", countryCode: "ID", role: "Aktueller Standort" }
+        { country: "Malaysia", countryCode: "MY", role: "Bildung, Karriere und aktueller Standort" }
       ],
       languages_title: "Sprachen",
       languages: [
@@ -1343,11 +1520,15 @@ const translations: Record<Language, Translations> = {
       title: "Technologie-Arsenal",
       subtitle: "Umfassende Werkzeuge für moderne Anwendungen",
       categories: {
-        languages: "Sprachen", frontend: "Frontend", backend: "Backend", ai: "KI & ML", db: "Datenbanken", devops: "DevOps", tools: "Tools", core: "Kernkonzepte"
+        frontend: "Frontend", backend: "Backend", data: "Daten und Echtzeit", ai: "KI und Automatisierung", cloud: "Cloud und Delivery", observability: "Observability", mobile: "Mobile", commerce: "Commerce und Business-Systeme", tools: "Tools"
       }
     },
     projects: {
       title: "Vorgestellte Projekte",
+      featuredTitle: "Frequency Digital Group",
+      selectedTitle: "Selected Work",
+      independentTitle: "Independent Projects",
+      caseStudy: "Case Study",
       moreCategories: "Weitere Kategorien",
       learnMore: "Mehr Erfahren",
       viewProjects: "Projekte Ansehen →",
@@ -1355,16 +1536,108 @@ const translations: Record<Language, Translations> = {
       categoryTitles: {
         "n8n-automations": "N8N-Automatisierungen",
         "university-projects": "Universitätsprojekte",
+        "selected-work": "Selected Work",
+        "independent-projects": "Independent Projects",
         "client-portfolios": "Kundenportfolios",
       },
       categories: [
+        { title: "Selected Work", icon: "🧩", slug: "selected-work", desc: "CRM, sales, and product work from earlier roles" },
+        { title: "Independent Projects", icon: "🚀", slug: "independent-projects", desc: "Solo products built outside employment" },
         { title: "N8N-Automatisierungen", icon: "🤖", slug: "n8n-automations", desc: "Automatisierte Workflows und Integrationen" },
         { title: "Universitätsprojekte", icon: "🎓", slug: "university-projects", desc: "Akademische Forschung und Aufgaben" },
         { title: "Kundenportfolios", icon: "💼", slug: "client-portfolios", desc: "Portfolio-Websites für Kunden erstellt" }
       ],
       items: [
-                    {
+                    
+        {
+          slug: "review-revolution",
+          title: "Review Revolution",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Alleiniger Full-Stack-Entwickler",
+          productCategory: "KI-SaaS, Kundenerlebnis, Reputationsmanagement",
+          description: "Eigenständige Entwicklung einer Multi-Modul-SaaS-Plattform für Feedback, Reputation, Automatisierung, Analytik und Dashboards.",
+          longDescription: "Frontend, Backend, Datenmodelle und Workflows für eine Feedback- und Reputationsplattform.",
+          achievements: ["Alleiniger Entwickler für Frontend, Backend-Architektur und KI.", "Verbindet Feedback-Journeys mit Admin, Analytik und Automatisierung."],
+          tech: ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"],
+          ctaLabel: "Fallstudie",
+          liveUrl: "https://reviewrevolution.ai",
+          icon: "/review-revolution/icon.png",
+          images: [
+            { src: "/review-revolution/homepage.png", desc: "Review Revolution homepage" },
+            { src: "/review-revolution/features.png", desc: "Review Revolution reputation growth features" }
+          ]
+        },
+        {
+          slug: "daily-authority",
+          title: "Daily Authority",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Alleiniger Full-Stack-Entwickler",
+          productCategory: "Content- und Sichtbarkeitsprodukt",
+          description: "Eigenverantwortliche Architektur, Frontend, Backend und Publishing-Workflows für das Content- und Sichtbarkeitsprodukt von Review Revolution.",
+          longDescription: "Eigenverantwortliche Architektur, Umsetzung, Tests und Deployment. RR Daily Authority ist das Content- und Sichtbarkeitsprodukt von Review Revolution. Es plant einen Monat nützlicher Seiten und veröffentlicht täglich eine auf einer Website des Unternehmens.",
+          achievements: ["Alleiniger Entwickler von der Architektur bis zum Deployment.", "Verantwortet Frontend, Backend, Workflows, Tests und Lieferung."],
+          tech: ["Full stack", "Product architecture", "Testing", "Deployment"],
+          ctaLabel: "Fallstudie",
+          liveUrl: "https://authority.reviewrevolution.ai",
+          icon: "/daily-authority/icon.png",
+          images: [
+            { src: "/daily-authority/homepage.png", desc: "RR Daily Authority homepage" }
+          ]
+        },
+        {
+          slug: "art-by-mio",
+          title: "Art By MIO",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Alleiniger Full-Stack-Entwickler",
+          productCategory: "Kulturplattform",
+          description: "Alleinige Entwicklung und Wartung von Nutzerfunktionen, Backend, Daten und Verbesserungen für Art By MIO.",
+          longDescription: "Alleinige Entwicklung und Wartung von Nutzerfunktionen, Backend und Daten. Art By MIO ist eine Kulturplattform mit Radar, Erlebnissen, Magazin und Mitgliedschaft.",
+          achievements: ["Alleiniger Entwickler der Nutzerfunktionen und des Backends.", "Verantwortet Datenhandling und Produktverbesserungen."],
+          tech: ["Full stack", "UI", "Backend", "Data handling"],
+          ctaLabel: "Fallstudie",
+          liveUrl: "https://artbymio.com",
+          icon: "/art-by-mio/icon.png",
+          images: [
+            { src: "/art-by-mio/homepage.png", desc: "Art By MIO homepage" }
+          ]
+        },
+        {
+          slug: "fdg-workspace",
+          title: "FDG Workspace",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Alleiniger Full-Stack-Entwickler",
+          productCategory: "Content-Kalender und Social Workspace",
+          description: "Eigenverantwortliche Architektur, Frontend, Backend und Workflows für FDG Workspace: Content-Erstellung, Planung, Freigaben, Publishing, Automatisierung und Produktion auf einem Kalender.",
+          longDescription: "Eigenverantwortliche Architektur, Umsetzung, Tests und Deployment. FDG Workspace ist der Frequency-Digital-Group-Workspace für Kundenarbeit: Beiträge und Medien erstellen, Smart Scheduler über verbundene Social-Kanäle, Freigaben über Preview-Links, APIs und interne Tools, sowie Dreh und Schnitt am selben Publishing-Kalender.",
+          achievements: ["Alleiniger Entwickler von der Architektur bis zum Deployment.", "Verbindet Content, Planung, Freigaben, Automatisierung und Produktion in einem Workspace."],
+          tech: ["Full stack", "Product architecture", "APIs", "Workflows"],
+          ctaLabel: "Fallstudie",
+          liveUrl: "https://workspace.frequencydigital.group/",
+          icon: "/fdg-workspace/icon.png",
+          images: [
+            { src: "/fdg-workspace/homepage.png", desc: "FDG Workspace homepage" }
+          ]
+        },
+        {
+          slug: "mind-step-tutor",
+          title: "Mind Step Tutor",
+          category: "independent-projects",
+          organization: "Independent",
+          role: "Unabhängiges Solo-Projekt",
+          productCategory: "Bildungsplattform",
+          description: "Unabhängige Entwicklung einer B2C- und C2C-Plattform für Studierende und Privatlehrer. Mar 2026 to Present.",
+          longDescription: "Unabhängiges Solo-Projekt (Mar 2026 to Present). Keine Anstellung.",
+          achievements: ["Unabhängiges Produkt, keine Anstellung.", "Gestaltet die Beziehung zwischen Studierenden und Lehrkräften."],
+          tech: ["Product architecture", "Full stack"],
+          ctaLabel: "Fallstudie"
+        },
+{
                       slug: "engages-ai",
+                      category: "selected-work",
                       title: "Engages AI",
                       description: "Entwicklung einer CRM-Chat-Applikation mit integrierten KI-Chatbot-Fähigkeiten.",
                       longDescription: "Leitete die Entwicklung einer CRM- und KI-gesteuerten Chatbot-Plattform. Implementierte Echtzeit-Kommunikation und automatisierte Kontaktgruppierung sowie Lead-Management-Workflows.",
@@ -1375,6 +1648,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "salesmrkt",
+                      category: "selected-work",
                       title: "Salesmrkt",
                       description: "Entwickelte Frontend-UI-Komponenten für Vertriebs- und Dienstleistungsanbieter.",
                       longDescription: "Kernentwickler für das Salesmrkt-Ökosystem mit Fokus auf die Automatisierung des Vertriebsprozesses für Dienstleister inklusive zentralisierter Lead-Management-Tools.",
@@ -1384,6 +1658,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "gotryone",
+                      category: "selected-work",
                       title: "GoTryOne",
                       description: "Spezialisierte Plattform für Dienstleister zur effizienten Verwaltung von Buchungen.",
                       longDescription: "Aufbau einer Buchungs- und Testmanagement-Plattform innerhalb des Salesbox-Ökosystems. Integriert mit QuickBooks und Stripe für nahtlose Finanzprozesse.",
@@ -1555,143 +1830,68 @@ const translations: Record<Language, Translations> = {
                     }
                   ]
     },
+    education: {
+      title: "Ausbildung und Zertifikate",
+      degree: "Bachelor of Computer Science (Software Engineering)",
+      school: "Universiti Teknologi Malaysia",
+      period: "Mar 2020 – Feb 2024",
+      cgpa: "CGPA: 3.92",
+      certificationsTitle: "Zertifikate",
+      certifications: [
+        { name: "Web Development Nanodegree", issuer: "Udacity" },
+        { name: "Applied Data Science with Python", issuer: "Cognitive Class.ai" }
+      ]
+    },
     experience: {
       title: "Berufserfahrung",
       items: [
         {
-          "company": "Mind Step Tutor",
-          "role": "Gründer",
-          "period": "März 2026 – Heute",
-          "location": "Vereinigte Arabische Emirate",
-          "responsibilities": [
-            "Organisation der Beziehung zwischen Studenten und Privatlehrern auf einer B2C- und C2C-Plattform."
-          ],
-          "tech": [
-            "Geschäftsstrategie",
-            "Plattformarchitektur"
-          ]
+          "company": "Frequency Digital Group",
+          "role": "Sole AI Full Stack Developer",
+          "period": "Jun 2026 – Present",
+          "location": "Remote",
+          "responsibilities": ["Alleiniger Entwickler von Review Revolution, Daily Authority, Art By MIO und FDG Workspace für ein in Hongkong registriertes Unternehmen.", "Verantwortet Architektur, Frontend, Backend und laufende Verbesserungen."],
+          "tech": ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"]
         },
         {
           "company": "Salesmrkt",
-          "role": "AI FullStack Software Entwickler",
-          "period": "Sept 2025 – März 2026",
-          "location": "Seattle, WA",
-          "responsibilities": [
-            "Konvertierte ein React-Projekt zu NextJS für verbesserte Sicherheit und Flexibilität.",
-            "Entwickelte ein KI-Chat-System mit Empfehlungen und Tiefensuche, das mit Gemini in 1,5s antwortet.",
-            "Direkte Zusammenarbeit mit Kunden für Update-Anfragen und technischen Support.",
-            "Aktualisierte den Shopify-Store mit neuem Template-UI und Konfigurationen.",
-            "Verwaltete und entwickelte Funktionen für Dienstanbieter: Salesbox, Salesmrkt und GoTryOne mit NextJS, Tailwind, Firebase, Algolia und Zustand.",
-            "Nutzte QuickBooks und Stripe für komplexe Zahlungen und Rechnungsstellung.",
-            "Verwendete N8N für komplexe Prozessautomatisierung außerhalb des Hauptsystems."
-          ],
-          "tech": [
-            "NextJS",
-            "Tailwind",
-            "Firebase",
-            "Algolia",
-            "Zustand",
-            "QuickBooks",
-            "Stripe",
-            "N8N"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Sep 2025 – Mar 2026",
+          "location": "Seattle, USA (Remote)",
+          "responsibilities": ["Webanwendungen und KI-Chat entwickelt, inklusive Migration von React zu Next.js.", "Frontend, Backend, Business-Workflows, Zahlungen und Cloud-Deployments geliefert.", "KI-Chat mit Empfehlungen und Suche, Antwortzeit 1.5s mit Gemini."],
+          "tech": ["Next.js", "Tailwind CSS", "Firebase", "Shopify", "Stripe", "n8n"]
         },
         {
           "company": "Engages AI",
-          "role": "Fullstack Software Entwickler",
+          "role": "Full Stack Software Engineer",
           "period": "Jan 2024 – Aug 2025",
-          "location": "Singapur",
-          "responsibilities": [
-            "Entwickelte eine voll funktionsfähige CRM-Chat-Anwendung mit integrierten KI-Chatbot-Funktionen.",
-            "Verbesserte Frontend-Funktionen mit MUI, React, Redux, socket.io, RabbitMQ und benutzerdefinierten Web-Widgets.",
-            "Ersetzte Webpack durch Vite im Frontend und erreichte 50% schnellere Build-Zeiten.",
-            "Baute skalierbare Backend-Microservices mit NestJS unter Nutzung von PostgreSQL, Redis und RabbitMQ.",
-            "Integrierte fortschrittliche KI-Komponenten: Python, RASA-Modelle, GPT-4, GPT-Assistenten und LangGraph.",
-            "Verwaltete Cloud-Deployment auf Alibaba Ubuntu-Instanzen und serverlosen AWS Lambda-Funktionen.",
-            "Entwickelte umfassende Reporting-Dashboards und Automatisierungs-Workflows für das Lead-Management.",
-            "Implementierte Kontaktgruppierungs- und Broadcast-Messaging-Systeme.",
-            "Optimierte die Backend-Performance durch Migration der Logik in Datenbankfunktionen und Materialized Views.",
-            "Nutzte PeerDB (CDC) für die Echtzeitsynchronisation zwischen mehreren Datenquellen.",
-            "Entwickelte eine serverlose Crawler-Funktion zur automatischen Aktualisierung des Vektorspeichers des GPT-Assistenten.",
-            "Sicherte die Codequalität und Zuverlässigkeit durch Unit-Tests mit Jest."
-          ],
-          "tech": [
-            "NestJS",
-            "React",
-            "PostgreSQL",
-            "Redis",
-            "RabbitMQ",
-            "AWS Lambda",
-            "GPT-4",
-            "LangGraph",
-            "PeerDB",
-            "socket.io"
-          ]
+          "location": "Singapore (Remote)",
+          "responsibilities": ["CRM und Echtzeit-Chat, Microservices, KI-Chat, Daten-Workflows und Reporting-Dashboards entwickelt.", "Arbeit über Frontend, Backend, Datenbankdesign, Automatisierung und Produktion."],
+          "tech": ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "LangGraph", "Rasa"]
         },
         {
-          "company": "QuickDesk",
-          "role": "Software Entwickler Praktikant",
-          "period": "Mai 2023 – Dez 2023",
-          "location": "WP, Kuala Lumpur",
-          "responsibilities": [
-            "Trug zur Entwicklung von CRM-Webanwendungen bei; entwickelte das Frontend in React.",
-            "Implementierte das Backend mit NestJS, PostgreSQL, Redis und Alibaba ChatApp.",
-            "Entwickelte KI-Chatbots mit dem Rasa-Framework."
-          ],
-          "tech": [
-            "React",
-            "NestJS",
-            "PostgreSQL",
-            "Redis",
-            "Rasa",
-            "Alibaba ChatApp"
-          ]
+          "company": "Engages AI",
+          "role": "Software Engineer Intern",
+          "period": "May 2023 – Dec 2023",
+          "location": "Malaysia (Hybrid)",
+          "responsibilities": ["Beitrag zur Quickdesk-CRM-Plattform durch Aufbau und Verbesserung des React-Frontends.", "Backend-Services und KI-Chatbot-Fähigkeiten implementiert."],
+          "tech": ["React", "NestJS", "PostgreSQL", "Rasa"]
         },
         {
           "company": "Universiti Sains Islam Malaysia",
-          "role": "Systemanalytiker",
-          "period": "Okt 2022 – Apr 2023",
-          "location": "Nilai, Malaysia",
-          "responsibilities": [
-            "Modernisierte veraltete Universitätssysteme durch Migration von PHP und Kotlin zu React und React Native.",
-            "Verbesserte die Systemleistung, Wartbarkeit und Benutzererfahrung erheblich.",
-            "Unterstützte plattformübergreifende mobile Anwendungen für das Studentenmanagement."
-          ],
-          "tech": [
-            "React",
-            "React Native",
-            "PHP",
-            "Kotlin"
-          ]
+          "role": "System Analyst",
+          "period": "Oct 2022 – Apr 2023",
+          "location": "Malaysia (Remote)",
+          "responsibilities": ["Legacy-Web- und Mobile-Oberflächen durch Migration auf React und React Native modernisiert.", "Laravel-Backend für Wartbarkeit und Cross-Platform-Support verbessert."],
+          "tech": ["React", "React Native", "Laravel"]
         },
         {
-          "company": "Developer Student Club - UTM",
-          "role": "Technisches Teammitglied",
-          "period": "Nov 2021 – Okt 2022",
+          "company": "Google Developer Student Club, UTM",
+          "role": "Technical Team Member",
+          "period": "Nov 2021 – Oct 2022",
           "location": "Johor Bahru, Malaysia",
-          "responsibilities": [
-            "Erforschte die Bereiche maschinelles Lernen und Deep Learning in KI, um zu lernen und an praktischen Workshops teilzunehmen."
-          ],
-          "tech": [
-            "Python",
-            "Machine Learning",
-            "Deep Learning"
-          ]
-        },
-        {
-          "company": "Freelancer.com",
-          "role": "Frontend Web Entwickler",
-          "period": "Nov 2021 – Nov 2021",
-          "location": "Remote",
-          "responsibilities": [
-            "Entwickelte eine Wetter-Journal-Website, die mit einer Wetter-API verbunden ist, unter Verwendung von HTML-Formularen und Express.js, um interaktive Datenanforderungen zu erleichtern."
-          ],
-          "tech": [
-            "HTML",
-            "Express.js",
-            "JavaScript",
-            "Weather API"
-          ]
+          "responsibilities": ["Workshops zu Computer Vision und KI-Chatbots mit Azure unterstützt."],
+          "tech": ["Python", "Azure", "Computer Vision"]
         }
       ]
     },
@@ -1708,8 +1908,8 @@ const translations: Record<Language, Translations> = {
     }
   },
   ru: {
-    nav: { home: "Главная", about: "Обо мне", projects: "Проекты", contact: "Контакты", resume: "Резюме" },
-    hero: { location: "Денпасар, Бали, Индонезия", title: "Full Stack разработчик и специалист по ИИ", description: "Создание масштабируемых ИИ-решений и высокопроизводительных веб-приложений.", cta_projects: "Посмотреть проекты", cta_contact: "Связаться со мной" },
+    nav: { home: "Главная", work: "Работы", experience: "Опыт", projects: "Проекты", skills: "Навыки", education: "Образование", about: "Обо мне", contact: "Контакты", resume: "Резюме" },
+    hero: { location: "Selangor, Malaysia", title: "AI Full Stack Software Engineer", headline: "Сложные SaaS-продукты от архитектуры до поставки.", description: "Самостоятельно разрабатываю frontend, backend и ИИ-процессы. Недавняя работа: четыре программных проекта в Frequency Digital Group.", cta_projects: "Смотреть работы", cta_resume: "Скачать резюме", cta_contact: "Связаться" },
     about: {
       title: "Обо мне",
       subtitle: "Full Stack инженер со страстью к ИИ и масштабируемым системам",
@@ -1727,8 +1927,7 @@ const translations: Record<Language, Translations> = {
       journey: [
         { country: "Египет", countryCode: "EG", role: "Происхождение" },
         { country: "Саудовская Аравия", countryCode: "SA", role: "Ранние годы" },
-        { country: "Малайзия", countryCode: "MY", role: "Образование и старт карьеры" },
-        { country: "Индонезия", countryCode: "ID", role: "Текущая база" }
+        { country: "Малайзия", countryCode: "MY", role: "Образование, карьера и текущая база" }
       ],
       languages_title: "Языки",
       languages: [
@@ -1741,11 +1940,15 @@ const translations: Record<Language, Translations> = {
       title: "Тех-Арсенал",
       subtitle: "Набор инструментов для современных веб-приложений",
       categories: {
-        languages: "Языки", frontend: "Фронтенд", backend: "Бэкенд", ai: "ИИ и МО", db: "Базы данных", devops: "DevOps", tools: "Инструменты", core: "Основные концепции"
+        frontend: "Фронтенд", backend: "Бэкенд", data: "Данные и реальное время", ai: "ИИ и автоматизация", cloud: "Облако и поставка", observability: "Наблюдаемость", mobile: "Мобильная разработка", commerce: "Коммерция и бизнес-системы", tools: "Инструменты"
       }
     },
     projects: {
       title: "Проекты",
+      featuredTitle: "Frequency Digital Group",
+      selectedTitle: "Selected Work",
+      independentTitle: "Independent Projects",
+      caseStudy: "Case Study",
       moreCategories: "Больше Категорий",
       learnMore: "Узнать Больше",
       viewProjects: "Посмотреть Проекты →",
@@ -1753,16 +1956,108 @@ const translations: Record<Language, Translations> = {
       categoryTitles: {
         "n8n-automations": "Автоматизация N8N",
         "university-projects": "Университетские Проекты",
+        "selected-work": "Selected Work",
+        "independent-projects": "Independent Projects",
         "client-portfolios": "Портфолио Клиентов",
       },
       categories: [
+        { title: "Selected Work", icon: "🧩", slug: "selected-work", desc: "CRM, sales, and product work from earlier roles" },
+        { title: "Independent Projects", icon: "🚀", slug: "independent-projects", desc: "Solo products built outside employment" },
         { title: "Автоматизация N8N", icon: "🤖", slug: "n8n-automations", desc: "Автоматизированные рабочие процессы и интеграции" },
         { title: "Университетские Проекты", icon: "🎓", slug: "university-projects", desc: "Академические исследования и задания" },
         { title: "Портфолио Клиентов", icon: "💼", slug: "client-portfolios", desc: "Веб-сайты портфолио для клиентов" }
       ],
       items: [
-                    {
+                    
+        {
+          slug: "review-revolution",
+          title: "Review Revolution",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Единственный full stack разработчик",
+          productCategory: "SaaS с ИИ, клиентский опыт, управление репутацией",
+          description: "Самостоятельно разработал мультимодульную SaaS-платформу для отзывов, репутации, автоматизации, аналитики и панелей.",
+          longDescription: "Спроектировал frontend, backend, модели данных и процессы платформы обратной связи и репутации.",
+          achievements: ["Единственный разработчик frontend, backend и ИИ.", "Связывает сценарии отзывов с админкой, аналитикой и автоматизацией."],
+          tech: ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"],
+          ctaLabel: "Кейс",
+          liveUrl: "https://reviewrevolution.ai",
+          icon: "/review-revolution/icon.png",
+          images: [
+            { src: "/review-revolution/homepage.png", desc: "Review Revolution homepage" },
+            { src: "/review-revolution/features.png", desc: "Review Revolution reputation growth features" }
+          ]
+        },
+        {
+          slug: "daily-authority",
+          title: "Daily Authority",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Единственный full stack разработчик",
+          productCategory: "Продукт контента и видимости",
+          description: "Самостоятельная ответственность за архитектуру, frontend, backend и публикацию контент-продукта Review Revolution.",
+          longDescription: "Самостоятельная архитектура, реализация, тесты и деплой. RR Daily Authority это продукт контента и видимости Review Revolution. Он планирует месяц полезных страниц и публикует одну каждый день на сайте бизнеса.",
+          achievements: ["Единственный разработчик от архитектуры до деплоя.", "Владеет frontend, backend, процессами, тестами и поставкой."],
+          tech: ["Full stack", "Product architecture", "Testing", "Deployment"],
+          ctaLabel: "Кейс",
+          liveUrl: "https://authority.reviewrevolution.ai",
+          icon: "/daily-authority/icon.png",
+          images: [
+            { src: "/daily-authority/homepage.png", desc: "RR Daily Authority homepage" }
+          ]
+        },
+        {
+          slug: "art-by-mio",
+          title: "Art By MIO",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Единственный full stack разработчик",
+          productCategory: "Культурная платформа",
+          description: "Самостоятельно разработал и поддерживал пользовательские функции, backend, данные и улучшения для Art By MIO.",
+          longDescription: "Самостоятельная разработка и поддержка пользовательских функций, backend и данных. Art By MIO это культурная платформа с радаром, событиями, журналом и членством.",
+          achievements: ["Единственный разработчик пользовательских функций и backend.", "Владеет данными и улучшениями продукта."],
+          tech: ["Full stack", "UI", "Backend", "Data handling"],
+          ctaLabel: "Кейс",
+          liveUrl: "https://artbymio.com",
+          icon: "/art-by-mio/icon.png",
+          images: [
+            { src: "/art-by-mio/homepage.png", desc: "Art By MIO homepage" }
+          ]
+        },
+        {
+          slug: "fdg-workspace",
+          title: "FDG Workspace",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Единственный full stack разработчик",
+          productCategory: "Контент, календарь и социальные публикации",
+          description: "Самостоятельная архитектура, frontend, backend и процессы FDG Workspace для контента, планирования, согласований, публикаций, автоматизации и продакшена в одном календаре.",
+          longDescription: "Самостоятельная архитектура, реализация, тесты и деплой. FDG Workspace это рабочее пространство Frequency Digital Group для клиентской работы: черновики постов и медиа, умный планировщик по подключенным соцканалам, согласования по preview-ссылкам, API и внутренние инструменты, съемка и монтаж в том же календаре публикаций.",
+          achievements: ["Единственный разработчик от архитектуры до деплоя.", "Связывает контент, планирование, согласования, автоматизацию и продакшен в одном пространстве."],
+          tech: ["Full stack", "Product architecture", "APIs", "Workflows"],
+          ctaLabel: "Кейс",
+          liveUrl: "https://workspace.frequencydigital.group/",
+          icon: "/fdg-workspace/icon.png",
+          images: [
+            { src: "/fdg-workspace/homepage.png", desc: "FDG Workspace homepage" }
+          ]
+        },
+        {
+          slug: "mind-step-tutor",
+          title: "Mind Step Tutor",
+          category: "independent-projects",
+          organization: "Independent",
+          role: "Независимый соло-проект",
+          productCategory: "Образовательная платформа",
+          description: "Независимая разработка B2C и C2C платформы, соединяющей студентов с репетиторами. Mar 2026 to Present.",
+          longDescription: "Независимый соло-проект (Mar 2026 to Present). Это не трудоустройство.",
+          achievements: ["Независимый продукт, не должность.", "Проектирует связь студента и репетитора в B2C и C2C потоках."],
+          tech: ["Product architecture", "Full stack"],
+          ctaLabel: "Кейс"
+        },
+{
                       slug: "engages-ai",
+                      category: "selected-work",
                       title: "Engages AI",
                       description: "CRM-чат-приложение с интегрированными возможностями искусственного интеллекта.",
                       longDescription: "Руководил разработкой CRM и платформы ИИ-чат-ботов. Внедрил коммуникацию в реальном времени и автоматизацию рабочих процессов для управления лидами.",
@@ -1773,6 +2068,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "salesmrkt",
+                      category: "selected-work",
                       title: "Salesmrkt",
                       description: "Платформа компонентов интерфейса для отделов продаж и поставщиков услуг.",
                       longDescription: "Ключевой разработчик экосистемы Salesmrkt, специализирующийся на автоматизации воронки продаж и централизованном управлении лидами.",
@@ -1782,6 +2078,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "gotryone",
+                      category: "selected-work",
                       title: "GoTryOne",
                       description: "Специализированная платформа для поставщиков услуг для управления бронированием.",
                       longDescription: "Создал платформу бронирования в экосистеме Salesbox с интеграцией QuickBooks и Stripe.",
@@ -1806,7 +2103,7 @@ const translations: Record<Language, Translations> = {
   slug: "food-bazaar-app",
   title: "Приложение Food Bazaar",
   description: "Приложение для микро-ресторанов, позволяющее частным лицам продавать домашнюю еду, расширять базу клиентов и управлять доставкой.",
-  longDescription: "Food Bazaar — это мобильное приложение для микро-ресторанов, созданное на Flutter и Dart. Оно помогает продавцам домашней еды находить клиентов, добавлять блюда в каталог и ускорять доставку. Включает аутентификацию, каталог с изображениями, отслеживание заказов и интеграцию платежей.",
+  longDescription: "Food Bazaar is a Flutter mobile app for micro-restaurants. It helps home cooks find customers, add meals, and manage delivery, with authentication, a catalog, order tracking, and payments.",
   tech: ["Flutter", "Dart", "Mobile Development"],
   category: "university-projects",
   images: [
@@ -1953,143 +2250,68 @@ const translations: Record<Language, Translations> = {
                     }
                   ]
     },
+    education: {
+      title: "Образование и сертификаты",
+      degree: "Bachelor of Computer Science (Software Engineering)",
+      school: "Universiti Teknologi Malaysia",
+      period: "Mar 2020 – Feb 2024",
+      cgpa: "CGPA: 3.92",
+      certificationsTitle: "Сертификаты",
+      certifications: [
+        { name: "Web Development Nanodegree", issuer: "Udacity" },
+        { name: "Applied Data Science with Python", issuer: "Cognitive Class.ai" }
+      ]
+    },
     experience: {
       title: "Опыт работы",
       items: [
         {
-          "company": "Mind Step Tutor",
-          "role": "Основатель",
-          "period": "Март 2026 – Настоящее время",
-          "location": "ОАЭ",
-          "responsibilities": [
-            "Организация отношений между студентами и частными репетиторами на платформе B2C и C2C."
-          ],
-          "tech": [
-            "Business Strategy",
-            "Platform Architecture"
-          ]
+          "company": "Frequency Digital Group",
+          "role": "Sole AI Full Stack Developer",
+          "period": "Jun 2026 – Present",
+          "location": "Remote",
+          "responsibilities": ["Единственный разработчик Review Revolution, Daily Authority, Art By MIO и FDG Workspace в компании, зарегистрированной в Гонконге.", "Владеет архитектурой, frontend, backend и улучшениями продукта."],
+          "tech": ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"]
         },
         {
           "company": "Salesmrkt",
-          "role": "AI FullStack Software Engineer",
-          "period": "Сент 2025 – Март 2026",
-          "location": "Сиэтл, США",
-          "responsibilities": [
-            "Перевел проект с React на NextJS для повышения безопасности и гибкости.",
-            "Разработал систему чата с ИИ с рекомендациями и глубоким поиском, отвечающую за 1,5 сек с использованием Gemini.",
-            "Напрямую взаимодействовал с клиентами по вопросам обновления и технической поддержки.",
-            "Обновил магазин Shopify с новым пользовательским интерфейсом и конфигурациями.",
-            "Управлял и разрабатывал функции для поставщиков услуг: Salesbox, Salesmrkt и GoTryOne с использованием NextJS, Tailwind, Firebase, Algolia и Zustand.",
-            "Использовал QuickBooks и Stripe для обработки сложных платежей и выставления счетов.",
-            "Использовал N8N для автоматизации сложных процессов вне основной системы."
-          ],
-          "tech": [
-            "NextJS",
-            "Tailwind",
-            "Firebase",
-            "Algolia",
-            "Zustand",
-            "QuickBooks",
-            "Stripe",
-            "N8N"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Sep 2025 – Mar 2026",
+          "location": "Seattle, USA (Remote)",
+          "responsibilities": ["Создавал веб-приложения и ИИ-чат, включая миграцию с React на Next.js.", "Поставлял frontend, backend, бизнес-процессы, платежи и облачные деплои.", "ИИ-чат с рекомендациями и поиском, ответ 1.5s на Gemini."],
+          "tech": ["Next.js", "Tailwind CSS", "Firebase", "Shopify", "Stripe", "n8n"]
         },
         {
           "company": "Engages AI",
-          "role": "Fullstack Software Engineer",
-          "period": "Янв 2024 – Авг 2025",
-          "location": "Сингапур",
-          "responsibilities": [
-            "Разработал полнофункциональное CRM-чат-приложение с интегрированными возможностями ИИ-чат-бота.",
-            "Улучшил функции фронтенда с использованием MUI, React, Redux, socket.io, RabbitMQ и пользовательских веб-виджетов.",
-            "Заменил Webpack на Vite во фронтенде, добившись ускорения сборки на 50%.",
-            "Построил масштабируемые серверные микросервисы на NestJS, используя PostgreSQL, Redis и RabbitMQ.",
-            "Интегрировал передовые ИИ-компоненты: Python, модели RASA, GPT-4, ассистенты GPT и LangGraph.",
-            "Управлял облачным развертыванием на инстансах Alibaba Ubuntu и бессерверных функциях AWS Lambda.",
-            "Разработал комплексные дашборды отчетности и рабочие процессы автоматизации для управления лидами.",
-            "Реализовал системы группировки контактов и рассылки сообщений.",
-            "Оптимизировал производительность бэкенда, перенеся логику в функции базы данных и материализованные представления.",
-            "Использовал PeerDB (CDC) для синхронизации в реальном времени между несколькими источниками данных.",
-            "Разработал бессерверную функцию краулера для автоматического обновления векторного хранилища ассистента GPT.",
-            "Обеспечил качество и надежность кода с помощью модульного тестирования на Jest."
-          ],
-          "tech": [
-            "NestJS",
-            "React",
-            "PostgreSQL",
-            "Redis",
-            "RabbitMQ",
-            "AWS Lambda",
-            "GPT-4",
-            "LangGraph",
-            "PeerDB",
-            "socket.io"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Jan 2024 – Aug 2025",
+          "location": "Singapore (Remote)",
+          "responsibilities": ["Разрабатывал CRM и чат в реальном времени, микросервисы, ИИ-чат, процессы данных и дашборды.", "Работал с frontend, backend, базами данных, автоматизацией и продакшен-деплоем."],
+          "tech": ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "LangGraph", "Rasa"]
         },
         {
-          "company": "QuickDesk",
-          "role": "Инженер-стажер по программному обеспечению",
-          "period": "Май 2023 – Дек 2023",
-          "location": "Куала-Лумпур",
-          "responsibilities": [
-            "Внес вклад в разработку веб-приложения CRM; разработал фронтенд на React.",
-            "Реализовал бэкенд с использованием NestJS, PostgreSQL, Redis и Alibaba ChatApp.",
-            "Разработал ИИ-чат-ботов с использованием фреймворка Rasa."
-          ],
-          "tech": [
-            "React",
-            "NestJS",
-            "PostgreSQL",
-            "Redis",
-            "Rasa",
-            "Alibaba ChatApp"
-          ]
+          "company": "Engages AI",
+          "role": "Software Engineer Intern",
+          "period": "May 2023 – Dec 2023",
+          "location": "Malaysia (Hybrid)",
+          "responsibilities": ["Внёс вклад в Quickdesk CRM, развивая React-frontend.", "Реализовал backend-сервисы и возможности ИИ-чатбота."],
+          "tech": ["React", "NestJS", "PostgreSQL", "Rasa"]
         },
         {
           "company": "Universiti Sains Islam Malaysia",
-          "role": "Системный аналитик",
-          "period": "Окт 2022 – Апр 2023",
-          "location": "Малайзия",
-          "responsibilities": [
-            "Модернизировал устаревшие университетские системы, перейдя с PHP и Kotlin на React и React Native.",
-            "Значительно улучшил производительность системы, удобство обслуживания и пользовательский опыт.",
-            "Разрабатывал и поддерживал кроссплатформенные мобильные приложения для управления студентами."
-          ],
-          "tech": [
-            "React",
-            "React Native",
-            "PHP",
-            "Kotlin"
-          ]
+          "role": "System Analyst",
+          "period": "Oct 2022 – Apr 2023",
+          "location": "Malaysia (Remote)",
+          "responsibilities": ["Обновил устаревшие веб- и мобильные интерфейсы, перейдя на React и React Native.", "Улучшил Laravel-backend для сопровождаемости и кроссплатформенности."],
+          "tech": ["React", "React Native", "Laravel"]
         },
         {
-          "company": "Developer Student Club - UTM",
-          "role": "Член технической команды",
-          "period": "Ноя 2021 – Окт 2022",
-          "location": "Джохор-Бару, Малайзия",
-          "responsibilities": [
-            "Изучал машинное обучение и глубокое обучение в области ИИ для участия в практических семинарах."
-          ],
-          "tech": [
-            "Python",
-            "Machine Learning",
-            "Deep Learning"
-          ]
-        },
-        {
-          "company": "Freelancer.com",
-          "role": "Frontend Web Разработчик",
-          "period": "Ноя 2021 – Ноя 2021",
-          "location": "Удаленно",
-          "responsibilities": [
-            "Разработал веб-сайт журнала погоды, подключенный к API погоды с использованием HTML-форм и Express.js."
-          ],
-          "tech": [
-            "HTML",
-            "Express.js",
-            "JavaScript",
-            "Weather API"
-          ]
+          "company": "Google Developer Student Club, UTM",
+          "role": "Technical Team Member",
+          "period": "Nov 2021 – Oct 2022",
+          "location": "Johor Bahru, Malaysia",
+          "responsibilities": ["Поддерживал воркшопы по компьютерному зрению и ИИ-чатботам на Azure."],
+          "tech": ["Python", "Azure", "Computer Vision"]
         }
       ]
     },
@@ -2106,8 +2328,8 @@ const translations: Record<Language, Translations> = {
     }
   },
   fr: {
-    nav: { home: "Accueil", about: "À propos", projects: "Projets", contact: "Contact", resume: "CV" },
-    hero: { location: "Denpasar, Bali, Indonésie", title: "Ingénieur Full Stack & Spécialiste IA", description: "Création de solutions IA évolutives et d'applications web performantes.", cta_projects: "Voir les Projets", cta_contact: "Contactez-moi" },
+    nav: { home: "Accueil", work: "Travail", experience: "Expérience", projects: "Projets", skills: "Compétences", education: "Éducation", about: "À propos", contact: "Contact", resume: "CV" },
+    hero: { location: "Selangor, Malaysia", title: "AI Full Stack Software Engineer", headline: "Des produits SaaS complexes, de l'architecture à la livraison.", description: "Je développe de façon indépendante le frontend, le backend et des workflows IA. Mon travail récent inclut quatre projets logiciels chez Frequency Digital Group.", cta_projects: "Voir mon travail", cta_resume: "Télécharger le CV", cta_contact: "Me contacter" },
     about: {
       title: "À Propos",
       subtitle: "Ingénieur Full Stack passionné par l'IA et les systèmes évolutifs",
@@ -2125,8 +2347,7 @@ const translations: Record<Language, Translations> = {
       journey: [
         { country: "Égypte", countryCode: "EG", role: "Origine" },
         { country: "Arabie Saoudite", countryCode: "SA", role: "Premières Années" },
-        { country: "Malaisie", countryCode: "MY", role: "Études et Début de Carrière" },
-        { country: "Indonésie", countryCode: "ID", role: "Base Actuelle" }
+        { country: "Malaisie", countryCode: "MY", role: "Éducation, carrière et base actuelle" }
       ],
       languages_title: "Langues",
       languages: [
@@ -2139,11 +2360,15 @@ const translations: Record<Language, Translations> = {
       title: "Arsenal Tech",
       subtitle: "Outils complets pour applications modernes",
       categories: {
-        languages: "Langages", frontend: "Frontend", backend: "Backend", ai: "IA & ML", db: "Bases de données", devops: "DevOps", tools: "Outils", core: "Concepts Clés"
+        frontend: "Frontend", backend: "Backend", data: "Données et temps réel", ai: "IA et automatisation", cloud: "Cloud et livraison", observability: "Observabilité", mobile: "Mobile", commerce: "Commerce et systèmes métier", tools: "Outils"
       }
     },
     projects: {
       title: "Projets",
+      featuredTitle: "Frequency Digital Group",
+      selectedTitle: "Selected Work",
+      independentTitle: "Independent Projects",
+      caseStudy: "Case Study",
       moreCategories: "Plus de Catégories",
       learnMore: "En Savoir Plus",
       viewProjects: "Voir les Projets →",
@@ -2151,16 +2376,108 @@ const translations: Record<Language, Translations> = {
       categoryTitles: {
         "n8n-automations": "Automatisation N8N",
         "university-projects": "Projets Universitaires",
+        "selected-work": "Selected Work",
+        "independent-projects": "Independent Projects",
         "client-portfolios": "Portfolios Clients",
       },
       categories: [
+        { title: "Selected Work", icon: "🧩", slug: "selected-work", desc: "CRM, sales, and product work from earlier roles" },
+        { title: "Independent Projects", icon: "🚀", slug: "independent-projects", desc: "Solo products built outside employment" },
         { title: "Automatisation N8N", icon: "🤖", slug: "n8n-automations", desc: "Flux de travail et intégrations automatisés" },
         { title: "Projets Universitaires", icon: "🎓", slug: "university-projects", desc: "Recherche académique et devoirs" },
         { title: "Portfolios Clients", icon: "💼", slug: "client-portfolios", desc: "Sites web de portfolio créés pour les clients" }
       ],
       items: [
-                    {
+                    
+        {
+          slug: "review-revolution",
+          title: "Review Revolution",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Développeur full stack unique",
+          productCategory: "SaaS IA, expérience client, gestion de réputation",
+          description: "Développement indépendant d'une plateforme SaaS multimodule couvrant avis, réputation, automatisation, analytique et tableaux de bord.",
+          longDescription: "Conception du frontend, du backend, des modèles de données et des workflows pour une plateforme d'avis et d'intelligence de réputation.",
+          achievements: ["Seul développeur du frontend, du backend et des fonctions IA.", "Relie des parcours d'avis à l'administration, l'analytique et l'automatisation."],
+          tech: ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"],
+          ctaLabel: "Étude de cas",
+          liveUrl: "https://reviewrevolution.ai",
+          icon: "/review-revolution/icon.png",
+          images: [
+            { src: "/review-revolution/homepage.png", desc: "Review Revolution homepage" },
+            { src: "/review-revolution/features.png", desc: "Review Revolution reputation growth features" }
+          ]
+        },
+        {
+          slug: "daily-authority",
+          title: "Daily Authority",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Développeur full stack unique",
+          productCategory: "Produit de contenu et de visibilité",
+          description: "Propriété indépendante de l'architecture, du frontend, du backend et des flux de publication du produit de contenu et de visibilité de Review Revolution.",
+          longDescription: "Propriété indépendante de l'architecture, de l'implémentation, des tests et du déploiement. RR Daily Authority est le produit de contenu et de visibilité de Review Revolution. Il planifie un mois de pages utiles, puis en publie une chaque jour sur un site appartenant à l'entreprise.",
+          achievements: ["Seul développeur de l'architecture au déploiement.", "Possède le frontend, le backend, les workflows, les tests et la livraison."],
+          tech: ["Full stack", "Product architecture", "Testing", "Deployment"],
+          ctaLabel: "Étude de cas",
+          liveUrl: "https://authority.reviewrevolution.ai",
+          icon: "/daily-authority/icon.png",
+          images: [
+            { src: "/daily-authority/homepage.png", desc: "RR Daily Authority homepage" }
+          ]
+        },
+        {
+          slug: "art-by-mio",
+          title: "Art By MIO",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Développeur full stack unique",
+          productCategory: "Plateforme culturelle",
+          description: "Développement et maintenance en solo des fonctions utilisateur, du backend, des données et des améliorations pour Art By MIO.",
+          longDescription: "Développement et maintenance en solo des fonctions utilisateur, du backend et des données. Art By MIO est une plateforme culturelle avec radar, expériences, magazine et adhésion.",
+          achievements: ["Seul développeur des fonctions utilisateur et du backend.", "Possède les données et les améliorations produit."],
+          tech: ["Full stack", "UI", "Backend", "Data handling"],
+          ctaLabel: "Étude de cas",
+          liveUrl: "https://artbymio.com",
+          icon: "/art-by-mio/icon.png",
+          images: [
+            { src: "/art-by-mio/homepage.png", desc: "Art By MIO homepage" }
+          ]
+        },
+        {
+          slug: "fdg-workspace",
+          title: "FDG Workspace",
+          featured: true,
+          organization: "Frequency Digital Group",
+          role: "Développeur full stack unique",
+          productCategory: "Espace contenu, calendrier et réseaux",
+          description: "Propriété indépendante de l'architecture, du frontend, du backend et des workflows de FDG Workspace pour la création de contenu, la planification, les validations, la publication, les automatisations et la production sur un même calendrier.",
+          longDescription: "Propriété indépendante de l'architecture, de l'implémentation, des tests et du déploiement. FDG Workspace est l'espace Frequency Digital Group pour le travail client: rédiger posts et médias, planifier sur des canaux sociaux connectés, collecter des validations via des liens de prévisualisation, connecter des APIs et outils internes, et aligner tournage et montage sur le même calendrier de publication.",
+          achievements: ["Seul développeur de l'architecture au déploiement.", "Relie contenu, planification, validations, automatisations et production dans un seul espace."],
+          tech: ["Full stack", "Product architecture", "APIs", "Workflows"],
+          ctaLabel: "Étude de cas",
+          liveUrl: "https://workspace.frequencydigital.group/",
+          icon: "/fdg-workspace/icon.png",
+          images: [
+            { src: "/fdg-workspace/homepage.png", desc: "FDG Workspace homepage" }
+          ]
+        },
+        {
+          slug: "mind-step-tutor",
+          title: "Mind Step Tutor",
+          category: "independent-projects",
+          organization: "Independent",
+          role: "Projet indépendant en solo",
+          productCategory: "Plateforme éducative",
+          description: "Développement indépendant d'une plateforme B2C et C2C reliant étudiants et tuteurs privés. Mar 2026 to Present.",
+          longDescription: "Projet indépendant en solo (Mar 2026 to Present). Ce n'est pas un emploi.",
+          achievements: ["Produit indépendant, pas un emploi.", "Conçoit la relation étudiant-tuteur dans des flux B2C et C2C."],
+          tech: ["Product architecture", "Full stack"],
+          ctaLabel: "Étude de cas"
+        },
+{
                       slug: "engages-ai",
+                      category: "selected-work",
                       title: "Engages AI",
                       description: "Application de chat CRM intégrée à des capacités de chatbot IA.",
                       longDescription: "A dirigé le développement de la plateforme CRM avec une communication en temps réel et des flux de gestion des pistes complexes via des chatbots.",
@@ -2171,6 +2488,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "salesmrkt",
+                      category: "selected-work",
                       title: "Salesmrkt",
                       description: "Développement d'interfaces utilisateur frontend pour la vente et le service.",
                       longDescription: "Développeur principal de l'écosystème Salesmrkt, spécialisé dans l'optimisation des tunnels de vente pour les fournisseurs de services via de nombreux outils de gestion.",
@@ -2180,6 +2498,7 @@ const translations: Record<Language, Translations> = {
                     },
                     {
                       slug: "gotryone",
+                      category: "selected-work",
                       title: "GoTryOne",
                       description: "Plateforme spécialisée de réservation et d'essais pour les fournisseurs.",
                       longDescription: "Mise en place d'une plateforme de réservation au sein de l'écosystème Salesbox, intégrée avec des modules comme QuickBooks et Stripe.",
@@ -2351,143 +2670,68 @@ const translations: Record<Language, Translations> = {
                     }
                   ]
     },
+    education: {
+      title: "Éducation et certifications",
+      degree: "Bachelor of Computer Science (Software Engineering)",
+      school: "Universiti Teknologi Malaysia",
+      period: "Mar 2020 – Feb 2024",
+      cgpa: "CGPA: 3.92",
+      certificationsTitle: "Certifications",
+      certifications: [
+        { name: "Web Development Nanodegree", issuer: "Udacity" },
+        { name: "Applied Data Science with Python", issuer: "Cognitive Class.ai" }
+      ]
+    },
     experience: {
-      title: "Expérience Professionnelle",
+      title: "Expérience professionnelle",
       items: [
         {
-          "company": "Mind Step Tutor",
-          "role": "Fondateur",
-          "period": "Mars 2026 – Présent",
-          "location": "Émirats Arabes Unis",
-          "responsibilities": [
-            "Organisation de la relation entre les étudiants et les tuteurs privés dans une plateforme B2C et C2C."
-          ],
-          "tech": [
-            "Stratégie d'Entreprise",
-            "Architecture de Plateforme"
-          ]
+          "company": "Frequency Digital Group",
+          "role": "Sole AI Full Stack Developer",
+          "period": "Jun 2026 – Present",
+          "location": "Remote",
+          "responsibilities": ["Seul développeur de Review Revolution, Daily Authority, Art By MIO et FDG Workspace pour une société enregistrée à Hong Kong.", "Possède l'architecture, le frontend, le backend et les améliorations continues."],
+          "tech": ["Next.js", "TypeScript", "Backend APIs", "PostgreSQL", "AI workflows"]
         },
         {
           "company": "Salesmrkt",
-          "role": "Ingénieur Logiciel IA FullStack",
-          "period": "Sept 2025 – Mars 2026",
-          "location": "Seattle, WA",
-          "responsibilities": [
-            "Converti un projet React en NextJS pour une sécurité et une flexibilité accrues.",
-            "Développé un système de chat IA avec recommandations et recherche approfondie, répondant en 1,5 s via Gemini.",
-            "Interagi directement avec les clients pour les demandes de mise à jour et le support technique.",
-            "Mis à jour la boutique Shopify avec une nouvelle interface utilisateur et des configurations.",
-            "Géré et développé des fonctionnalités pour les prestataires de services : Salesbox, Salesmrkt et GoTryOne en utilisant NextJS, Tailwind, Firebase, Algolia et Zustand.",
-            "Utilisé QuickBooks et Stripe pour gérer les paiements et la facturation complexes.",
-            "Utilisé N8N pour gérer l'automatisation de processus complexes en dehors du système principal."
-          ],
-          "tech": [
-            "NextJS",
-            "Tailwind",
-            "Firebase",
-            "Algolia",
-            "Zustand",
-            "QuickBooks",
-            "Stripe",
-            "N8N"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Sep 2025 – Mar 2026",
+          "location": "Seattle, USA (Remote)",
+          "responsibilities": ["Applications web et chat IA, y compris une migration de React vers Next.js.", "Frontend, backend, workflows métier, paiements et déploiements cloud.", "Système de chat IA avec recommandations et recherche, réponse en 1.5s avec Gemini."],
+          "tech": ["Next.js", "Tailwind CSS", "Firebase", "Shopify", "Stripe", "n8n"]
         },
         {
           "company": "Engages AI",
-          "role": "Ingénieur Logiciel Full Stack",
-          "period": "Jan 2024 – Août 2025",
-          "location": "Singapour",
-          "responsibilities": [
-            "Développé une application de chat CRM complète avec des capacités de chatbot IA intégrées.",
-            "Amélioré les fonctionnalités Frontend en utilisant MUI, React, Redux, socket.io, RabbitMQ et des widgets web personnalisés.",
-            "Remplacé Webpack par Vite dans le Frontend, multipliant par deux la vitesse de build.",
-            "Construit des microservices backend évolutifs avec NestJS, en exploitant PostgreSQL, Redis et RabbitMQ.",
-            "Intégré des composants IA avancés : Python, modèles RASA, GPT-4, assistants GPT et LangGraph.",
-            "Géré le déploiement cloud sur des instances Alibaba Ubuntu et des fonctions AWS Lambda sans serveur.",
-            "Développé des tableaux de bord de reporting complets et des flux de travail d'automatisation pour la gestion des leads.",
-            "Mis en œuvre des systèmes de regroupement de contacts et de messagerie de diffusion.",
-            "Optimisé les performances backend en migrant la logique vers des fonctions de base de données et des vues matérialisées.",
-            "Utilisé PeerDB (CDC) pour la synchronisation en temps réel entre plusieurs sources de données.",
-            "Développé une fonction de crawler sans serveur pour mettre à jour automatiquement le magasin de vecteurs de l'assistant GPT.",
-            "Assuré la qualité et la fiabilité du code grâce à des tests unitaires avec Jest."
-          ],
-          "tech": [
-            "NestJS",
-            "React",
-            "PostgreSQL",
-            "Redis",
-            "RabbitMQ",
-            "AWS Lambda",
-            "GPT-4",
-            "LangGraph",
-            "PeerDB",
-            "socket.io"
-          ]
+          "role": "Full Stack Software Engineer",
+          "period": "Jan 2024 – Aug 2025",
+          "location": "Singapore (Remote)",
+          "responsibilities": ["CRM et chat temps réel, microservices, chat IA, workflows de données et tableaux de reporting.", "Travail sur frontend, backend, bases de données, automatisation et déploiement en production."],
+          "tech": ["NestJS", "React", "PostgreSQL", "Redis", "RabbitMQ", "LangGraph", "Rasa"]
         },
         {
-          "company": "QuickDesk",
-          "role": "Stagiaire Ingénieur Logiciel",
-          "period": "Mai 2023 – Déc 2023",
-          "location": "WP, Kuala Lumpur",
-          "responsibilities": [
-            "A contribué au développement d'applications Web CRM ; a développé le frontend en React.",
-            "Realisé le backend à l'aide de NestJS, PostgreSQL, Redis et Alibaba ChatApp.",
-            "Développé des chatbots IA à l'aide du framework Rasa."
-          ],
-          "tech": [
-            "React",
-            "NestJS",
-            "PostgreSQL",
-            "Redis",
-            "Rasa",
-            "Alibaba ChatApp"
-          ]
+          "company": "Engages AI",
+          "role": "Software Engineer Intern",
+          "period": "May 2023 – Dec 2023",
+          "location": "Malaysia (Hybrid)",
+          "responsibilities": ["Contribution à Quickdesk CRM en construisant et améliorant le frontend React.", "Services backend et capacités de chatbot IA."],
+          "tech": ["React", "NestJS", "PostgreSQL", "Rasa"]
         },
         {
           "company": "Universiti Sains Islam Malaysia",
-          "role": "Analyste Système",
-          "period": "Oct 2022 – Avr 2023",
-          "location": "Nilai, Malaisie",
-          "responsibilities": [
-            "Modernisé les systèmes universitaires existants en migrant de PHP et Kotlin vers React et React Native.",
-            "Amélioré considérablement les performances du système, la maintenabilité et l'expérience utilisateur.",
-            "Soutenu des applications mobiles multiplateformes pour la gestion des étudiants."
-          ],
-          "tech": [
-            "React",
-            "React Native",
-            "PHP",
-            "Kotlin"
-          ]
+          "role": "System Analyst",
+          "period": "Oct 2022 – Apr 2023",
+          "location": "Malaysia (Remote)",
+          "responsibilities": ["Modernisation des interfaces web et mobile héritées vers React et React Native.", "Amélioration du backend Laravel pour la maintenabilité et le support multiplateforme."],
+          "tech": ["React", "React Native", "Laravel"]
         },
         {
-          "company": "Developer Student Club - UTM",
-          "role": "Membre de l'équipe technique",
+          "company": "Google Developer Student Club, UTM",
+          "role": "Technical Team Member",
           "period": "Nov 2021 – Oct 2022",
-          "location": "Johor Bahru, Malaisie",
-          "responsibilities": [
-            "A exploré les domaines du machine learning et du deep learning en IA pour apprendre et participer à des ateliers pratiques."
-          ],
-          "tech": [
-            "Python",
-            "Machine Learning",
-            "Deep Learning"
-          ]
-        },
-        {
-          "company": "Freelancer.com",
-          "role": "Développeur Web Frontend",
-          "period": "Nov 2021 – Nov 2021",
-          "location": "À distance",
-          "responsibilities": [
-            "Développé un site Web de journal météo connecté à une API météo à l'aide de formulaires HTML et d'Express.js."
-          ],
-          "tech": [
-            "HTML",
-            "Express.js",
-            "JavaScript",
-            "Weather API"
-          ]
+          "location": "Johor Bahru, Malaysia",
+          "responsibilities": ["Ateliers de vision par ordinateur et de chatbots IA avec Azure."],
+          "tech": ["Python", "Azure", "Computer Vision"]
         }
       ]
     },

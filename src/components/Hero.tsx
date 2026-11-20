@@ -98,7 +98,10 @@ export default function Hero() {
           >
             {t.hero.title}
           </p>
-          <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "clamp(0.9rem, 1.5vw, 1.1rem)", marginTop: "10px" }}>
+          <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "clamp(1rem, 1.8vw, 1.25rem)", marginTop: "12px", maxWidth: "700px" }}>
+            {t.hero.headline}
+          </p>
+          <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "clamp(0.9rem, 1.5vw, 1.1rem)", marginTop: "10px", maxWidth: "720px", lineHeight: 1.6 }}>
             {t.hero.description}
           </p>
         </div>
@@ -150,7 +153,7 @@ export default function Hero() {
         >
           <button
             className="btn-glow"
-            onClick={() => scrollToSection("projects")}
+            onClick={() => scrollToSection("work")}
             style={{
               padding: "14px 32px",
               fontSize: "1rem",
@@ -159,6 +162,25 @@ export default function Hero() {
           >
             {t.hero.cta_projects}
           </button>
+          <a
+            href="/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass"
+            style={{
+              padding: "14px 32px",
+              background: "transparent",
+              border: "1px solid var(--glass-border)",
+              borderRadius: "8px",
+              color: "white",
+              fontWeight: 600,
+              fontSize: "1rem",
+              textDecoration: "none",
+              display: "inline-block"
+            }}
+          >
+            {t.hero.cta_resume}
+          </a>
           <button
             onClick={() => scrollToSection("contact")}
             style={{

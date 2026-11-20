@@ -16,22 +16,7 @@ export default function CategoryPage() {
     // Try to find projects of this category from our translation items
     // Since translations might not have 'category' property added yet, we type cast it as any
     const allProjects = t.projects.items || [];
-    let categoryProjects = allProjects.filter((p: any) => p.category === categorySlug);
-
-    // If no projects exist for this category, provide a placeholder for demonstration
-    if (categoryProjects.length === 0) {
-        categoryProjects = [
-            {
-                slug: `sample-project-for-${categorySlug}`,
-                title: `Sample ${categorySlug} Project`,
-                description: "A short description of this project showing its features.",
-                longDescription: "A more detailed description of the sample project.",
-                tech: ["React", "Next.js"],
-                category: categorySlug,
-                images: [{ src: "", desc: "First placeholder image" }]
-            }
-        ];
-    }
+    const categoryProjects = allProjects.filter((p: any) => p.category === categorySlug);
 
     return (
         <main style={{ minHeight: "100vh", background: "#050505", color: "white" }}>
@@ -68,6 +53,9 @@ export default function CategoryPage() {
                     {t.projects.categoryTitles[categorySlug] || categorySlug}
                 </motion.h1>
 
+                {categoryProjects.length === 0 && (
+                    <p style={{ textAlign: "center", color: "rgba(255,255,255,0.6)" }}>No projects in this category yet.</p>
+                )}
                 <div style={{ display: "flex", flexDirection: "column", gap: "80px" }}>
                     {categoryProjects.map((project: any, index: number) => (
                         <motion.div

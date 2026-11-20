@@ -5,6 +5,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useI18n } from "@/lib/translations-context";
+import { skillCategories as skillData } from "@/data/skills";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -16,50 +17,12 @@ export default function Skills() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
-  const skillCategories = [
-    {
-      title: t.skills.categories.languages,
-      icon: "💻",
-      skills: ["Python", "JavaScript", "TypeScript", "Flutter", "C++", "Java"],
-      color: "#7000FF"
-    },
-    {
-      title: t.skills.categories.frontend,
-      icon: "🎨",
-      skills: ["Next.js", "React", "Tailwind CSS", "MUI", "Redux", "Zustand"],
-      color: "#00D1FF"
-    },
-    {
-      title: t.skills.categories.backend,
-      icon: "⚙️",
-      skills: ["NestJS", "Node.js", "Microservices", "REST API", "GraphQL"],
-      color: "#9D4EDD"
-    },
-    {
-      title: t.skills.categories.ai,
-      icon: "🤖",
-      skills: ["RASA", "OpenAI", "Gemini", "LangGraph", "N8N", "Computer Vision"],
-      color: "#00F5FF"
-    },
-    {
-      title: t.skills.categories.db,
-      icon: "🗄️",
-      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "RabbitMQ"],
-      color: "#0066FF"
-    },
-    {
-      title: t.skills.categories.devops,
-      icon: "☁️",
-      skills: ["Alibaba Cloud", "Azure", "Firebase", "Heroku", "Netlify", "Docker"],
-      color: "#FF6B9D"
-    },
-    {
-      title: t.skills.categories.tools,
-      icon: "🛠️",
-      skills: ["Cursor", "GPT Plus", "GitHub Actions", "Bitbucket", "Shopify"],
-      color: "#FFB800"
-    }
-  ];
+  const skillCategories = skillData.map((category) => ({
+    title: t.skills.categories[category.titleKey as keyof typeof t.skills.categories],
+    icon: category.icon,
+    skills: category.skills,
+    color: category.color,
+  }));
 
   useEffect(() => {
     if (isInView && titleRef.current) {
@@ -166,45 +129,6 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Core Concepts */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="glass"
-          style={{
-            padding: "40px",
-            borderRadius: "16px",
-            border: "1px solid var(--glass-border)",
-            textAlign: "center"
-          }}
-        >
-          <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "20px", color: "#00D1FF" }}>
-            {t.skills.categories.core}
-          </h3>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", justifyContent: "center" }}>
-            {[
-              "OOP", "Problem-Solving", "Data Structures", "Algorithms", 
-              "Design Patterns", "MVC Architecture", "Microservices", 
-              "Machine Learning", "CI/CD", "Agile/Scrum"
-            ].map((concept, index) => (
-              <span
-                key={concept}
-                style={{
-                  padding: "10px 20px",
-                  fontSize: "0.9rem",
-                  fontWeight: 600,
-                  borderRadius: "8px",
-                  background: "linear-gradient(135deg, rgba(112, 0, 255, 0.2), rgba(0, 209, 255, 0.2))",
-                  border: "1px solid rgba(112, 0, 255, 0.4)",
-                  color: "rgba(255,255,255,0.9)"
-                }}
-              >
-                {concept}
-              </span>
-            ))}
-          </div>
-        </motion.div>
       </div>
 
       <style jsx>{`
