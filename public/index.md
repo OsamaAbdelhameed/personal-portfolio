@@ -116,6 +116,12 @@ Specialized booking and trial management platform with AI conversation chatbot, 
 **Tech:** NextJS, Firebase, Algolia, Zustand, Stripe, QuickBooks  
 **Live:** [gotryone.com](https://gotryone.com)
 
+### ProvenTru - Due Diligence & Risk Advisory Website
+Marketing website for ProvenTru, a Salesbox company offering corporate verification, risk and reputation analysis, and marketplace and seller vetting.
+
+**Tech:** Next.js, React  
+**Live:** [proventru.com](https://proventru.com)
+
 ### UTMSIR - AI Student Housing (Final Year Project)
 Web-based residence management system for international students featuring an AI-driven recommendation engine for roommate matching and automated room assignments.
 

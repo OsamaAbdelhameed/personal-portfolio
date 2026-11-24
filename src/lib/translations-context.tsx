@@ -352,6 +352,17 @@ const translations: Record<Language, Translations> = {
           images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
         },
         {
+          slug: "proventru",
+          title: "ProvenTru",
+          category: "selected-work",
+          description: "Built the marketing website for ProvenTru, a Salesbox company offering due diligence and risk advisory services.",
+          longDescription: "Designed and developed the public website for ProvenTru, a Salesbox company that helps businesses verify who they work with through corporate verification, risk and reputation analysis, and marketplace and seller vetting. Focused on clear service messaging, a responsive layout, and booking-driven calls to action.",
+          tech: ["Next.js", "React"],
+          liveUrl: "https://proventru.com",
+          icon: "/proventru/icon.png",
+          images: [{ src: "/proventru/homepage.png", desc: "The homepage for ProvenTru" }]
+        },
+        {
           slug: "utmsir",
           title: "UTMSIR",
           description: "AI-enhanced web solution for international student accommodation with automated room assignments.",
@@ -826,6 +837,17 @@ const translations: Record<Language, Translations> = {
                       images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
                     },
                     {
+                      slug: "proventru",
+                      title: "ProvenTru",
+                      category: "selected-work",
+                      description: "بناء الموقع التسويقي لشركة ProvenTru، إحدى شركات Salesbox المتخصصة في العناية الواجبة واستشارات المخاطر.",
+                      longDescription: "تصميم وتطوير الموقع الرسمي لشركة ProvenTru، إحدى شركات Salesbox، التي تساعد الشركات على التحقق ممن تتعامل معهم عبر التحقق من الشركات وتحليل المخاطر والسمعة وفحص البائعين والأسواق. ركّزت على وضوح عرض الخدمات وتصميم متجاوب ودعوات لاتخاذ إجراء مرتبطة بالحجز.",
+                      tech: ["Next.js", "React"],
+                      liveUrl: "https://proventru.com",
+                      icon: "/proventru/icon.png",
+                      images: [{ src: "/proventru/homepage.png", desc: "الصفحة الرئيسية لموقع ProvenTru" }]
+                    },
+                    {
                       slug: "utmsir",
                       title: "UTMSIR",
                       description: "حل ويب معزز بالذكاء الاصطناعي لسكن الطلاب الدوليين مع مهام غرف آلية.",
@@ -1245,6 +1267,17 @@ const translations: Record<Language, Translations> = {
                       tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
                       liveUrl: "https://gotryone.com",
                       images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
+                    },
+                    {
+                      slug: "proventru",
+                      title: "ProvenTru",
+                      category: "selected-work",
+                      description: "Desarrollé el sitio web de ProvenTru, una empresa de Salesbox especializada en due diligence y asesoría de riesgos.",
+                      longDescription: "Diseñé y desarrollé el sitio público de ProvenTru, una empresa de Salesbox que ayuda a verificar con quién se hacen negocios mediante verificación corporativa, análisis de riesgo y reputación, y evaluación de vendedores y marketplaces. Me centré en mensajes claros, diseño responsive y llamadas a la acción orientadas a reservas.",
+                      tech: ["Next.js", "React"],
+                      liveUrl: "https://proventru.com",
+                      icon: "/proventru/icon.png",
+                      images: [{ src: "/proventru/homepage.png", desc: "La página de inicio de ProvenTru" }]
                     },
                     {
                       slug: "utmsir",
@@ -1667,6 +1700,17 @@ const translations: Record<Language, Translations> = {
                       images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
                     },
                     {
+                      slug: "proventru",
+                      title: "ProvenTru",
+                      category: "selected-work",
+                      description: "Entwicklung der Website von ProvenTru, einem Salesbox-Unternehmen für Due Diligence und Risikoberatung.",
+                      longDescription: "Design und Entwicklung der öffentlichen Website von ProvenTru, einem Salesbox-Unternehmen, das Firmen bei der Prüfung von Geschäftspartnern unterstützt – mit Unternehmensverifizierung, Risiko- und Reputationsanalyse sowie Marktplatz- und Verkäuferprüfung. Schwerpunkte waren klare Leistungsdarstellung, responsives Layout und buchungsorientierte Calls-to-Action.",
+                      tech: ["Next.js", "React"],
+                      liveUrl: "https://proventru.com",
+                      icon: "/proventru/icon.png",
+                      images: [{ src: "/proventru/homepage.png", desc: "Die Startseite von ProvenTru" }]
+                    },
+                    {
                       slug: "utmsir",
                       title: "UTMSIR",
                       description: "KI-gestützte Web-Lösung für internationale Studentenunterkünfte mit automatischer Zimmerzuweisung.",
@@ -2087,6 +2131,17 @@ const translations: Record<Language, Translations> = {
                       images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
                     },
                     {
+                      slug: "proventru",
+                      title: "ProvenTru",
+                      category: "selected-work",
+                      description: "Разработал сайт ProvenTru — компании экосистемы Salesbox в сфере due diligence и консалтинга по рискам.",
+                      longDescription: "Спроектировал и разработал публичный сайт ProvenTru, компании Salesbox, которая помогает проверять партнёров: верификация компаний, анализ рисков и репутации, проверка продавцов и маркетплейсов. Упор сделан на понятную подачу услуг, адаптивную вёрстку и призывы к бронированию.",
+                      tech: ["Next.js", "React"],
+                      liveUrl: "https://proventru.com",
+                      icon: "/proventru/icon.png",
+                      images: [{ src: "/proventru/homepage.png", desc: "Главная страница ProvenTru" }]
+                    },
+                    {
                       slug: "utmsir",
                       title: "UTMSIR",
                       description: "Веб-решение с поддержкой ИИ для размещения иностранных студентов.",
@@ -2505,6 +2560,17 @@ const translations: Record<Language, Translations> = {
                       tech: ["NextJS", "Firebase", "Algolia", "Zustand", "Stripe", "QuickBooks"],
                       liveUrl: "https://gotryone.com",
                       images: [{ src: "/gotryone/gotryone.com_.png", desc: "The main landing page for GoTryOne" }, { src: "/gotryone/gotryone.com_build.png", desc: "The inital page for AI Conversation chatbot in GoTryOne" }, { src: "/gotryone/gotryone.com_build (1).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one of the options on the right" }, { src: "/gotryone/gotryone.com_build (2).png", desc: "The AI Conversation chatbot in GoTryOne when user clicks on one on the service name in the message then on see more button" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions using suggested answers" }, { src: "/gotryone/gotryone.com_build (3).png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a more details analysis to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user answers more questions and gets a bundle service discount to his business" }, { src: "/gotryone/gotryone.com_build_conversation_UlWX8rZYYAGENieuWiu9.png", desc: "The AI Conversation chatbot in GoTryOne when user gets a deep research insights about his business" }, { src: "/gotryone/gotryone.com_profile.png", desc: "The profile page for GoTryOne" }]
+                    },
+                    {
+                      slug: "proventru",
+                      title: "ProvenTru",
+                      category: "selected-work",
+                      description: "Développement du site web de ProvenTru, une société Salesbox spécialisée en due diligence et conseil en risques.",
+                      longDescription: "Conception et développement du site public de ProvenTru, société Salesbox qui aide les entreprises à vérifier leurs partenaires : vérification d'entreprises, analyse des risques et de la réputation, contrôle des vendeurs et places de marché. Accent sur un message clair, une mise en page responsive et des appels à l'action orientés réservation.",
+                      tech: ["Next.js", "React"],
+                      liveUrl: "https://proventru.com",
+                      icon: "/proventru/icon.png",
+                      images: [{ src: "/proventru/homepage.png", desc: "La page d'accueil de ProvenTru" }]
                     },
                     {
                       slug: "utmsir",

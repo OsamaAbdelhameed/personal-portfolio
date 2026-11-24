@@ -5,4 +5,4 @@ export const featuredProjectSlugs = [
   "fdg-workspace",
 ] as const;
 
-export const selectedWorkSlugs = ["engages-ai", "salesmrkt", "gotryone"] as const;
+export const selectedWorkSlugs = ["engages-ai", "salesmrkt", "gotryone", "proventru"] as const;
